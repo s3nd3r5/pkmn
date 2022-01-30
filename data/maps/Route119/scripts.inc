@@ -59,7 +59,7 @@ Route119_EventScript_RivalEncounter::
 	delay 30
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route119_EventScript_BattleMay
-	goto_if_eq VAR_RESULT, FEMALE, Route119_EventScript_BattleBrendan
+	goto_if_eq VAR_RESULT, FEMALE, Route119_EventScript_BattleEthan
 	releaseall
 	end
 
@@ -101,33 +101,33 @@ Route119_EventScript_DefeatedMay::
 	goto Route119_EventScript_RivalExitScottArrive
 	end
 
-Route119_EventScript_BattleBrendan::
-	msgbox Route119_Text_BrendanIntro, MSGBOX_DEFAULT
+Route119_EventScript_BattleEthan::
+	msgbox Route119_Text_EthanIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route119_EventScript_BattleBrendanTreecko
-	case 1, Route119_EventScript_BattleBrendanTorchic
-	case 2, Route119_EventScript_BattleBrendanMudkip
+	case 0, Route119_EventScript_BattleEthanTreecko
+	case 1, Route119_EventScript_BattleEthanTorchic
+	case 2, Route119_EventScript_BattleEthanMudkip
 	end
 
-Route119_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_TREECKO, Route119_Text_BrendanDefeat
-	goto Route119_EventScript_DefeatedBrendan
+Route119_EventScript_BattleEthanTreecko::
+	trainerbattle_no_intro TRAINER_ETHAN_ROUTE_119_TREECKO, Route119_Text_EthanDefeat
+	goto Route119_EventScript_DefeatedEthan
 	end
 
-Route119_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_TORCHIC, Route119_Text_BrendanDefeat
-	goto Route119_EventScript_DefeatedBrendan
+Route119_EventScript_BattleEthanTorchic::
+	trainerbattle_no_intro TRAINER_ETHAN_ROUTE_119_TORCHIC, Route119_Text_EthanDefeat
+	goto Route119_EventScript_DefeatedEthan
 	end
 
-Route119_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_MUDKIP, Route119_Text_BrendanDefeat
-	goto Route119_EventScript_DefeatedBrendan
+Route119_EventScript_BattleEthanMudkip::
+	trainerbattle_no_intro TRAINER_ETHAN_ROUTE_119_MUDKIP, Route119_Text_EthanDefeat
+	goto Route119_EventScript_DefeatedEthan
 	end
 
-Route119_EventScript_DefeatedBrendan::
-	msgbox Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT
+Route119_EventScript_DefeatedEthan::
+	msgbox Route119_Text_EthanIllGiveYouThis, MSGBOX_DEFAULT
 	call Route119_EventScript_GiveFlyHM
-	msgbox Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT
+	msgbox Route119_Text_EthanExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
 
@@ -511,26 +511,26 @@ Route119_Text_MayExplainFly:
 	.string "{PLAYER}{KUN}.\p"
 	.string "Well, let's meet again somewhere!$"
 
-Route119_Text_BrendanIntro:
-	.string "BRENDAN: {PLAYER}! So this is where\n"
+Route119_Text_EthanIntro:
+	.string "ETHAN: {PLAYER}! So this is where\n"
 	.string "you've been looking for POKéMON?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
 	.string "Now!\n"
 	.string "It's a battle, so battle!$"
 
-Route119_Text_BrendanDefeat:
+Route119_Text_EthanDefeat:
 	.string "Hmm…\n"
 	.string "You've gotten pretty darn decent.$"
 
-Route119_Text_BrendanIllGiveYouThis:
-	.string "BRENDAN: I'd say you're good enough\n"
+Route119_Text_EthanIllGiveYouThis:
+	.string "ETHAN: I'd say you're good enough\n"
 	.string "to search for POKéMON anywhere.\p"
 	.string "Here, I'll give you this.\n"
 	.string "Try it out.$"
 
-Route119_Text_BrendanExplainFly:
-	.string "BRENDAN: Use FLY, and your POKéMON\n"
+Route119_Text_EthanExplainFly:
+	.string "ETHAN: Use FLY, and your POKéMON\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
 	.string "But you need the FORTREE GYM BADGE \n"

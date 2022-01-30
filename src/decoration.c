@@ -424,7 +424,7 @@ static const u16 sDecorShapeSizes[] = {
     0x04, 0x08, 0x10, 0x20, 0x10, 0x08, 0x10, 0x20, 0x40, 0x20
 };
 
-static const u16 sBrendanPalette[] = INCBIN_U16("graphics/decorations/brendan.gbapal");
+static const u16 sEthanPalette[] = INCBIN_U16("graphics/decorations/ethan.gbapal");
 
 static const u16 sMayPalette[] = INCBIN_U16("graphics/decorations/may.gbapal");
 
@@ -442,9 +442,9 @@ static const struct YesNoFuncTable sStopPuttingAwayDecorationsYesNoFunctions =
 
 static const u8 sDecorationPuttingAwayCursor[] = INCBIN_U8("graphics/decorations/put_away_cursor.4bpp");
 
-static const struct SpritePalette sSpritePal_PuttingAwayCursorBrendan =
+static const struct SpritePalette sSpritePal_PuttingAwayCursorEthan =
 {
-    .data = sBrendanPalette,
+    .data = sEthanPalette,
     .tag = PLACE_DECORATION_PLAYER_TAG,
 };
 
@@ -1396,7 +1396,7 @@ static void SetUpPlacingDecorationPlayerAvatar(u8 taskId, struct PlaceDecoration
         x -= 8;
 
     if (gSaveBlock2Ptr->playerGender == MALE)
-        sDecor_CameraSpriteObjectIdx2 = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_BRENDAN_DECORATING, SpriteCallbackDummy, x, 72, 0);
+        sDecor_CameraSpriteObjectIdx2 = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_ETHAN_DECORATING, SpriteCallbackDummy, x, 72, 0);
     else
         sDecor_CameraSpriteObjectIdx2 = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_MAY_DECORATING, SpriteCallbackDummy, x, 72, 0);
 
@@ -2288,7 +2288,7 @@ static void SetUpPuttingAwayDecorationPlayerAvatar(void)
     LoadPlayerSpritePalette();
     gFieldCamera.spriteId = CreateSprite(&sPuttingAwayCursorSpriteTemplate, 120, 80, 0);
     if (gSaveBlock2Ptr->playerGender == MALE)
-        sDecor_CameraSpriteObjectIdx2 = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_BRENDAN_DECORATING, SpriteCallbackDummy, 136, 72, 0);
+        sDecor_CameraSpriteObjectIdx2 = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_ETHAN_DECORATING, SpriteCallbackDummy, 136, 72, 0);
     else
         sDecor_CameraSpriteObjectIdx2 = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_MAY_DECORATING, SpriteCallbackDummy, 136, 72, 0);
 
@@ -2683,7 +2683,7 @@ static void InitializeCameraSprite1(struct Sprite *sprite)
 static void LoadPlayerSpritePalette(void)
 {
     if (gSaveBlock2Ptr->playerGender == MALE)
-        LoadSpritePalette(&sSpritePal_PuttingAwayCursorBrendan);
+        LoadSpritePalette(&sSpritePal_PuttingAwayCursorEthan);
     else
         LoadSpritePalette(&sSpritePal_PuttingAwayCursorMay);
 }

@@ -891,7 +891,7 @@ static const u16 sMugshotPal_Phoebe[] = INCBIN_U16("graphics/battle_transitions/
 static const u16 sMugshotPal_Glacia[] = INCBIN_U16("graphics/battle_transitions/glacia_bg.gbapal");
 static const u16 sMugshotPal_Drake[] = INCBIN_U16("graphics/battle_transitions/drake_bg.gbapal");
 static const u16 sMugshotPal_Champion[] = INCBIN_U16("graphics/battle_transitions/wallace_bg.gbapal");
-static const u16 sMugshotPal_Brendan[] = INCBIN_U16("graphics/battle_transitions/brendan_bg.gbapal");
+static const u16 sMugshotPal_Ethan[] = INCBIN_U16("graphics/battle_transitions/ethan_bg.gbapal");
 static const u16 sMugshotPal_May[] = INCBIN_U16("graphics/battle_transitions/may_bg.gbapal");
 
 static const u16 *const sOpponentMugshotsPals[MUGSHOTS_COUNT] =
@@ -905,7 +905,7 @@ static const u16 *const sOpponentMugshotsPals[MUGSHOTS_COUNT] =
 
 static const u16 *const sPlayerMugshotsPals[GENDER_COUNT] =
 {
-    [MALE] = sMugshotPal_Brendan,
+    [MALE] = sMugshotPal_Ethan,
     [FEMALE] = sMugshotPal_May
 };
 
