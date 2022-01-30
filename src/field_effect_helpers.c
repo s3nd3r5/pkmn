@@ -261,7 +261,7 @@ u8 CreateWarpArrowSprite(void)
     if (spriteId != MAX_SPRITES)
     {
         sprite = &gSprites[spriteId];
-        // OBJ_EVENT_PAL_TAG_MAY : OBJ_EVENT_PAL_TAG_BRENDAN
+        // OBJ_EVENT_PAL_TAG_MAY : OBJ_EVENT_PAL_TAG_ETHAN
         sprite->oam.paletteNum = LoadObjectEventPalette(gSaveBlock2Ptr->playerGender ? 0x1110 : 0x1100);
         sprite->oam.priority = 1;
         sprite->coordOffsetEnabled = TRUE;

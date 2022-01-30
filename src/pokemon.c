@@ -1969,12 +1969,12 @@ const struct SpriteTemplate gBattlerSpriteTemplates[MAX_BATTLERS_COUNT] =
 
 static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
 {
-    [TRAINER_BACK_PIC_BRENDAN] = {
+    [TRAINER_BACK_PIC_ETHAN] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
         .anims = NULL,
-        .images = gTrainerBackPicTable_Brendan,
+        .images = gTrainerBackPicTable_Ethan,
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
@@ -6943,7 +6943,7 @@ u16 PlayerGenderToFrontTrainerPicId(u8 playerGender)
     if (playerGender != MALE)
         return FacilityClassToPicIndex(FACILITY_CLASS_MAY);
     else
-        return FacilityClassToPicIndex(FACILITY_CLASS_BRENDAN);
+        return FacilityClassToPicIndex(FACILITY_CLASS_ETHAN);
 }
 
 void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)

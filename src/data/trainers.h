@@ -7279,130 +7279,130 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemCustomMoves = sParty_WallyVR1},
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
+    [TRAINER_ETHAN_ROUTE_103_MUDKIP] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Mudkip),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Mudkip},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute103Mudkip),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute103Mudkip},
     },
 
-    [TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
+    [TRAINER_ETHAN_ROUTE_110_MUDKIP] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute110Mudkip),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute110Mudkip},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute110Mudkip),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute110Mudkip},
     },
 
-    [TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
+    [TRAINER_ETHAN_ROUTE_119_MUDKIP] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute119Mudkip),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute119Mudkip},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute119Mudkip),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute119Mudkip},
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
+    [TRAINER_ETHAN_ROUTE_103_TREECKO] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_SETUP_FIRST_TURN,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Treecko),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Treecko},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute103Treecko),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute103Treecko},
     },
 
-    [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
+    [TRAINER_ETHAN_ROUTE_110_TREECKO] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute110Treecko),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute110Treecko},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute110Treecko),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute110Treecko},
     },
 
-    [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
+    [TRAINER_ETHAN_ROUTE_119_TREECKO] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute119Treecko),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute119Treecko},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute119Treecko),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute119Treecko},
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
+    [TRAINER_ETHAN_ROUTE_103_TORCHIC] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Torchic),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Torchic},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute103Torchic),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute103Torchic},
     },
 
-    [TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
+    [TRAINER_ETHAN_ROUTE_110_TORCHIC] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute110Torchic),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute110Torchic},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute110Torchic),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute110Torchic},
     },
 
-    [TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
+    [TRAINER_ETHAN_ROUTE_119_TORCHIC] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute119Torchic),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute119Torchic},
+        .partySize = ARRAY_COUNT(sParty_EthanRoute119Torchic),
+        .party = {.NoItemDefaultMoves = sParty_EthanRoute119Torchic},
     },
 
     [TRAINER_MAY_ROUTE_103_MUDKIP] =
@@ -8287,32 +8287,32 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Macey},
     },
 
-    [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
+    [TRAINER_ETHAN_RUSTBORO_TREECKO] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_BrendanRustboroTreecko),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRustboroTreecko},
+        .partySize = ARRAY_COUNT(sParty_EthanRustboroTreecko),
+        .party = {.NoItemDefaultMoves = sParty_EthanRustboroTreecko},
     },
 
-    [TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
+    [TRAINER_ETHAN_RUSTBORO_MUDKIP] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_BrendanRustboroMudkip),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRustboroMudkip},
+        .partySize = ARRAY_COUNT(sParty_EthanRustboroMudkip),
+        .party = {.NoItemDefaultMoves = sParty_EthanRustboroMudkip},
     },
 
     [TRAINER_PAXTON] =
@@ -8385,18 +8385,18 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Jonathan},
     },
 
-    [TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
+    [TRAINER_ETHAN_RUSTBORO_TORCHIC] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRustboroTorchic),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRustboroTorchic},
+        .partySize = ARRAY_COUNT(sParty_EthanRustboroTorchic),
+        .party = {.NoItemDefaultMoves = sParty_EthanRustboroTorchic},
     },
 
     [TRAINER_MAY_RUSTBORO_MUDKIP] =
@@ -9253,46 +9253,46 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemCustomMoves = sParty_WallyVR5},
     },
 
-    [TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
+    [TRAINER_ETHAN_LILYCOVE_MUDKIP] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanLilycoveMudkip),
-        .party = {.NoItemDefaultMoves = sParty_BrendanLilycoveMudkip},
+        .partySize = ARRAY_COUNT(sParty_EthanLilycoveMudkip),
+        .party = {.NoItemDefaultMoves = sParty_EthanLilycoveMudkip},
     },
 
-    [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
+    [TRAINER_ETHAN_LILYCOVE_TREECKO] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanLilycoveTreecko),
-        .party = {.NoItemDefaultMoves = sParty_BrendanLilycoveTreecko},
+        .partySize = ARRAY_COUNT(sParty_EthanLilycoveTreecko),
+        .party = {.NoItemDefaultMoves = sParty_EthanLilycoveTreecko},
     },
 
-    [TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
+    [TRAINER_ETHAN_LILYCOVE_TORCHIC] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanLilycoveTorchic),
-        .party = {.NoItemDefaultMoves = sParty_BrendanLilycoveTorchic},
+        .partySize = ARRAY_COUNT(sParty_EthanLilycoveTorchic),
+        .party = {.NoItemDefaultMoves = sParty_EthanLilycoveTorchic},
     },
 
     [TRAINER_MAY_LILYCOVE_MUDKIP] =
@@ -11951,8 +11951,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = 0,
-        .partySize = ARRAY_COUNT(sParty_BrendanLinkPlaceholder),
-        .party = {.NoItemDefaultMoves = sParty_BrendanLinkPlaceholder},
+        .partySize = ARRAY_COUNT(sParty_EthanLinkPlaceholder),
+        .party = {.NoItemDefaultMoves = sParty_EthanLinkPlaceholder},
     },
 
     [TRAINER_MAY_PLACEHOLDER] =

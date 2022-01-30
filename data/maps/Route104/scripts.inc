@@ -91,7 +91,7 @@ Route104_EventScript_PlayBrendanMusic::
 Route104_EventScript_RivalEncounter::
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route104_EventScript_MayEncounter
-	goto_if_eq VAR_RESULT, FEMALE, Route104_EventScript_BrendanEncounter
+	goto_if_eq VAR_RESULT, FEMALE, Route104_EventScript_EthanEncounter
 	end
 
 Route104_EventScript_MayEncounter::
@@ -180,71 +180,71 @@ Route104_EventScript_BattleMayMudkip::
 	goto Route104_EventScript_MayDefeated
 	end
 
-Route104_EventScript_BrendanEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_BrendanDefeated
-	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_BrendanAskToBattle
+Route104_EventScript_EthanEncounter::
+	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_EthanDefeated
+	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_EthanAskToBattle
 	setflag FLAG_REGISTER_RIVAL_POKENAV
-	msgbox Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT
+	msgbox Route104_Text_EthanWeShouldRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	msgbox Route104_Text_RegisteredEthan, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
-	msgbox Route104_Text_BrendanHowsYourPokedex, MSGBOX_DEFAULT
+	msgbox Route104_Text_EthanHowsYourPokedex, MSGBOX_DEFAULT
 	closemessage
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalApproachPlayer
 	waitmovement 0
 	copyobjectxytoperm LOCALID_RIVAL
-	msgbox Route104_Text_BrendanDoingGreatLetsBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox Route104_Text_EthanDoingGreatLetsBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleEthan
+	msgbox Route104_Text_EthanNoConfidence, MSGBOX_DEFAULT
 	call Route104_EventScript_RestoreMusic
 	releaseall
 	end
 
-Route104_EventScript_BrendanAskToBattle::
-	msgbox Route104_Text_BrendanLetsBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+Route104_EventScript_EthanAskToBattle::
+	msgbox Route104_Text_EthanLetsBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleEthan
+	msgbox Route104_Text_EthanNoConfidence, MSGBOX_DEFAULT
 	releaseall
 	end
 
-Route104_EventScript_BattleBrendan::
-	msgbox Route104_Text_BrendanIntro, MSGBOX_DEFAULT
+Route104_EventScript_BattleEthan::
+	msgbox Route104_Text_EthanIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route104_EventScript_BattleBrendanTreecko
-	case 1, Route104_EventScript_BattleBrendanTorchic
-	case 2, Route104_EventScript_BattleBrendanMudkip
+	case 0, Route104_EventScript_BattleEthanTreecko
+	case 1, Route104_EventScript_BattleEthanTorchic
+	case 2, Route104_EventScript_BattleEthanMudkip
 	end
 
-Route104_EventScript_BrendanDefeated::
-	msgbox Route104_Text_BrendanPostBattle, MSGBOX_DEFAULT
+Route104_EventScript_EthanDefeated::
+	msgbox Route104_Text_EthanPostBattle, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 	releaseall
 	end
 
-Route104_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TREECKO, Route104_Text_BrendanDefeat
+Route104_EventScript_BattleEthanTreecko::
+	trainerbattle_no_intro TRAINER_ETHAN_RUSTBORO_TREECKO, Route104_Text_EthanDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
-	goto Route104_EventScript_BrendanDefeated
+	goto Route104_EventScript_EthanDefeated
 	end
 
-Route104_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, Route104_Text_BrendanDefeat
+Route104_EventScript_BattleEthanTorchic::
+	trainerbattle_no_intro TRAINER_ETHAN_RUSTBORO_TORCHIC, Route104_Text_EthanDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
-	goto Route104_EventScript_BrendanDefeated
+	goto Route104_EventScript_EthanDefeated
 	end
 
-Route104_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_MUDKIP, Route104_Text_BrendanDefeat
+Route104_EventScript_BattleEthanMudkip::
+	trainerbattle_no_intro TRAINER_ETHAN_RUSTBORO_MUDKIP, Route104_Text_EthanDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
-	goto Route104_EventScript_BrendanDefeated
+	goto Route104_EventScript_EthanDefeated
 	end
 
 Route104_Movement_PlayerBackUp:
@@ -1127,44 +1127,44 @@ Route104_Text_MayPostBattle:
 	.string "It's important to become friends with\n"
 	.string "POKéMON, too.$"
 
-Route104_Text_BrendanWeShouldRegister:
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
+Route104_Text_EthanWeShouldRegister:
+	.string "ETHAN: Oh, hey, {PLAYER}!\p"
 	.string "Cool, you had DEVON install the MATCH\n"
 	.string "CALL system on your POKéNAV!\p"
 	.string "Let's register each other in our\n"
 	.string "POKéNAVS so we can keep in touch.$"
 
-Route104_Text_RegisteredBrendan:
-	.string "{PLAYER} registered BRENDAN\n"
+Route104_Text_RegisteredEthan:
+	.string "{PLAYER} registered ETHAN\n"
 	.string "in the POKéNAV.$"
 
-Route104_Text_BrendanHowsYourPokedex:
-	.string "BRENDAN: {PLAYER}, how's your POKéDEX?\n"
+Route104_Text_EthanHowsYourPokedex:
+	.string "ETHAN: {PLAYER}, how's your POKéDEX?\n"
 	.string "Have you filled in any pages yet?$"
 
-Route104_Text_BrendanDoingGreatLetsBattle:
+Route104_Text_EthanDoingGreatLetsBattle:
 	.string "Me, I'm doing great!\p"
 	.string "Want to check out how good I am with\n"
 	.string "a battle?$"
 
-Route104_Text_BrendanNoConfidence:
-	.string "BRENDAN: What's the matter? Don't have\n"
+Route104_Text_EthanNoConfidence:
+	.string "ETHAN: What's the matter? Don't have\n"
 	.string "any confidence in your POKéMON?$"
 
-Route104_Text_BrendanLetsBattle:
-	.string "BRENDAN: What's up?\n"
+Route104_Text_EthanLetsBattle:
+	.string "ETHAN: What's up?\n"
 	.string "Want to have a battle with me?$"
 
-Route104_Text_BrendanIntro:
-	.string "BRENDAN: I know you just became\n"
+Route104_Text_EthanIntro:
+	.string "ETHAN: I know you just became\n"
 	.string "a TRAINER, but I won't go easy!$"
 
-Route104_Text_BrendanDefeat:
+Route104_Text_EthanDefeat:
 	.string "Hmm…\n"
 	.string "You're pretty good.$"
 
-Route104_Text_BrendanPostBattle:
-	.string "BRENDAN: You've gotten pretty decent\n"
+Route104_Text_EthanPostBattle:
+	.string "ETHAN: You've gotten pretty decent\n"
 	.string "at handling POKéMON.\p"
 	.string "But, you know, you shouldn't just be\n"
 	.string "making POKéMON battle.\p"

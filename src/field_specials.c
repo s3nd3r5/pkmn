@@ -543,13 +543,13 @@ void SpawnLinkPartnerObjectEvent(void)
                 break;
             case VERSION_EMERALD:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_ETHAN_NORMAL;
                 else
                     linkSpriteId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL;
                 break;
             default:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_ETHAN_NORMAL;
                 else
                     linkSpriteId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL;
                 break;
@@ -570,7 +570,7 @@ static void LoadLinkPartnerObjectEventSpritePalette(u8 graphicsId, u8 localEvent
     adjustedPaletteNum = paletteNum + 6;
     if (graphicsId == OBJ_EVENT_GFX_LINK_RS_BRENDAN ||
         graphicsId == OBJ_EVENT_GFX_LINK_RS_MAY ||
-        graphicsId == OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL ||
+        graphicsId == OBJ_EVENT_GFX_RIVAL_ETHAN_NORMAL ||
         graphicsId == OBJ_EVENT_GFX_RIVAL_MAY_NORMAL)
     {
         u8 obj = GetObjectEventIdByLocalIdAndMap(localEventId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
@@ -588,8 +588,8 @@ static void LoadLinkPartnerObjectEventSpritePalette(u8 graphicsId, u8 localEvent
             case OBJ_EVENT_GFX_LINK_RS_MAY:
                 LoadPalette(gObjectEventPal_RubySapphireMay, 0x100 + (adjustedPaletteNum << 4), 0x20);
                 break;
-            case OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL:
-                LoadPalette(gObjectEventPal_Brendan, 0x100 + (adjustedPaletteNum << 4), 0x20);
+            case OBJ_EVENT_GFX_RIVAL_ETHAN_NORMAL:
+                LoadPalette(gObjectEventPal_Ethan, 0x100 + (adjustedPaletteNum << 4), 0x20);
                 break;
             case OBJ_EVENT_GFX_RIVAL_MAY_NORMAL:
                 LoadPalette(gObjectEventPal_May, 0x100 + (adjustedPaletteNum << 4), 0x20);
@@ -2697,7 +2697,7 @@ void SetBattleTowerLinkPlayerGfx(void)
     for (i = 0; i < 2; i++)
     {
         if (gLinkPlayers[i].gender == MALE)
-            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_BRENDAN_NORMAL);
+            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_ETHAN_NORMAL);
         else
             VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL);
     }

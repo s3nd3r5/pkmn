@@ -829,7 +829,7 @@ RustboroCity_EventScript_RivalTrigger7::
 RustboroCity_EventScript_RivalEncounter::
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, RustboroCity_EventScript_MayEncounter
-	goto_if_eq VAR_RESULT, FEMALE, RustboroCity_EventScript_BrendanEncounter
+	goto_if_eq VAR_RESULT, FEMALE, RustboroCity_EventScript_EthanEncounter
 	end
 
 RustboroCity_EventScript_MayEncounter::
@@ -900,65 +900,65 @@ RustboroCity_EventScript_BattleMayMudkip::
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
-RustboroCity_EventScript_BrendanEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanBrineyHint
-	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanAskToBattle
+RustboroCity_EventScript_EthanEncounter::
+	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_EthanBrineyHint
+	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_EthanAskToBattle
 	setflag FLAG_MET_RIVAL_RUSTBORO
-	msgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_EthanHiLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_RegisteredEthan, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 	setvar VAR_ROUTE104_STATE, 2
-	msgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_EthanPassedBrineyWantToBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleEthan
+	msgbox RustboroCity_Text_EthanNoConfidenceInPokemon, MSGBOX_DEFAULT
 	call RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
 
-RustboroCity_EventScript_BrendanAskToBattle::
-	msgbox RustboroCity_Text_BrendanWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+RustboroCity_EventScript_EthanAskToBattle::
+	msgbox RustboroCity_Text_EthanWantToBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleEthan
+	msgbox RustboroCity_Text_EthanNoConfidenceInPokemon, MSGBOX_DEFAULT
 	releaseall
 	end
 
-RustboroCity_EventScript_BattleBrendan::
-	msgbox RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT
+RustboroCity_EventScript_BattleEthan::
+	msgbox RustboroCity_Text_EthanIWontGoEasy, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, RustboroCity_EventScript_BattleBrendanTreecko
-	case 1, RustboroCity_EventScript_BattleBrendanTorchic
-	case 2, RustboroCity_EventScript_BattleBrendanMudkip
+	case 0, RustboroCity_EventScript_BattleEthanTreecko
+	case 1, RustboroCity_EventScript_BattleEthanTorchic
+	case 2, RustboroCity_EventScript_BattleEthanMudkip
 	end
 
-RustboroCity_EventScript_BrendanBrineyHint::
-	msgbox RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT
+RustboroCity_EventScript_EthanBrineyHint::
+	msgbox RustboroCity_Text_EthanMrBrineyHint, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
 
-RustboroCity_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TREECKO, RustboroCity_Text_BrendanDefeat
+RustboroCity_EventScript_BattleEthanTreecko::
+	trainerbattle_no_intro TRAINER_ETHAN_RUSTBORO_TREECKO, RustboroCity_Text_EthanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_BrendanBrineyHint
+	goto RustboroCity_EventScript_EthanBrineyHint
 	end
 
-RustboroCity_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, RustboroCity_Text_BrendanDefeat
+RustboroCity_EventScript_BattleEthanTorchic::
+	trainerbattle_no_intro TRAINER_ETHAN_RUSTBORO_TORCHIC, RustboroCity_Text_EthanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_BrendanBrineyHint
+	goto RustboroCity_EventScript_EthanBrineyHint
 	end
 
-RustboroCity_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_MUDKIP, RustboroCity_Text_BrendanDefeat
+RustboroCity_EventScript_BattleEthanMudkip::
+	trainerbattle_no_intro TRAINER_ETHAN_RUSTBORO_MUDKIP, RustboroCity_Text_EthanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_BrendanBrineyHint
+	goto RustboroCity_EventScript_EthanBrineyHint
 	end
 
 RustboroCity_Movement_RivalApproachPlayer0:
@@ -1181,20 +1181,20 @@ RustboroCity_Text_MayMrBrineyHint:
 	.string "might not know this, but MR. BRINEY\l"
 	.string "was once a revered seafarer.$"
 
-RustboroCity_Text_BrendanHiLetsRegister:
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
+RustboroCity_Text_EthanHiLetsRegister:
+	.string "ETHAN: Oh, hey, {PLAYER}!\p"
 	.string "You had a MATCH CALL feature put\n"
 	.string "on your POKéNAV! Cool!\p"
 	.string "Let's register each other so we can\n"
 	.string "get in touch anytime!\p"
 	.string "… … … … … …$"
 
-RustboroCity_Text_RegisteredBrendan:
-	.string "Registered BRENDAN\n"
+RustboroCity_Text_RegisteredEthan:
+	.string "Registered ETHAN\n"
 	.string "in the POKéNAV.$"
 
-RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "BRENDAN: By the way, {PLAYER}, I walked\n"
+RustboroCity_Text_EthanPassedBrineyWantToBattle:
+	.string "ETHAN: By the way, {PLAYER}, I walked\n"
 	.string "by MR. BRINEY in PETALBURG WOODS.\p"
 	.string "I bet he was on his way home to his\n"
 	.string "cottage by the sea.\p"
@@ -1204,24 +1204,24 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 	.string "Want to have a battle to test how\n"
 	.string "far you've progressed?$"
 
-RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "BRENDAN: What's the matter? Don't have\n"
+RustboroCity_Text_EthanNoConfidenceInPokemon:
+	.string "ETHAN: What's the matter? Don't have\n"
 	.string "any confidence in your POKéMON?$"
 
-RustboroCity_Text_BrendanWantToBattle:
-	.string "BRENDAN: What's up?\n"
+RustboroCity_Text_EthanWantToBattle:
+	.string "ETHAN: What's up?\n"
 	.string "Want to have a battle with me?$"
 
-RustboroCity_Text_BrendanIWontGoEasy:
-	.string "BRENDAN: I know you just became\n"
+RustboroCity_Text_EthanIWontGoEasy:
+	.string "Ethan: I know you just became\n"
 	.string "a TRAINER, but I won't go easy!$"
 
-RustboroCity_Text_BrendanDefeat:
+RustboroCity_Text_EthanDefeat:
 	.string "Hmm…\n"
 	.string "You're pretty good.$"
 
-RustboroCity_Text_BrendanMrBrineyHint:
-	.string "BRENDAN: By the way, you know\n"
+RustboroCity_Text_EthanMrBrineyHint:
+	.string "ETHAN: By the way, you know\n"
 	.string "MR. BRINEY? The guy I just passed?\p"
 	.string "I bet you didn't know this, since you\n"
 	.string "just moved here, {PLAYER}, but\l"

@@ -2524,7 +2524,7 @@ void LoadLinkContestPlayerPalettes(void)
             else
             {
                 if (gLinkPlayers[i].gender == MALE)
-                    LoadPalette(gObjectEventPal_Brendan, 0x160 + i * 0x10, 0x20);
+                    LoadPalette(gObjectEventPal_Ethan, 0x160 + i * 0x10, 0x20);
                 else
                     LoadPalette(gObjectEventPal_May, 0x160 + i * 0x10, 0x20);
             }
