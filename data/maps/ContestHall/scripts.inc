@@ -291,7 +291,7 @@ ContestHall_EventScript_RandomAudienceBeauty::
 	return
 
 ContestHall_EventScript_RandomAudienceScientist1::
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_SCIENTIST_1
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_SCIENTIST_M
 	return
 
 ContestHall_EventScript_CreateAudience::
@@ -307,20 +307,20 @@ ContestHall_EventScript_CreateAudience::
 
 ContestHall_EventScript_CreateNormalContestAudience::
 	createvobject OBJ_EVENT_GFX_NINJA_BOY, 20, 3, 2, 3, DIR_SOUTH
-	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_SCIENTIST_M, 24, 11, 2, 3, DIR_SOUTH
 	return
 
 ContestHall_EventScript_CreateSuperContestAudience::
 	createvobject OBJ_EVENT_GFX_BEAUTY, 0, 2, 3, 3, DIR_EAST
 	createvobject OBJ_EVENT_GFX_MAN_5, 1, 2, 4, 3, DIR_EAST
 	createvobject OBJ_EVENT_GFX_HIKER, 2, 2, 7, 3, DIR_EAST
-	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 3, 2, 8, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_SCIENTIST_M, 3, 2, 8, 3, DIR_EAST
 	createvobject OBJ_EVENT_GFX_NINJA_BOY, 10, 12, 3, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_WOMAN_2, 11, 12, 4, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_WOMAN_3, 12, 12, 7, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_LITTLE_GIRL, 13, 12, 8, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_LASS, 20, 3, 2, 3, DIR_SOUTH
-	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_SCIENTIST_M, 24, 11, 2, 3, DIR_SOUTH
 	return
 
 ContestHall_EventScript_CreateHyperContestAudience::
@@ -335,7 +335,7 @@ ContestHall_EventScript_CreateHyperContestAudience::
 	createvobject OBJ_EVENT_GFX_EXPERT_F, 20, 3, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_MAN_2, 20, 6, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_WOMAN_5, 20, 7, 2, 3, DIR_SOUTH
-	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 8, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_SCIENTIST_M, 24, 8, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_GENTLEMAN, 24, 11, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_LITTLE_BOY, 25, 3, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 4, 9, 3, DIR_NORTH
@@ -366,7 +366,7 @@ ContestHall_EventScript_CreateMasterContestAudience::
 	createvobject OBJ_EVENT_GFX_POKEFAN_M, 20, 3, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_CAMPER, 21, 6, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_MAN_3, 22, 7, 2, 3, DIR_SOUTH
-	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_SCIENTIST_M, 24, 11, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_SAILOR, 25, 3, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 4, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_GENTLEMAN, 27, 5, 9, 3, DIR_NORTH
@@ -396,7 +396,7 @@ ContestHall_EventScript_CreateWirelessContestAudience::
 	createvobject OBJ_EVENT_GFX_POKEFAN_M, 20, 3, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_CAMPER, 21, 6, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_MAN_3, 22, 7, 2, 3, DIR_SOUTH
-	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_SCIENTIST_M, 24, 11, 2, 3, DIR_SOUTH
 	return
 
 ContestHall_EventScript_SetExitWarp::

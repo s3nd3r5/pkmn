@@ -47,7 +47,7 @@
 #define OBJ_EVENT_GFX_SWIMMER_F                   43
 #define OBJ_EVENT_GFX_BLACK_BELT                  44
 #define OBJ_EVENT_GFX_BEAUTY                      45
-#define OBJ_EVENT_GFX_SCIENTIST_1                 46
+#define OBJ_EVENT_GFX_SCIENTIST_M                 46
 #define OBJ_EVENT_GFX_LASS                        47
 #define OBJ_EVENT_GFX_GENTLEMAN                   48
 #define OBJ_EVENT_GFX_SAILOR                      49
@@ -116,7 +116,7 @@
 #define OBJ_EVENT_GFX_MAY_UNDERWATER             112
 #define OBJ_EVENT_GFX_MOVING_BOX                 113
 #define OBJ_EVENT_GFX_CABLE_CAR                  114
-#define OBJ_EVENT_GFX_SCIENTIST_2                115
+#define OBJ_EVENT_GFX_SCIENTIST_F                115
 #define OBJ_EVENT_GFX_DEVON_EMPLOYEE             116
 #define OBJ_EVENT_GFX_AQUA_MEMBER_M              117
 #define OBJ_EVENT_GFX_AQUA_MEMBER_F              118
