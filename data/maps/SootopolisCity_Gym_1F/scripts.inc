@@ -98,7 +98,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	setflag FLAG_BADGE08_GET
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
-	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_LANCE
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 6
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
 	setvar VAR_0x8008, 8
@@ -198,11 +198,11 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught WALLACE everything\n"
+	.string "It was I who taught LANCE everything\n"
 	.string "there is to know about POKéMON.\p"
 	.string "Once, I had given up my position as\n"
 	.string "the GYM LEADER.\p"
-	.string "In my place, I had entrusted WALLACE\n"
+	.string "In my place, I had entrusted LANCE\n"
 	.string "with the GYM.\p"
 	.string "However, a compelling reason arose for\n"
 	.string "me to make a comeback.\p"
@@ -223,7 +223,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "From you, I sense the brilliant shine\n"
 	.string "of skill that will overcome all.\p"
 	.string "However, compared with me or even\n"
-	.string "WALLACE, you are lacking in elegance.\p"
+	.string "LANCE, you are lacking in elegance.\p"
 	.string "Perhaps I should make you a loan\n"
 	.string "of my outfit?\p"
 	.string "… … … … … …\n"

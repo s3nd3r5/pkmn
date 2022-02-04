@@ -1,23 +1,23 @@
-.set LOCALID_WALLACE, 1
+.set LOCALID_LANCE, 1
 
 CaveOfOrigin_B1F_MapScripts::
 	.byte 0
 
-CaveOfOrigin_B1F_EventScript_Wallace::
+CaveOfOrigin_B1F_EventScript_Lance::
 	lock
 	faceplayer
-	msgbox CaveOfOrigin_B1F_Text_WallaceStory, MSGBOX_DEFAULT
+	msgbox CaveOfOrigin_B1F_Text_LanceStory, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_LANCE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 60
 	playse SE_PIN
-	applymovement LOCALID_WALLACE, Common_Movement_ExclamationMark
+	applymovement LOCALID_LANCE, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_WALLACE, Common_Movement_Delay48
+	applymovement LOCALID_LANCE, Common_Movement_Delay48
 	waitmovement 0
 	delay 30
-	applymovement LOCALID_WALLACE, Common_Movement_FacePlayer
+	applymovement LOCALID_LANCE, Common_Movement_FacePlayer
 	waitmovement 0
 	message CaveOfOrigin_B1F_Text_WhereIsRayquaza
 	waitmessage
@@ -53,18 +53,18 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 	closemessage
 	playse SE_EXIT
 	fadescreenspeed FADE_TO_BLACK, 4
-	setflag FLAG_WALLACE_GOES_TO_SKY_PILLAR
+	setflag FLAG_LANCE_GOES_TO_SKY_PILLAR
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 3
-	removeobject LOCALID_WALLACE
-	clearflag FLAG_HIDE_SKY_PILLAR_WALLACE
+	removeobject LOCALID_LANCE
+	clearflag FLAG_HIDE_SKY_PILLAR_LANCE
 	fadescreen FADE_FROM_BLACK
 	release
 	end
 
-CaveOfOrigin_B1F_Text_WallaceStory:
+CaveOfOrigin_B1F_Text_LanceStory:
 	.string "Ah, so you are {PLAYER}{KUN}?\n"
 	.string "I've heard tales of your exploits.\p"
-	.string "My name is WALLACE.\p"
+	.string "My name is LANCE.\p"
 	.string "I was once the GYM LEADER of\n"
 	.string "SOOTOPOLIS, but something came up.\p"
 	.string "So now, I've entrusted my mentor JUAN\n"
@@ -86,19 +86,19 @@ CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "RAYQUAZA's whereabouts…$"
 
 CaveOfOrigin_B1F_Text_WhereIsRayquaza:
-	.string "WALLACE: {PLAYER}{KUN}, do you perhaps\n"
+	.string "LANCE: {PLAYER}{KUN}, do you perhaps\n"
 	.string "know where RAYQUAZA is now?\p"
 	.string "If you do, please tell me.$"
 
 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin:
-	.string "WALLACE: The CAVE OF ORIGIN?\p"
+	.string "LANCE: The CAVE OF ORIGIN?\p"
 	.string "But that's right here!\n"
 	.string "I need you to do better than that!\p"
 	.string "Please, I need you to think about\n"
 	.string "where RAYQUAZA might be right now.$"
 
 CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
-	.string "WALLACE: MT. PYRE?\p"
+	.string "LANCE: MT. PYRE?\p"
 	.string "But when I met the old lady there\n"
 	.string "earlier, she made no mention of it.\p"
 	.string "I very much doubt that the old lady\n"
@@ -107,12 +107,12 @@ CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
 	.string "more carefully for me?$"
 
 CaveOfOrigin_B1F_Text_CantYouRememberSomehow:
-	.string "WALLACE: Huh? You don't remember?\n"
+	.string "LANCE: Huh? You don't remember?\n"
 	.string "Hmm… That's a problem…\p"
 	.string "Can't you remember somehow?$"
 
 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
-	.string "WALLACE: The SKY PILLAR?\p"
+	.string "LANCE: The SKY PILLAR?\p"
 	.string "That's it!\n"
 	.string "It must be the SKY PILLAR!\p"
 	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"

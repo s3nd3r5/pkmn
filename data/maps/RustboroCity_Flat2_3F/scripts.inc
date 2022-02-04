@@ -1,7 +1,7 @@
 RustboroCity_Flat2_3F_MapScripts::
 	.byte 0
 
-RustboroCity_Flat2_3F_EventScript_DevonEmployee::
+RustboroCity_Flat2_3F_EventScript_ProfOak::
 	msgbox RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones, MSGBOX_NPC
 	end
 

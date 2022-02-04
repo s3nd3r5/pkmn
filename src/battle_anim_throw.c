@@ -786,7 +786,7 @@ static void AnimTask_ThrowBall_Step(u8 taskId)
         DestroyAnimVisualTask(taskId);
 }
 
-// Safari Zone throw / Wally's throw
+// Safari Zone throw / Lyra's throw
 void AnimTask_ThrowBall_StandingTrainer(u8 taskId)
 {
     s16 x, y;
@@ -794,7 +794,7 @@ void AnimTask_ThrowBall_StandingTrainer(u8 taskId)
     u8 subpriority;
     u8 spriteId;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL)
+    if (gBattleTypeFlags & BATTLE_TYPE_LYRA_TUTORIAL)
     {
         x = 32;
         y = 11;

@@ -112,7 +112,7 @@ struct ListBuffer2 {
     s8 name[MAX_POCKET_ITEMS][ITEM_NAME_LENGTH + 10];
 };
 
-struct TempWallyBag {
+struct TempLyraBag {
     struct ItemSlot bagPocket_Items[BAG_ITEMS_COUNT];
     struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
     u16 cursorPosition[POCKETS_COUNT];
@@ -135,8 +135,8 @@ static void CreatePocketScrollArrowPair(void);
 static void CreatePocketSwitchArrowPair(void);
 static void DestroyPocketSwitchArrowPair(void);
 static void PrepareTMHMMoveWindow(void);
-static bool8 IsWallysBag(void);
-static void Task_WallyTutorialBagMenu(u8);
+static bool8 IsLyrasBag(void);
+static void Task_LyraTutorialBagMenu(u8);
 static void Task_BagMenu_HandleInput(u8);
 static void GetItemName(s8*, u16);
 static void PrintItemDescription(int);
@@ -350,7 +350,7 @@ static const TaskFunc sContextMenuFuncs[] = {
     [ITEMMENULOCATION_FAVOR_LADY] =             Task_ItemContext_Normal,
     [ITEMMENULOCATION_QUIZ_LADY] =              Task_ItemContext_Normal,
     [ITEMMENULOCATION_APPRENTICE] =             Task_ItemContext_Normal,
-    [ITEMMENULOCATION_WALLY] =                  NULL,
+    [ITEMMENULOCATION_LYRA] =                  NULL,
     [ITEMMENULOCATION_PCBOX] =                  Task_ItemContext_GiveToPC
 };
 
@@ -549,7 +549,7 @@ EWRAM_DATA struct BagPosition gBagPosition = {0};
 static EWRAM_DATA struct ListBuffer1 *sListBuffer1 = 0;
 static EWRAM_DATA struct ListBuffer2 *sListBuffer2 = 0;
 EWRAM_DATA u16 gSpecialVar_ItemId = 0;
-static EWRAM_DATA struct TempWallyBag *sTempWallyBag = 0;
+static EWRAM_DATA struct TempLyraBag *sTempLyraBag = 0;
 
 void ResetBagScrollPositions(void)
 {
@@ -817,14 +817,14 @@ static bool8 LoadBagMenu_Graphics(void)
         }
         break;
     case 2:
-        if (!IsWallysBag() && gSaveBlock2Ptr->playerGender != MALE)
+        if (!IsLyrasBag() && gSaveBlock2Ptr->playerGender != MALE)
             LoadCompressedPalette(gBagScreenFemale_Pal, 0, 0x40);
         else
             LoadCompressedPalette(gBagScreenMale_Pal, 0, 0x40);
         gBagMenu->graphicsLoadState++;
         break;
     case 3:
-        if (IsWallysBag() == TRUE || gSaveBlock2Ptr->playerGender == MALE)
+        if (IsLyrasBag() == TRUE || gSaveBlock2Ptr->playerGender == MALE)
             LoadCompressedSpriteSheet(&gBagMaleSpriteSheet);
         else
             LoadCompressedSpriteSheet(&gBagFemaleSpriteSheet);
@@ -845,8 +845,8 @@ static bool8 LoadBagMenu_Graphics(void)
 static u8 CreateBagInputHandlerTask(u8 location)
 {
     u8 taskId;
-    if (location == ITEMMENULOCATION_WALLY)
-        taskId = CreateTask(Task_WallyTutorialBagMenu, 0);
+    if (location == ITEMMENULOCATION_LYRA)
+        taskId = CreateTask(Task_LyraTutorialBagMenu, 0);
     else
         taskId = CreateTask(Task_BagMenu_HandleInput, 0);
     return taskId;
@@ -1354,7 +1354,7 @@ static void Task_SwitchBagPocket(u8 taskId)
 {
     s16* data = gTasks[taskId].data;
 
-    if (!MenuHelpers_IsLinkActive() && !IsWallysBag())
+    if (!MenuHelpers_IsLinkActive() && !IsLyrasBag())
     {
         switch (GetSwitchBagPocketDirection())
         {
@@ -1532,7 +1532,7 @@ static void OpenContextMenu(u8 taskId)
     switch (gBagPosition.location)
     {
     case ITEMMENULOCATION_BATTLE:
-    case ITEMMENULOCATION_WALLY:
+    case ITEMMENULOCATION_LYRA:
         if (ItemId_GetBattleUsage(gSpecialVar_ItemId))
         {
             gBagMenu->contextMenuItemsPtr = sContextMenuItems_BattleUse;
@@ -2274,58 +2274,58 @@ static void WaitDepositErrorMessage(u8 taskId)
     }
 }
 
-static bool8 IsWallysBag(void)
+static bool8 IsLyrasBag(void)
 {
-    if (gBagPosition.location == ITEMMENULOCATION_WALLY)
+    if (gBagPosition.location == ITEMMENULOCATION_LYRA)
         return TRUE;
     return FALSE;
 }
 
-static void PrepareBagForWallyTutorial(void)
+static void PrepareBagForLyraTutorial(void)
 {
     u32 i;
 
-    sTempWallyBag = AllocZeroed(sizeof(*sTempWallyBag));
-    memcpy(sTempWallyBag->bagPocket_Items, gSaveBlock1Ptr->bagPocket_Items, sizeof(gSaveBlock1Ptr->bagPocket_Items));
-    memcpy(sTempWallyBag->bagPocket_PokeBalls, gSaveBlock1Ptr->bagPocket_PokeBalls, sizeof(gSaveBlock1Ptr->bagPocket_PokeBalls));
-    sTempWallyBag->pocket = gBagPosition.pocket;
+    sTempLyraBag = AllocZeroed(sizeof(*sTempLyraBag));
+    memcpy(sTempLyraBag->bagPocket_Items, gSaveBlock1Ptr->bagPocket_Items, sizeof(gSaveBlock1Ptr->bagPocket_Items));
+    memcpy(sTempLyraBag->bagPocket_PokeBalls, gSaveBlock1Ptr->bagPocket_PokeBalls, sizeof(gSaveBlock1Ptr->bagPocket_PokeBalls));
+    sTempLyraBag->pocket = gBagPosition.pocket;
     for (i = 0; i < POCKETS_COUNT; i++)
     {
-        sTempWallyBag->cursorPosition[i] = gBagPosition.cursorPosition[i];
-        sTempWallyBag->scrollPosition[i] = gBagPosition.scrollPosition[i];
+        sTempLyraBag->cursorPosition[i] = gBagPosition.cursorPosition[i];
+        sTempLyraBag->scrollPosition[i] = gBagPosition.scrollPosition[i];
     }
     ClearItemSlots(gSaveBlock1Ptr->bagPocket_Items, BAG_ITEMS_COUNT);
     ClearItemSlots(gSaveBlock1Ptr->bagPocket_PokeBalls, BAG_POKEBALLS_COUNT);
     ResetBagScrollPositions();
 }
 
-static void RestoreBagAfterWallyTutorial(void)
+static void RestoreBagAfterLyraTutorial(void)
 {
     u32 i;
 
-    memcpy(gSaveBlock1Ptr->bagPocket_Items, sTempWallyBag->bagPocket_Items, sizeof(sTempWallyBag->bagPocket_Items));
-    memcpy(gSaveBlock1Ptr->bagPocket_PokeBalls, sTempWallyBag->bagPocket_PokeBalls, sizeof(sTempWallyBag->bagPocket_PokeBalls));
-    gBagPosition.pocket = sTempWallyBag->pocket;
+    memcpy(gSaveBlock1Ptr->bagPocket_Items, sTempLyraBag->bagPocket_Items, sizeof(sTempLyraBag->bagPocket_Items));
+    memcpy(gSaveBlock1Ptr->bagPocket_PokeBalls, sTempLyraBag->bagPocket_PokeBalls, sizeof(sTempLyraBag->bagPocket_PokeBalls));
+    gBagPosition.pocket = sTempLyraBag->pocket;
     for (i = 0; i < POCKETS_COUNT; i++)
     {
-        gBagPosition.cursorPosition[i] = sTempWallyBag->cursorPosition[i];
-        gBagPosition.scrollPosition[i] = sTempWallyBag->scrollPosition[i];
+        gBagPosition.cursorPosition[i] = sTempLyraBag->cursorPosition[i];
+        gBagPosition.scrollPosition[i] = sTempLyraBag->scrollPosition[i];
     }
-    Free(sTempWallyBag);
+    Free(sTempLyraBag);
 }
 
-void DoWallyTutorialBagMenu(void)
+void DoLyraTutorialBagMenu(void)
 {
-    PrepareBagForWallyTutorial();
+    PrepareBagForLyraTutorial();
     AddBagItem(ITEM_POTION, 1);
     AddBagItem(ITEM_POKE_BALL, 1);
-    GoToBagMenu(ITEMMENULOCATION_WALLY, ITEMS_POCKET, CB2_SetUpReshowBattleScreenAfterMenu2);
+    GoToBagMenu(ITEMMENULOCATION_LYRA, ITEMS_POCKET, CB2_SetUpReshowBattleScreenAfterMenu2);
 }
 
 #define tTimer data[8]
-#define WALLY_BAG_DELAY 102 // The number of frames between each action Wally takes in the bag
+#define LYRA_BAG_DELAY 102 // The number of frames between each action Lyra takes in the bag
 
-static void Task_WallyTutorialBagMenu(u8 taskId)
+static void Task_LyraTutorialBagMenu(u8 taskId)
 {
     s16* data = gTasks[taskId].data;
 
@@ -2333,23 +2333,23 @@ static void Task_WallyTutorialBagMenu(u8 taskId)
     {
         switch (tTimer)
         {
-        case WALLY_BAG_DELAY * 1:
+        case LYRA_BAG_DELAY * 1:
             PlaySE(SE_SELECT);
             SwitchBagPocket(taskId, MENU_CURSOR_DELTA_RIGHT, FALSE);
             tTimer++;
             break;
-        case WALLY_BAG_DELAY * 2:
+        case LYRA_BAG_DELAY * 2:
             PlaySE(SE_SELECT);
             BagMenu_PrintCursor(tListTaskId, COLORID_GRAY_CURSOR);
             gSpecialVar_ItemId = ITEM_POKE_BALL;
             OpenContextMenu(taskId);
             tTimer++;
             break;
-        case WALLY_BAG_DELAY * 3:
+        case LYRA_BAG_DELAY * 3:
             PlaySE(SE_SELECT);
             RemoveContextWindow();
             DestroyListMenuTask(tListTaskId, 0, 0);
-            RestoreBagAfterWallyTutorial();
+            RestoreBagAfterLyraTutorial();
             Task_FadeAndCloseBagMenu(taskId);
             break;
         default:

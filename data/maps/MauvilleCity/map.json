@@ -101,7 +101,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_LYRA",
       "x": 8,
       "y": 6,
       "elevation": 3,
@@ -110,8 +110,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_Wally",
-      "flag": "FLAG_HIDE_MAUVILLE_CITY_WALLY"
+      "script": "MauvilleCity_EventScript_Lyra",
+      "flag": "FLAG_HIDE_MAUVILLE_CITY_LYRA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
@@ -123,8 +123,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_WallysUncle",
-      "flag": "FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE"
+      "script": "MauvilleCity_EventScript_LyrasUncle",
+      "flag": "FLAG_HIDE_MAUVILLE_CITY_LYRAS_UNCLE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WATTSON",
@@ -230,7 +230,9 @@
       "dest_warp_id": 0
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

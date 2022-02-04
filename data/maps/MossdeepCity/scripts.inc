@@ -431,5 +431,5 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "I think the GYM there had a new\n"
 	.string "LEADER come in.\p"
 	.string "People tell me the new LEADER once\n"
-	.string "mentored WALLACE.$"
+	.string "mentored LANCE.$"
 

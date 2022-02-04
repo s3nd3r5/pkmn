@@ -266,7 +266,7 @@ const u8 *const gBagMenu_ReturnToStrings[] =
     [ITEMMENULOCATION_FAVOR_LADY]          = gText_TheField,
     [ITEMMENULOCATION_QUIZ_LADY]           = gText_TheField,
     [ITEMMENULOCATION_APPRENTICE]          = gText_TheField,
-    [ITEMMENULOCATION_WALLY]               = gText_TheBattle,
+    [ITEMMENULOCATION_LYRA]               = gText_TheBattle,
     [ITEMMENULOCATION_PCBOX]               = gText_ThePC
 };
 
@@ -595,7 +595,7 @@ const u8 gText_BagIsFull[] = _("The BAG is full.{PAUSE_UNTIL_PRESS}");
 const u8 gText_MailToBagMessageErased[] = _("The MAIL was returned to the BAG\nwith its message erased.{PAUSE_UNTIL_PRESS}");
 const u8 gText_Dad[] = _("DAD");
 const u8 gText_Mom[] = _("MOM");
-const u8 gText_Wallace[] = _("WALLACE");
+const u8 gText_Lance[] = _("LANCE");
 const u8 gText_Steven[] = _("STEVEN");
 const u8 gText_Brawly[] = _("BRAWLY");
 const u8 gText_Winona[] = _("WINONA");
@@ -1778,7 +1778,7 @@ const u8 gText_StevenMatchCallName[] = _("STEVEN");
 const u8 gText_MayEthanMatchCallDesc[] = _("RAD NEIGHBOR");
 const u8 gText_NormanMatchCallDesc[] = _("RELIABLE ONE");
 const u8 gText_MomMatchCallDesc[] = _("CALM & KIND");
-const u8 gText_WallyMatchCallDesc[] = _("{PKMN} LOVER");
+const u8 gText_LyraMatchCallDesc[] = _("{PKMN} LOVER");
 const u8 gText_NormanMatchCallName[] = _("DAD");
 const u8 gText_MomMatchCallName[] = _("MOM");
 const u8 gText_ScottMatchCallDesc[] = _("ELUSIVE EYES");

@@ -96,12 +96,12 @@ const struct SpriteFrameImage gTrainerBackPicTable_RubySapphireMay[] =
     gTrainerBackPic_RubySapphireMay + 0x1800, 0x0800,
 };
 
-const struct SpriteFrameImage gTrainerBackPicTable_Wally[] =
+const struct SpriteFrameImage gTrainerBackPicTable_Lyra[] =
 {
-    gTrainerBackPic_Wally, 0x0800,
-    gTrainerBackPic_Wally + 0x0800, 0x0800,
-    gTrainerBackPic_Wally + 0x1000, 0x0800,
-    gTrainerBackPic_Wally + 0x1800, 0x0800,
+    gTrainerBackPic_Lyra, 0x0800,
+    gTrainerBackPic_Lyra + 0x0800, 0x0800,
+    gTrainerBackPic_Lyra + 0x1000, 0x0800,
+    gTrainerBackPic_Lyra + 0x1800, 0x0800,
 };
 
 const struct SpriteFrameImage gTrainerBackPicTable_Steven[] =

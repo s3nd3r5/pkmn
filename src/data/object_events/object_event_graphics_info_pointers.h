@@ -83,7 +83,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedPorygon2Doll
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CuttableTree;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MartEmployee;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RooftopSaleWoman;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Teala;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AceTrainerM;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreakableRock;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PushableBoulder;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MrBrineysBoat;
@@ -114,7 +114,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayUnderwater;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MovingBox;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CableCar;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ScientistF;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DevonEmployee;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfOak;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberM;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberF;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberM;
@@ -131,13 +131,13 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Norman;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Winona;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Liza;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tate;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wallace;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lance;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Steven;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wally;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lyra;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireLittleBoy;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EthanFishing;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayFishing;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HotSpringsOldWoman;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AceTrainerF;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SSTidal;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SubmarineShadow;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PichuDoll;
@@ -221,7 +221,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scott;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poochyena;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KyogreSide;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GroudonSide;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MysteryEventDeliveryman;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OfficerM;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Statue;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kirlia;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dusclops;
@@ -336,7 +336,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CUTTABLE_TREE] =            &gObjectEventGraphicsInfo_CuttableTree,
     [OBJ_EVENT_GFX_MART_EMPLOYEE] =            &gObjectEventGraphicsInfo_MartEmployee,
     [OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN] =       &gObjectEventGraphicsInfo_RooftopSaleWoman,
-    [OBJ_EVENT_GFX_TEALA] =                    &gObjectEventGraphicsInfo_Teala,
+    [OBJ_EVENT_GFX_ACE_TRAINER_M] =            &gObjectEventGraphicsInfo_AceTrainerM,
     [OBJ_EVENT_GFX_BREAKABLE_ROCK] =           &gObjectEventGraphicsInfo_BreakableRock,
     [OBJ_EVENT_GFX_PUSHABLE_BOULDER] =         &gObjectEventGraphicsInfo_PushableBoulder,
     [OBJ_EVENT_GFX_MR_BRINEYS_BOAT] =          &gObjectEventGraphicsInfo_MrBrineysBoat,
@@ -367,7 +367,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MOVING_BOX] =               &gObjectEventGraphicsInfo_MovingBox,
     [OBJ_EVENT_GFX_CABLE_CAR] =                &gObjectEventGraphicsInfo_CableCar,
     [OBJ_EVENT_GFX_SCIENTIST_F] =              &gObjectEventGraphicsInfo_ScientistF,
-    [OBJ_EVENT_GFX_DEVON_EMPLOYEE] =           &gObjectEventGraphicsInfo_DevonEmployee,
+    [OBJ_EVENT_GFX_PROF_OAK] =           	   &gObjectEventGraphicsInfo_ProfOak,
     [OBJ_EVENT_GFX_AQUA_MEMBER_M] =            &gObjectEventGraphicsInfo_AquaMemberM,
     [OBJ_EVENT_GFX_AQUA_MEMBER_F] =            &gObjectEventGraphicsInfo_AquaMemberF,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_M] =           &gObjectEventGraphicsInfo_MagmaMemberM,
@@ -384,13 +384,13 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WINONA] =                   &gObjectEventGraphicsInfo_Winona,
     [OBJ_EVENT_GFX_LIZA] =                     &gObjectEventGraphicsInfo_Liza,
     [OBJ_EVENT_GFX_TATE] =                     &gObjectEventGraphicsInfo_Tate,
-    [OBJ_EVENT_GFX_WALLACE] =                  &gObjectEventGraphicsInfo_Wallace,
+    [OBJ_EVENT_GFX_LANCE] =                    &gObjectEventGraphicsInfo_Lance,
     [OBJ_EVENT_GFX_STEVEN] =                   &gObjectEventGraphicsInfo_Steven,
-    [OBJ_EVENT_GFX_WALLY] =                    &gObjectEventGraphicsInfo_Wally,
+    [OBJ_EVENT_GFX_LYRA] =                     &gObjectEventGraphicsInfo_Lyra,
     [OBJ_EVENT_GFX_LITTLE_BOY_3] =             &gObjectEventGraphicsInfo_RubySapphireLittleBoy,
     [OBJ_EVENT_GFX_ETHAN_FISHING] =            &gObjectEventGraphicsInfo_EthanFishing,
     [OBJ_EVENT_GFX_MAY_FISHING] =              &gObjectEventGraphicsInfo_MayFishing,
-    [OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN] =    &gObjectEventGraphicsInfo_HotSpringsOldWoman,
+    [OBJ_EVENT_GFX_ACE_TRAINER_F] =    		   &gObjectEventGraphicsInfo_AceTrainerF,
     [OBJ_EVENT_GFX_SS_TIDAL] =                 &gObjectEventGraphicsInfo_SSTidal,
     [OBJ_EVENT_GFX_SUBMARINE_SHADOW] =         &gObjectEventGraphicsInfo_SubmarineShadow,
     [OBJ_EVENT_GFX_PICHU_DOLL] =               &gObjectEventGraphicsInfo_PichuDoll,
@@ -474,7 +474,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POOCHYENA] =                &gObjectEventGraphicsInfo_Poochyena,
     [OBJ_EVENT_GFX_KYOGRE_SIDE] =              &gObjectEventGraphicsInfo_KyogreSide,
     [OBJ_EVENT_GFX_GROUDON_SIDE] =             &gObjectEventGraphicsInfo_GroudonSide,
-    [OBJ_EVENT_GFX_MYSTERY_GIFT_MAN] =         &gObjectEventGraphicsInfo_MysteryEventDeliveryman,
+    [OBJ_EVENT_GFX_OFFICER_M] =         	   &gObjectEventGraphicsInfo_OfficerM,
     [OBJ_EVENT_GFX_TRICK_HOUSE_STATUE] =       &gObjectEventGraphicsInfo_Statue,
     [OBJ_EVENT_GFX_KIRLIA] =                   &gObjectEventGraphicsInfo_Kirlia,
     [OBJ_EVENT_GFX_DUSCLOPS] =                 &gObjectEventGraphicsInfo_Dusclops,

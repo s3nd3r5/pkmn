@@ -73,7 +73,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
       "x": 4,
       "y": 4,
       "elevation": 3,
@@ -82,11 +82,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LavaridgeTown_EventScript_HotSpringsOldWoman1",
+      "script": "LavaridgeTown_EventScript_AceTrainerF1",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
       "x": 5,
       "y": 4,
       "elevation": 3,
@@ -95,7 +95,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LavaridgeTown_EventScript_HotSpringsOldWoman2",
+      "script": "LavaridgeTown_EventScript_AceTrainerF2",
       "flag": "0"
     },
     {

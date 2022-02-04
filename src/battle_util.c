@@ -618,7 +618,7 @@ void HandleAction_SafariZoneRun(void)
     gBattleOutcome = B_OUTCOME_RAN;
 }
 
-void HandleAction_WallyBallThrow(void)
+void HandleAction_LyraBallThrow(void)
 {
     gBattlerAttacker = gBattlerByTurnOrder[gCurrentTurnActionNumber];
     gBattle_BG0_X = 0;

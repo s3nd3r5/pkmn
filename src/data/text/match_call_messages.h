@@ -318,10 +318,10 @@ const u8 gText_MatchCallYoungCouple_LoisAndHal_Pokemon[] = _("Lovey-dovey POKéM
 const u8 gText_MatchCallYoungCouple_LoisAndHal_Intro1[] = _("We're lovey-dovey!");
 const u8 gText_MatchCallYoungCouple_LoisAndHal_Intro2[] = _("Forever lovey-dovey!");
 
-const u8 gText_MatchCallPkmnTrainer_Wally_Strategy[] = _("We let it all hang out.");
-const u8 gText_MatchCallPkmnTrainer_Wally_Pokemon[] = _("The 1st POKéMON I caught.");
-const u8 gText_MatchCallPkmnTrainer_Wally_Intro1[] = _("POKéMON and I have grown");
-const u8 gText_MatchCallPkmnTrainer_Wally_Intro2[] = _("stronger together.");
+const u8 gText_MatchCallPkmnTrainer_Lyra_Strategy[] = _("We let it all hang out.");
+const u8 gText_MatchCallPkmnTrainer_Lyra_Pokemon[] = _("The 1st POKéMON I caught.");
+const u8 gText_MatchCallPkmnTrainer_Lyra_Intro1[] = _("POKéMON and I have grown");
+const u8 gText_MatchCallPkmnTrainer_Lyra_Intro2[] = _("stronger together.");
 
 const u8 gText_MatchCallRockinWhiz_Roxanne_Strategy[] = _("ROCK-type power attack.");
 const u8 gText_MatchCallRockinWhiz_Roxanne_Pokemon[] = _("I prefer rock-hard POKéMON.");
@@ -383,10 +383,10 @@ const u8 gText_MatchCallEliteFour_Drake_Pokemon[] = _("The raw power of DRAGONS!
 const u8 gText_MatchCallEliteFour_Drake_Intro1[] = _("I dedicate myself to the");
 const u8 gText_MatchCallEliteFour_Drake_Intro2[] = _("POKéMON that saved me.");
 
-const u8 gText_MatchCallChampion_Wallace_Strategy[] = _("Dignity and respect.");
-const u8 gText_MatchCallChampion_Wallace_Pokemon[] = _("I prefer POKéMON of grace.");
-const u8 gText_MatchCallChampion_Wallace_Intro1[] = _("I represent beauty as");
-const u8 gText_MatchCallChampion_Wallace_Intro2[] = _("well as intelligence.");
+const u8 gText_MatchCallChampion_Lance_Strategy[] = _("Dignity and respect.");
+const u8 gText_MatchCallChampion_Lance_Pokemon[] = _("I prefer POKéMON of grace.");
+const u8 gText_MatchCallChampion_Lance_Intro1[] = _("I represent beauty as");
+const u8 gText_MatchCallChampion_Lance_Intro2[] = _("well as intelligence.");
 
 const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_COUNT] =
 {
@@ -454,7 +454,7 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_TRENT] = MCFLAVOR(Hiker_Trent),
     [REMATCH_SAWYER] = MCFLAVOR(Hiker_Sawyer),
     [REMATCH_KIRA_AND_DAN] = MCFLAVOR(YoungCouple_LoisAndHal),
-    [REMATCH_WALLY_VR] = MCFLAVOR(PkmnTrainer_Wally),
+    [REMATCH_LYRA_VR] = MCFLAVOR(PkmnTrainer_Lyra),
     [REMATCH_ROXANNE] = MCFLAVOR(RockinWhiz_Roxanne),
     [REMATCH_BRAWLY] = MCFLAVOR(TheBigHit_Brawly),
     [REMATCH_WATTSON] = MCFLAVOR(SwellShock_Wattson),
@@ -467,5 +467,5 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_PHOEBE] = MCFLAVOR(EliteFour_Phoebe),
     [REMATCH_GLACIA] = MCFLAVOR(EliteFour_Glacia),
     [REMATCH_DRAKE] = MCFLAVOR(EliteFour_Drake),
-    [REMATCH_WALLACE] = MCFLAVOR(Champion_Wallace),
+    [REMATCH_LANCE] = MCFLAVOR(Champion_Lance),
 };

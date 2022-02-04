@@ -15,7 +15,7 @@ enum {
     ITEMMENULOCATION_FAVOR_LADY,
     ITEMMENULOCATION_QUIZ_LADY,
     ITEMMENULOCATION_APPRENTICE,
-    ITEMMENULOCATION_WALLY,
+    ITEMMENULOCATION_LYRA,
     ITEMMENULOCATION_PCBOX,
     ITEMMENULOCATION_LAST,
 };
@@ -97,7 +97,7 @@ u8 GetItemListPosition(u8 pocketId);
 bool8 UseRegisteredKeyItemOnField(void);
 void CB2_GoToSellMenu(void);
 void GoToBagMenu(u8 bagMenuType, u8 pocketId, void ( *exitCallback)());
-void DoWallyTutorialBagMenu(void);
+void DoLyraTutorialBagMenu(void);
 void ResetBagScrollPositions(void);
 void ChooseBerryForMachine(void (*exitCallback)(void));
 void CB2_ChooseBerry(void);

@@ -145,7 +145,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RustboroCity_EventScript_DevonEmployee1",
-      "flag": "FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1"
+      "flag": "FLAG_HIDE_RUSTBORO_CITY_PROF_OAK_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
@@ -161,7 +161,7 @@
       "flag": "FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "graphics_id": "OBJ_EVENT_GFX_PROF_OAK",
       "x": 13,
       "y": 34,
       "elevation": 3,
@@ -213,7 +213,7 @@
       "flag": "FLAG_HIDE_RUSTBORO_CITY_RIVAL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_M",
       "x": 11,
       "y": 15,
       "elevation": 0,

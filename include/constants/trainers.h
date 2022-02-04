@@ -70,7 +70,7 @@
 #define TRAINER_PIC_POKEFAN_M             51
 #define TRAINER_PIC_POKEFAN_F             52
 #define TRAINER_PIC_YOUNGSTER             53
-#define TRAINER_PIC_CHAMPION_WALLACE      54
+#define TRAINER_PIC_CHAMPION_LANCE      54
 #define TRAINER_PIC_FISHERMAN             55
 #define TRAINER_PIC_CYCLING_TRIATHLETE_M  56
 #define TRAINER_PIC_CYCLING_TRIATHLETE_F  57
@@ -86,7 +86,7 @@
 #define TRAINER_PIC_TWINS                 67
 #define TRAINER_PIC_SAILOR                68
 #define TRAINER_PIC_MAGMA_ADMIN           69
-#define TRAINER_PIC_WALLY                 70
+#define TRAINER_PIC_LYRA                 70
 #define TRAINER_PIC_ETHAN                 71
 #define TRAINER_PIC_MAY                   72
 #define TRAINER_PIC_BUG_CATCHER           73
@@ -117,7 +117,7 @@
 #define TRAINER_BACK_PIC_LEAF                   3
 #define TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN  4
 #define TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY      5
-#define TRAINER_BACK_PIC_WALLY                  6
+#define TRAINER_BACK_PIC_LYRA                  6
 #define TRAINER_BACK_PIC_STEVEN                 7
 
 #define FACILITY_CLASS_HIKER                 0x0
@@ -164,7 +164,7 @@
 #define FACILITY_CLASS_POKEFAN_M             0x29
 #define FACILITY_CLASS_POKEFAN_F             0x2a
 #define FACILITY_CLASS_YOUNGSTER             0x2b
-#define FACILITY_CLASS_CHAMPION_WALLACE      0x2c
+#define FACILITY_CLASS_CHAMPION_LANCE      0x2c
 #define FACILITY_CLASS_FISHERMAN             0x2d
 #define FACILITY_CLASS_CYCLING_TRIATHLETE_M  0x2e
 #define FACILITY_CLASS_CYCLING_TRIATHLETE_F  0x2f
@@ -179,7 +179,7 @@
 #define FACILITY_CLASS_SWIMMER_F             0x38
 #define FACILITY_CLASS_TWINS                 0x39
 #define FACILITY_CLASS_SAILOR                0x3a
-#define FACILITY_CLASS_WALLY                 0x3b
+#define FACILITY_CLASS_LYRA                 0x3b
 #define FACILITY_CLASS_ETHAN                 0x3c
 #define FACILITY_CLASS_ETHAN_2               0x3d
 #define FACILITY_CLASS_ETHAN_3               0x3e
@@ -262,7 +262,7 @@
 #define RS_FACILITY_CLASS_BOARDER_1             0x36
 #define RS_FACILITY_CLASS_BOARDER_2             0x37
 #define RS_FACILITY_CLASS_COLLECTOR             0x38
-#define RS_FACILITY_CLASS_WALLY                 0x39
+#define RS_FACILITY_CLASS_LYRA                 0x39
 #define RS_FACILITY_CLASS_ETHAN_1               0x3A
 #define RS_FACILITY_CLASS_ETHAN_2               0x3B
 #define RS_FACILITY_CLASS_ETHAN_3               0x3C

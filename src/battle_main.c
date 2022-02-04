@@ -540,7 +540,7 @@ static void (* const sTurnActionsFuncsTable[])(void) =
     [B_ACTION_SAFARI_POKEBLOCK]       = HandleAction_ThrowPokeblock,
     [B_ACTION_SAFARI_GO_NEAR]         = HandleAction_GoNear,
     [B_ACTION_SAFARI_RUN]             = HandleAction_SafariZoneRun,
-    [B_ACTION_WALLY_THROW]            = HandleAction_WallyBallThrow,
+    [B_ACTION_LYRA_THROW]            = HandleAction_LyraBallThrow,
     [B_ACTION_EXEC_SCRIPT]            = HandleAction_RunBattleScript,
     [B_ACTION_TRY_FINISH]             = HandleAction_TryFinish,
     [B_ACTION_FINISHED]               = HandleAction_ActionFinished,
@@ -3002,7 +3002,7 @@ static void SpriteCB_TrainerThrowObject_Main(struct Sprite *sprite)
 }
 
 // Sprite callback for a trainer back pic to throw an object 
-// (Wally throwing a ball, throwing Pokéblocks/balls in the Safari Zone)
+// (Lyra throwing a ball, throwing Pokéblocks/balls in the Safari Zone)
 void SpriteCB_TrainerThrowObject(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, 1);
@@ -4430,7 +4430,7 @@ static void HandleTurnActionSelectionState(void)
                     gHitMarker |= HITMARKER_RUN;
                     gBattleCommunication[gActiveBattler]++;
                     break;
-                case B_ACTION_WALLY_THROW:
+                case B_ACTION_LYRA_THROW:
                     gBattleCommunication[gActiveBattler]++;
                     break;
                 }
@@ -5083,7 +5083,7 @@ static void HandleEndTurn_FinishBattle(void)
                                   | BATTLE_TYPE_FIRST_BATTLE
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_EREADER_TRAINER
-                                  | BATTLE_TYPE_WALLY_TUTORIAL
+                                  | BATTLE_TYPE_LYRA_TUTORIAL
                                   | BATTLE_TYPE_FRONTIER)))
         {
             for (gActiveBattler = 0; gActiveBattler < gBattlersCount; gActiveBattler++)
@@ -5112,7 +5112,7 @@ static void HandleEndTurn_FinishBattle(void)
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_FRONTIER
                                   | BATTLE_TYPE_EREADER_TRAINER
-                                  | BATTLE_TYPE_WALLY_TUTORIAL))
+                                  | BATTLE_TYPE_LYRA_TUTORIAL))
             && gBattleResults.shinyWildMon)
         {
             TryPutBreakingNewsOnAir();

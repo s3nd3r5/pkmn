@@ -220,11 +220,11 @@ LavaridgeTown_EventScript_Twin::
 	msgbox LavaridgeTown_Text_BatheInHotSpringsEveryDay, MSGBOX_NPC
 	end
 
-LavaridgeTown_EventScript_HotSpringsOldWoman1::
+LavaridgeTown_EventScript_AceTrainerF1::
 	msgbox LavaridgeTown_Text_IfPokemonInHotSprings, MSGBOX_NPC
 	end
 
-LavaridgeTown_EventScript_HotSpringsOldWoman2::
+LavaridgeTown_EventScript_AceTrainerF2::
 	msgbox LavaridgeTown_Text_HotSpringsClaims, MSGBOX_NPC
 	end
 

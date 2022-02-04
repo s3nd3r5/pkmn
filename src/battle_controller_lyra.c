@@ -33,213 +33,213 @@
 #include "constants/rgb.h"
 
 // this file's functions
-static void WallyHandleGetMonData(void);
-static void WallyHandleGetRawMonData(void);
-static void WallyHandleSetMonData(void);
-static void WallyHandleSetRawMonData(void);
-static void WallyHandleLoadMonSprite(void);
-static void WallyHandleSwitchInAnim(void);
-static void WallyHandleReturnMonToBall(void);
-static void WallyHandleDrawTrainerPic(void);
-static void WallyHandleTrainerSlide(void);
-static void WallyHandleTrainerSlideBack(void);
-static void WallyHandleFaintAnimation(void);
-static void WallyHandlePaletteFade(void);
-static void WallyHandleSuccessBallThrowAnim(void);
-static void WallyHandleBallThrowAnim(void);
-static void WallyHandlePause(void);
-static void WallyHandleMoveAnimation(void);
-static void WallyHandlePrintString(void);
-static void WallyHandlePrintSelectionString(void);
-static void WallyHandleChooseAction(void);
-static void WallyHandleYesNoBox(void);
-static void WallyHandleChooseMove(void);
-static void WallyHandleChooseItem(void);
-static void WallyHandleChoosePokemon(void);
-static void WallyHandleCmd23(void);
-static void WallyHandleHealthBarUpdate(void);
-static void WallyHandleExpUpdate(void);
-static void WallyHandleStatusIconUpdate(void);
-static void WallyHandleStatusAnimation(void);
-static void WallyHandleStatusXor(void);
-static void WallyHandleDataTransfer(void);
-static void WallyHandleDMA3Transfer(void);
-static void WallyHandlePlayBGM(void);
-static void WallyHandleCmd32(void);
-static void WallyHandleTwoReturnValues(void);
-static void WallyHandleChosenMonReturnValue(void);
-static void WallyHandleOneReturnValue(void);
-static void WallyHandleOneReturnValue_Duplicate(void);
-static void WallyHandleClearUnkVar(void);
-static void WallyHandleSetUnkVar(void);
-static void WallyHandleClearUnkFlag(void);
-static void WallyHandleToggleUnkFlag(void);
-static void WallyHandleHitAnimation(void);
-static void WallyHandleCantSwitch(void);
-static void WallyHandlePlaySE(void);
-static void WallyHandlePlayFanfareOrBGM(void);
-static void WallyHandleFaintingCry(void);
-static void WallyHandleIntroSlide(void);
-static void WallyHandleIntroTrainerBallThrow(void);
-static void WallyHandleDrawPartyStatusSummary(void);
-static void WallyHandleHidePartyStatusSummary(void);
-static void WallyHandleEndBounceEffect(void);
-static void WallyHandleSpriteInvisibility(void);
-static void WallyHandleBattleAnimation(void);
-static void WallyHandleLinkStandbyMsg(void);
-static void WallyHandleResetActionMoveSelection(void);
-static void WallyHandleEndLinkBattle(void);
-static void WallyCmdEnd(void);
+static void LyraHandleGetMonData(void);
+static void LyraHandleGetRawMonData(void);
+static void LyraHandleSetMonData(void);
+static void LyraHandleSetRawMonData(void);
+static void LyraHandleLoadMonSprite(void);
+static void LyraHandleSwitchInAnim(void);
+static void LyraHandleReturnMonToBall(void);
+static void LyraHandleDrawTrainerPic(void);
+static void LyraHandleTrainerSlide(void);
+static void LyraHandleTrainerSlideBack(void);
+static void LyraHandleFaintAnimation(void);
+static void LyraHandlePaletteFade(void);
+static void LyraHandleSuccessBallThrowAnim(void);
+static void LyraHandleBallThrowAnim(void);
+static void LyraHandlePause(void);
+static void LyraHandleMoveAnimation(void);
+static void LyraHandlePrintString(void);
+static void LyraHandlePrintSelectionString(void);
+static void LyraHandleChooseAction(void);
+static void LyraHandleYesNoBox(void);
+static void LyraHandleChooseMove(void);
+static void LyraHandleChooseItem(void);
+static void LyraHandleChoosePokemon(void);
+static void LyraHandleCmd23(void);
+static void LyraHandleHealthBarUpdate(void);
+static void LyraHandleExpUpdate(void);
+static void LyraHandleStatusIconUpdate(void);
+static void LyraHandleStatusAnimation(void);
+static void LyraHandleStatusXor(void);
+static void LyraHandleDataTransfer(void);
+static void LyraHandleDMA3Transfer(void);
+static void LyraHandlePlayBGM(void);
+static void LyraHandleCmd32(void);
+static void LyraHandleTwoReturnValues(void);
+static void LyraHandleChosenMonReturnValue(void);
+static void LyraHandleOneReturnValue(void);
+static void LyraHandleOneReturnValue_Duplicate(void);
+static void LyraHandleClearUnkVar(void);
+static void LyraHandleSetUnkVar(void);
+static void LyraHandleClearUnkFlag(void);
+static void LyraHandleToggleUnkFlag(void);
+static void LyraHandleHitAnimation(void);
+static void LyraHandleCantSwitch(void);
+static void LyraHandlePlaySE(void);
+static void LyraHandlePlayFanfareOrBGM(void);
+static void LyraHandleFaintingCry(void);
+static void LyraHandleIntroSlide(void);
+static void LyraHandleIntroTrainerBallThrow(void);
+static void LyraHandleDrawPartyStatusSummary(void);
+static void LyraHandleHidePartyStatusSummary(void);
+static void LyraHandleEndBounceEffect(void);
+static void LyraHandleSpriteInvisibility(void);
+static void LyraHandleBattleAnimation(void);
+static void LyraHandleLinkStandbyMsg(void);
+static void LyraHandleResetActionMoveSelection(void);
+static void LyraHandleEndLinkBattle(void);
+static void LyraCmdEnd(void);
 
-static void WallyBufferRunCommand(void);
-static void WallyBufferExecCompleted(void);
+static void LyraBufferRunCommand(void);
+static void LyraBufferExecCompleted(void);
 static void CompleteOnChosenItem(void);
 static void Intro_WaitForShinyAnimAndHealthbox(void);
-static u32 CopyWallyMonData(u8 monId, u8 *dst);
-static void SetWallyMonData(u8 monId);
-static void WallyDoMoveAnimation(void);
+static u32 CopyLyraMonData(u8 monId, u8 *dst);
+static void SetLyraMonData(u8 monId);
+static void LyraDoMoveAnimation(void);
 static void Task_StartSendOutAnim(u8 taskId);
 
-static void (*const sWallyBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
+static void (*const sLyraBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
 {
-    [CONTROLLER_GETMONDATA]               = WallyHandleGetMonData,
-    [CONTROLLER_GETRAWMONDATA]            = WallyHandleGetRawMonData,
-    [CONTROLLER_SETMONDATA]               = WallyHandleSetMonData,
-    [CONTROLLER_SETRAWMONDATA]            = WallyHandleSetRawMonData,
-    [CONTROLLER_LOADMONSPRITE]            = WallyHandleLoadMonSprite,
-    [CONTROLLER_SWITCHINANIM]             = WallyHandleSwitchInAnim,
-    [CONTROLLER_RETURNMONTOBALL]          = WallyHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = WallyHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = WallyHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = WallyHandleTrainerSlideBack,
-    [CONTROLLER_FAINTANIMATION]           = WallyHandleFaintAnimation,
-    [CONTROLLER_PALETTEFADE]              = WallyHandlePaletteFade,
-    [CONTROLLER_SUCCESSBALLTHROWANIM]     = WallyHandleSuccessBallThrowAnim,
-    [CONTROLLER_BALLTHROWANIM]            = WallyHandleBallThrowAnim,
-    [CONTROLLER_PAUSE]                    = WallyHandlePause,
-    [CONTROLLER_MOVEANIMATION]            = WallyHandleMoveAnimation,
-    [CONTROLLER_PRINTSTRING]              = WallyHandlePrintString,
-    [CONTROLLER_PRINTSTRINGPLAYERONLY]    = WallyHandlePrintSelectionString,
-    [CONTROLLER_CHOOSEACTION]             = WallyHandleChooseAction,
-    [CONTROLLER_YESNOBOX]                 = WallyHandleYesNoBox,
-    [CONTROLLER_CHOOSEMOVE]               = WallyHandleChooseMove,
-    [CONTROLLER_OPENBAG]                  = WallyHandleChooseItem,
-    [CONTROLLER_CHOOSEPOKEMON]            = WallyHandleChoosePokemon,
-    [CONTROLLER_23]                       = WallyHandleCmd23,
-    [CONTROLLER_HEALTHBARUPDATE]          = WallyHandleHealthBarUpdate,
-    [CONTROLLER_EXPUPDATE]                = WallyHandleExpUpdate,
-    [CONTROLLER_STATUSICONUPDATE]         = WallyHandleStatusIconUpdate,
-    [CONTROLLER_STATUSANIMATION]          = WallyHandleStatusAnimation,
-    [CONTROLLER_STATUSXOR]                = WallyHandleStatusXor,
-    [CONTROLLER_DATATRANSFER]             = WallyHandleDataTransfer,
-    [CONTROLLER_DMA3TRANSFER]             = WallyHandleDMA3Transfer,
-    [CONTROLLER_PLAYBGM]                  = WallyHandlePlayBGM,
-    [CONTROLLER_32]                       = WallyHandleCmd32,
-    [CONTROLLER_TWORETURNVALUES]          = WallyHandleTwoReturnValues,
-    [CONTROLLER_CHOSENMONRETURNVALUE]     = WallyHandleChosenMonReturnValue,
-    [CONTROLLER_ONERETURNVALUE]           = WallyHandleOneReturnValue,
-    [CONTROLLER_ONERETURNVALUE_DUPLICATE] = WallyHandleOneReturnValue_Duplicate,
-    [CONTROLLER_CLEARUNKVAR]              = WallyHandleClearUnkVar,
-    [CONTROLLER_SETUNKVAR]                = WallyHandleSetUnkVar,
-    [CONTROLLER_CLEARUNKFLAG]             = WallyHandleClearUnkFlag,
-    [CONTROLLER_TOGGLEUNKFLAG]            = WallyHandleToggleUnkFlag,
-    [CONTROLLER_HITANIMATION]             = WallyHandleHitAnimation,
-    [CONTROLLER_CANTSWITCH]               = WallyHandleCantSwitch,
-    [CONTROLLER_PLAYSE]                   = WallyHandlePlaySE,
-    [CONTROLLER_PLAYFANFAREORBGM]         = WallyHandlePlayFanfareOrBGM,
-    [CONTROLLER_FAINTINGCRY]              = WallyHandleFaintingCry,
-    [CONTROLLER_INTROSLIDE]               = WallyHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = WallyHandleIntroTrainerBallThrow,
-    [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = WallyHandleDrawPartyStatusSummary,
-    [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = WallyHandleHidePartyStatusSummary,
-    [CONTROLLER_ENDBOUNCE]                = WallyHandleEndBounceEffect,
-    [CONTROLLER_SPRITEINVISIBILITY]       = WallyHandleSpriteInvisibility,
-    [CONTROLLER_BATTLEANIMATION]          = WallyHandleBattleAnimation,
-    [CONTROLLER_LINKSTANDBYMSG]           = WallyHandleLinkStandbyMsg,
-    [CONTROLLER_RESETACTIONMOVESELECTION] = WallyHandleResetActionMoveSelection,
-    [CONTROLLER_ENDLINKBATTLE]            = WallyHandleEndLinkBattle,
-    [CONTROLLER_TERMINATOR_NOP]           = WallyCmdEnd
+    [CONTROLLER_GETMONDATA]               = LyraHandleGetMonData,
+    [CONTROLLER_GETRAWMONDATA]            = LyraHandleGetRawMonData,
+    [CONTROLLER_SETMONDATA]               = LyraHandleSetMonData,
+    [CONTROLLER_SETRAWMONDATA]            = LyraHandleSetRawMonData,
+    [CONTROLLER_LOADMONSPRITE]            = LyraHandleLoadMonSprite,
+    [CONTROLLER_SWITCHINANIM]             = LyraHandleSwitchInAnim,
+    [CONTROLLER_RETURNMONTOBALL]          = LyraHandleReturnMonToBall,
+    [CONTROLLER_DRAWTRAINERPIC]           = LyraHandleDrawTrainerPic,
+    [CONTROLLER_TRAINERSLIDE]             = LyraHandleTrainerSlide,
+    [CONTROLLER_TRAINERSLIDEBACK]         = LyraHandleTrainerSlideBack,
+    [CONTROLLER_FAINTANIMATION]           = LyraHandleFaintAnimation,
+    [CONTROLLER_PALETTEFADE]              = LyraHandlePaletteFade,
+    [CONTROLLER_SUCCESSBALLTHROWANIM]     = LyraHandleSuccessBallThrowAnim,
+    [CONTROLLER_BALLTHROWANIM]            = LyraHandleBallThrowAnim,
+    [CONTROLLER_PAUSE]                    = LyraHandlePause,
+    [CONTROLLER_MOVEANIMATION]            = LyraHandleMoveAnimation,
+    [CONTROLLER_PRINTSTRING]              = LyraHandlePrintString,
+    [CONTROLLER_PRINTSTRINGPLAYERONLY]    = LyraHandlePrintSelectionString,
+    [CONTROLLER_CHOOSEACTION]             = LyraHandleChooseAction,
+    [CONTROLLER_YESNOBOX]                 = LyraHandleYesNoBox,
+    [CONTROLLER_CHOOSEMOVE]               = LyraHandleChooseMove,
+    [CONTROLLER_OPENBAG]                  = LyraHandleChooseItem,
+    [CONTROLLER_CHOOSEPOKEMON]            = LyraHandleChoosePokemon,
+    [CONTROLLER_23]                       = LyraHandleCmd23,
+    [CONTROLLER_HEALTHBARUPDATE]          = LyraHandleHealthBarUpdate,
+    [CONTROLLER_EXPUPDATE]                = LyraHandleExpUpdate,
+    [CONTROLLER_STATUSICONUPDATE]         = LyraHandleStatusIconUpdate,
+    [CONTROLLER_STATUSANIMATION]          = LyraHandleStatusAnimation,
+    [CONTROLLER_STATUSXOR]                = LyraHandleStatusXor,
+    [CONTROLLER_DATATRANSFER]             = LyraHandleDataTransfer,
+    [CONTROLLER_DMA3TRANSFER]             = LyraHandleDMA3Transfer,
+    [CONTROLLER_PLAYBGM]                  = LyraHandlePlayBGM,
+    [CONTROLLER_32]                       = LyraHandleCmd32,
+    [CONTROLLER_TWORETURNVALUES]          = LyraHandleTwoReturnValues,
+    [CONTROLLER_CHOSENMONRETURNVALUE]     = LyraHandleChosenMonReturnValue,
+    [CONTROLLER_ONERETURNVALUE]           = LyraHandleOneReturnValue,
+    [CONTROLLER_ONERETURNVALUE_DUPLICATE] = LyraHandleOneReturnValue_Duplicate,
+    [CONTROLLER_CLEARUNKVAR]              = LyraHandleClearUnkVar,
+    [CONTROLLER_SETUNKVAR]                = LyraHandleSetUnkVar,
+    [CONTROLLER_CLEARUNKFLAG]             = LyraHandleClearUnkFlag,
+    [CONTROLLER_TOGGLEUNKFLAG]            = LyraHandleToggleUnkFlag,
+    [CONTROLLER_HITANIMATION]             = LyraHandleHitAnimation,
+    [CONTROLLER_CANTSWITCH]               = LyraHandleCantSwitch,
+    [CONTROLLER_PLAYSE]                   = LyraHandlePlaySE,
+    [CONTROLLER_PLAYFANFAREORBGM]         = LyraHandlePlayFanfareOrBGM,
+    [CONTROLLER_FAINTINGCRY]              = LyraHandleFaintingCry,
+    [CONTROLLER_INTROSLIDE]               = LyraHandleIntroSlide,
+    [CONTROLLER_INTROTRAINERBALLTHROW]    = LyraHandleIntroTrainerBallThrow,
+    [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = LyraHandleDrawPartyStatusSummary,
+    [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = LyraHandleHidePartyStatusSummary,
+    [CONTROLLER_ENDBOUNCE]                = LyraHandleEndBounceEffect,
+    [CONTROLLER_SPRITEINVISIBILITY]       = LyraHandleSpriteInvisibility,
+    [CONTROLLER_BATTLEANIMATION]          = LyraHandleBattleAnimation,
+    [CONTROLLER_LINKSTANDBYMSG]           = LyraHandleLinkStandbyMsg,
+    [CONTROLLER_RESETACTIONMOVESELECTION] = LyraHandleResetActionMoveSelection,
+    [CONTROLLER_ENDLINKBATTLE]            = LyraHandleEndLinkBattle,
+    [CONTROLLER_TERMINATOR_NOP]           = LyraCmdEnd
 };
 
 static void SpriteCB_Null7(void)
 {
 }
 
-void SetControllerToWally(void)
+void SetControllerToLyra(void)
 {
-    gBattlerControllerFuncs[gActiveBattler] = WallyBufferRunCommand;
-    gBattleStruct->wallyBattleState = 0;
-    gBattleStruct->wallyMovesState = 0;
-    gBattleStruct->wallyWaitFrames = 0;
-    gBattleStruct->wallyMoveFrames = 0;
+    gBattlerControllerFuncs[gActiveBattler] = LyraBufferRunCommand;
+    gBattleStruct->lyraBattleState = 0;
+    gBattleStruct->lyraMovesState = 0;
+    gBattleStruct->lyraWaitFrames = 0;
+    gBattleStruct->lyraMoveFrames = 0;
 }
 
-static void WallyBufferRunCommand(void)
+static void LyraBufferRunCommand(void)
 {
     if (gBattleControllerExecFlags & gBitTable[gActiveBattler])
     {
-        if (gBattleBufferA[gActiveBattler][0] < ARRAY_COUNT(sWallyBufferCommands))
-            sWallyBufferCommands[gBattleBufferA[gActiveBattler][0]]();
+        if (gBattleBufferA[gActiveBattler][0] < ARRAY_COUNT(sLyraBufferCommands))
+            sLyraBufferCommands[gBattleBufferA[gActiveBattler][0]]();
         else
-            WallyBufferExecCompleted();
+            LyraBufferExecCompleted();
     }
 }
 
-static void WallyHandleActions(void)
+static void LyraHandleActions(void)
 {
-    switch (gBattleStruct->wallyBattleState)
+    switch (gBattleStruct->lyraBattleState)
     {
     case 0:
-        gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
-        gBattleStruct->wallyBattleState++;
+        gBattleStruct->lyraWaitFrames = B_WAIT_TIME_LONG;
+        gBattleStruct->lyraBattleState++;
     case 1:
-        if (--gBattleStruct->wallyWaitFrames == 0)
+        if (--gBattleStruct->lyraWaitFrames == 0)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_USE_MOVE, 0);
-            WallyBufferExecCompleted();
-            gBattleStruct->wallyBattleState++;
-            gBattleStruct->wallyMovesState = 0;
-            gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
+            LyraBufferExecCompleted();
+            gBattleStruct->lyraBattleState++;
+            gBattleStruct->lyraMovesState = 0;
+            gBattleStruct->lyraWaitFrames = B_WAIT_TIME_LONG;
         }
         break;
     case 2:
-        if (--gBattleStruct->wallyWaitFrames == 0)
+        if (--gBattleStruct->lyraWaitFrames == 0)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_USE_MOVE, 0);
-            WallyBufferExecCompleted();
-            gBattleStruct->wallyBattleState++;
-            gBattleStruct->wallyMovesState = 0;
-            gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
+            LyraBufferExecCompleted();
+            gBattleStruct->lyraBattleState++;
+            gBattleStruct->lyraMovesState = 0;
+            gBattleStruct->lyraWaitFrames = B_WAIT_TIME_LONG;
         }
         break;
     case 3:
-        if (--gBattleStruct->wallyWaitFrames == 0)
+        if (--gBattleStruct->lyraWaitFrames == 0)
         {
-            BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_WALLY_THROW, 0);
-            WallyBufferExecCompleted();
-            gBattleStruct->wallyBattleState++;
-            gBattleStruct->wallyMovesState = 0;
-            gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
+            BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_LYRA_THROW, 0);
+            LyraBufferExecCompleted();
+            gBattleStruct->lyraBattleState++;
+            gBattleStruct->lyraMovesState = 0;
+            gBattleStruct->lyraWaitFrames = B_WAIT_TIME_LONG;
         }
         break;
     case 4:
-        if (--gBattleStruct->wallyWaitFrames == 0)
+        if (--gBattleStruct->lyraWaitFrames == 0)
         {
             PlaySE(SE_SELECT);
             ActionSelectionDestroyCursorAt(0);
             ActionSelectionCreateCursorAt(1, 0);
-            gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
-            gBattleStruct->wallyBattleState++;
+            gBattleStruct->lyraWaitFrames = B_WAIT_TIME_LONG;
+            gBattleStruct->lyraBattleState++;
         }
         break;
     case 5:
-        if (--gBattleStruct->wallyWaitFrames == 0)
+        if (--gBattleStruct->lyraWaitFrames == 0)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_USE_ITEM, 0);
-            WallyBufferExecCompleted();
+            LyraBufferExecCompleted();
         }
         break;
     }
@@ -248,19 +248,19 @@ static void WallyHandleActions(void)
 static void CompleteOnBattlerSpriteCallbackDummy(void)
 {
     if (gSprites[gBattlerSpriteIds[gActiveBattler]].callback == SpriteCallbackDummy)
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
 }
 
 static void CompleteOnInactiveTextPrinter(void)
 {
     if (!IsTextPrinterActive(B_WIN_MSG))
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
 }
 
 static void CompleteOnFinishedAnimation(void)
 {
     if (!gDoingBattleAnim)
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
 }
 
 static void OpenBagAfterPaletteFade(void)
@@ -270,7 +270,7 @@ static void OpenBagAfterPaletteFade(void)
         gBattlerControllerFuncs[gActiveBattler] = CompleteOnChosenItem;
         ReshowBattleScreenDummy();
         FreeAllWindowBuffers();
-        DoWallyTutorialBagMenu();
+        DoLyraTutorialBagMenu();
     }
 }
 
@@ -279,7 +279,7 @@ static void CompleteOnChosenItem(void)
     if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
     {
         BtlController_EmitOneReturnValue(BUFFER_B, gSpecialVar_ItemId);
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
 }
 
@@ -338,7 +338,7 @@ static void Intro_WaitForShinyAnimAndHealthbox(void)
         CreateTask(Task_PlayerController_RestoreBgmAfterCry, 10);
         HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
 
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
 }
 
@@ -355,7 +355,7 @@ static void CompleteOnHealthbarDone(void)
     else
     {
         HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
 }
 
@@ -368,7 +368,7 @@ static void DoHitAnimBlinkSpriteEffect(void)
         gSprites[spriteId].data[1] = 0;
         gSprites[spriteId].invisible = FALSE;
         gDoingBattleAnim = FALSE;
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
     else
     {
@@ -385,25 +385,25 @@ static void DoSwitchOutAnimation(void)
         FreeSpriteOamMatrix(&gSprites[gBattlerSpriteIds[gActiveBattler]]);
         DestroySprite(&gSprites[gBattlerSpriteIds[gActiveBattler]]);
         SetHealthboxSpriteInvisible(gHealthboxSpriteIds[gActiveBattler]);
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
 }
 
 static void CompleteOnBankSpriteCallbackDummy2(void)
 {
     if (gSprites[gBattlerSpriteIds[gActiveBattler]].callback == SpriteCallbackDummy)
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
 }
 
 static void CompleteOnFinishedBattleAnimation(void)
 {
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animFromTableActive)
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
 }
 
-static void WallyBufferExecCompleted(void)
+static void LyraBufferExecCompleted(void)
 {
-    gBattlerControllerFuncs[gActiveBattler] = WallyBufferRunCommand;
+    gBattlerControllerFuncs[gActiveBattler] = LyraBufferRunCommand;
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
     {
         u8 playerId = GetMultiplayerId();
@@ -420,10 +420,10 @@ static void WallyBufferExecCompleted(void)
 static void CompleteOnFinishedStatusAnimation(void)
 {
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].statusAnimActive)
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
 }
 
-static void WallyHandleGetMonData(void)
+static void LyraHandleGetMonData(void)
 {
     u8 monData[sizeof(struct Pokemon) * 2 + 56]; // this allows to get full data of two pokemon, trying to get more will result in overwriting data
     u32 size = 0;
@@ -432,7 +432,7 @@ static void WallyHandleGetMonData(void)
 
     if (gBattleBufferA[gActiveBattler][2] == 0)
     {
-        size += CopyWallyMonData(gBattlerPartyIndexes[gActiveBattler], monData);
+        size += CopyLyraMonData(gBattlerPartyIndexes[gActiveBattler], monData);
     }
     else
     {
@@ -440,15 +440,15 @@ static void WallyHandleGetMonData(void)
         for (i = 0; i < PARTY_SIZE; i++)
         {
             if (monToCheck & 1)
-                size += CopyWallyMonData(i, monData + size);
+                size += CopyLyraMonData(i, monData + size);
             monToCheck >>= 1;
         }
     }
     BtlController_EmitDataTransfer(BUFFER_B, size, monData);
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static u32 CopyWallyMonData(u8 monId, u8 *dst)
+static u32 CopyLyraMonData(u8 monId, u8 *dst)
 {
     struct BattlePokemon battleMon;
     struct MovePpInfo moveData;
@@ -754,19 +754,19 @@ static u32 CopyWallyMonData(u8 monId, u8 *dst)
     return size;
 }
 
-static void WallyHandleGetRawMonData(void)
+static void LyraHandleGetRawMonData(void)
 {
     PlayerHandleGetRawMonData();
 }
 
-static void WallyHandleSetMonData(void)
+static void LyraHandleSetMonData(void)
 {
     u8 monToCheck;
     u8 i;
 
     if (gBattleBufferA[gActiveBattler][2] == 0)
     {
-        SetWallyMonData(gBattlerPartyIndexes[gActiveBattler]);
+        SetLyraMonData(gBattlerPartyIndexes[gActiveBattler]);
     }
     else
     {
@@ -774,14 +774,14 @@ static void WallyHandleSetMonData(void)
         for (i = 0; i < PARTY_SIZE; i++)
         {
             if (monToCheck & 1)
-                SetWallyMonData(i);
+                SetLyraMonData(i);
             monToCheck >>= 1;
         }
     }
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void SetWallyMonData(u8 monId)
+static void SetLyraMonData(u8 monId)
 {
     struct BattlePokemon *battlePokemon = (struct BattlePokemon *)&gBattleBufferA[gActiveBattler][3];
     struct MovePpInfo *moveData = (struct MovePpInfo *)&gBattleBufferA[gActiveBattler][3];
@@ -999,22 +999,22 @@ static void SetWallyMonData(u8 monId)
     HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
 }
 
-static void WallyHandleSetRawMonData(void)
+static void LyraHandleSetRawMonData(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleLoadMonSprite(void)
+static void LyraHandleLoadMonSprite(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleSwitchInAnim(void)
+static void LyraHandleSwitchInAnim(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleReturnMonToBall(void)
+static void LyraHandleReturnMonToBall(void)
 {
     if (gBattleBufferA[gActiveBattler][1] == 0)
     {
@@ -1026,19 +1026,19 @@ static void WallyHandleReturnMonToBall(void)
         FreeSpriteOamMatrix(&gSprites[gBattlerSpriteIds[gActiveBattler]]);
         DestroySprite(&gSprites[gBattlerSpriteIds[gActiveBattler]]);
         SetHealthboxSpriteInvisible(gHealthboxSpriteIds[gActiveBattler]);
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
 }
 
 #define sSpeedX data[0]
 
-static void WallyHandleDrawTrainerPic(void)
+static void LyraHandleDrawTrainerPic(void)
 {
-    DecompressTrainerBackPic(TRAINER_BACK_PIC_WALLY, gActiveBattler);
-    SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_WALLY, GetBattlerPosition(gActiveBattler));
+    DecompressTrainerBackPic(TRAINER_BACK_PIC_LYRA, gActiveBattler);
+    SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_LYRA, GetBattlerPosition(gActiveBattler));
     gBattlerSpriteIds[gActiveBattler] = CreateSprite(&gMultiuseSpriteTemplate,
                                                80,
-                                               80 + 4 * (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_WALLY].size),
+                                               80 + 4 * (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_LYRA].size),
                                                30);
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = gActiveBattler;
     gSprites[gBattlerSpriteIds[gActiveBattler]].x2 = DISPLAY_WIDTH;
@@ -1047,13 +1047,13 @@ static void WallyHandleDrawTrainerPic(void)
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnBattlerSpriteCallbackDummy;
 }
 
-static void WallyHandleTrainerSlide(void)
+static void LyraHandleTrainerSlide(void)
 {
-    DecompressTrainerBackPic(TRAINER_BACK_PIC_WALLY, gActiveBattler);
-    SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_WALLY, GetBattlerPosition(gActiveBattler));
+    DecompressTrainerBackPic(TRAINER_BACK_PIC_LYRA, gActiveBattler);
+    SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_LYRA, GetBattlerPosition(gActiveBattler));
     gBattlerSpriteIds[gActiveBattler] = CreateSprite(&gMultiuseSpriteTemplate,
                                                80,
-                                               80 + 4 * (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_WALLY].size),
+                                               80 + 4 * (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_LYRA].size),
                                                30);
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = gActiveBattler;
     gSprites[gBattlerSpriteIds[gActiveBattler]].x2 = -96;
@@ -1064,22 +1064,22 @@ static void WallyHandleTrainerSlide(void)
 
 #undef sSpeedX
 
-static void WallyHandleTrainerSlideBack(void)
+static void LyraHandleTrainerSlideBack(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleFaintAnimation(void)
+static void LyraHandleFaintAnimation(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandlePaletteFade(void)
+static void LyraHandlePaletteFade(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleSuccessBallThrowAnim(void)
+static void LyraHandleSuccessBallThrowAnim(void)
 {
     gBattleSpritesDataPtr->animationData->ballThrowCaseId = BALL_3_SHAKES_SUCCESS;
     gDoingBattleAnim = TRUE;
@@ -1087,7 +1087,7 @@ static void WallyHandleSuccessBallThrowAnim(void)
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnFinishedAnimation;
 }
 
-static void WallyHandleBallThrowAnim(void)
+static void LyraHandleBallThrowAnim(void)
 {
     u8 ballThrowCaseId = gBattleBufferA[gActiveBattler][1];
 
@@ -1097,12 +1097,12 @@ static void WallyHandleBallThrowAnim(void)
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnFinishedAnimation;
 }
 
-static void WallyHandlePause(void)
+static void LyraHandlePause(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleMoveAnimation(void)
+static void LyraHandleMoveAnimation(void)
 {
     u16 move = gBattleBufferA[gActiveBattler][1] | (gBattleBufferA[gActiveBattler][2] << 8);
 
@@ -1115,17 +1115,17 @@ static void WallyHandleMoveAnimation(void)
     gTransformedPersonalities[gActiveBattler] = gAnimDisableStructPtr->transformedMonPersonality;
     if (IsMoveWithoutAnimation(move, gAnimMoveTurn)) // always returns FALSE
     {
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
     else
     {
         gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animationState = 0;
-        gBattlerControllerFuncs[gActiveBattler] = WallyDoMoveAnimation;
+        gBattlerControllerFuncs[gActiveBattler] = LyraDoMoveAnimation;
     }
 
 }
 
-static void WallyDoMoveAnimation(void)
+static void LyraDoMoveAnimation(void)
 {
     u16 move = gBattleBufferA[gActiveBattler][1] | (gBattleBufferA[gActiveBattler][2] << 8);
 
@@ -1164,13 +1164,13 @@ static void WallyDoMoveAnimation(void)
             CopyAllBattleSpritesInvisibilities();
             TrySetBehindSubstituteSpriteBit(gActiveBattler, gBattleBufferA[gActiveBattler][1] | (gBattleBufferA[gActiveBattler][2] << 8));
             gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animationState = 0;
-            WallyBufferExecCompleted();
+            LyraBufferExecCompleted();
         }
         break;
     }
 }
 
-static void WallyHandlePrintString(void)
+static void LyraHandlePrintString(void)
 {
     u16 *stringId;
 
@@ -1182,12 +1182,12 @@ static void WallyHandlePrintString(void)
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnInactiveTextPrinter;
 }
 
-static void WallyHandlePrintSelectionString(void)
+static void LyraHandlePrintSelectionString(void)
 {
     if (GetBattlerSide(gActiveBattler) == B_SIDE_PLAYER)
-        WallyHandlePrintString();
+        LyraHandlePrintString();
     else
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
 }
 
 static void HandleChooseActionAfterDma3(void)
@@ -1196,11 +1196,11 @@ static void HandleChooseActionAfterDma3(void)
     {
         gBattle_BG0_X = 0;
         gBattle_BG0_Y = DISPLAY_HEIGHT;
-        gBattlerControllerFuncs[gActiveBattler] = WallyHandleActions;
+        gBattlerControllerFuncs[gActiveBattler] = LyraHandleActions;
     }
 }
 
-static void WallyHandleChooseAction(void)
+static void LyraHandleChooseAction(void)
 {
     s32 i;
 
@@ -1211,61 +1211,61 @@ static void WallyHandleChooseAction(void)
         ActionSelectionDestroyCursorAt(i);
 
     ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
-    BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillWallyDo);
+    BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillLyraDo);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
 }
 
-static void WallyHandleYesNoBox(void)
+static void LyraHandleYesNoBox(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleChooseMove(void)
+static void LyraHandleChooseMove(void)
 {
-    switch (gBattleStruct->wallyMovesState)
+    switch (gBattleStruct->lyraMovesState)
     {
     case 0:
         InitMoveSelectionsVarsAndStrings();
-        gBattleStruct->wallyMovesState++;
-        gBattleStruct->wallyMoveFrames = 80;
+        gBattleStruct->lyraMovesState++;
+        gBattleStruct->lyraMoveFrames = 80;
         break;
     case 1:
         if (!IsDma3ManagerBusyWithBgCopy())
         {
             gBattle_BG0_X = 0;
             gBattle_BG0_Y = DISPLAY_HEIGHT * 2;
-            gBattleStruct->wallyMovesState++;
+            gBattleStruct->lyraMovesState++;
         }
         break;
     case 2:
-        if (--gBattleStruct->wallyMoveFrames == 0)
+        if (--gBattleStruct->lyraMoveFrames == 0)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(BUFFER_B, 10, 0x100);
-            WallyBufferExecCompleted();
+            LyraBufferExecCompleted();
         }
         break;
     }
 }
 
-static void WallyHandleChooseItem(void)
+static void LyraHandleChooseItem(void)
 {
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gBattlerControllerFuncs[gActiveBattler] = OpenBagAfterPaletteFade;
     gBattlerInMenuId = gActiveBattler;
 }
 
-static void WallyHandleChoosePokemon(void)
+static void LyraHandleChoosePokemon(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleCmd23(void)
+static void LyraHandleCmd23(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleHealthBarUpdate(void)
+static void LyraHandleHealthBarUpdate(void)
 {
     s16 hpVal;
 
@@ -1290,91 +1290,91 @@ static void WallyHandleHealthBarUpdate(void)
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnHealthbarDone;
 }
 
-static void WallyHandleExpUpdate(void)
+static void LyraHandleExpUpdate(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleStatusIconUpdate(void)
+static void LyraHandleStatusIconUpdate(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleStatusAnimation(void)
+static void LyraHandleStatusAnimation(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleStatusXor(void)
+static void LyraHandleStatusXor(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleDataTransfer(void)
+static void LyraHandleDataTransfer(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleDMA3Transfer(void)
+static void LyraHandleDMA3Transfer(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandlePlayBGM(void)
+static void LyraHandlePlayBGM(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleCmd32(void)
+static void LyraHandleCmd32(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleTwoReturnValues(void)
+static void LyraHandleTwoReturnValues(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleChosenMonReturnValue(void)
+static void LyraHandleChosenMonReturnValue(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleOneReturnValue(void)
+static void LyraHandleOneReturnValue(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleOneReturnValue_Duplicate(void)
+static void LyraHandleOneReturnValue_Duplicate(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleClearUnkVar(void)
+static void LyraHandleClearUnkVar(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleSetUnkVar(void)
+static void LyraHandleSetUnkVar(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleClearUnkFlag(void)
+static void LyraHandleClearUnkFlag(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleToggleUnkFlag(void)
+static void LyraHandleToggleUnkFlag(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleHitAnimation(void)
+static void LyraHandleHitAnimation(void)
 {
     if (gSprites[gBattlerSpriteIds[gActiveBattler]].invisible == TRUE)
     {
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
     else
     {
@@ -1385,18 +1385,18 @@ static void WallyHandleHitAnimation(void)
     }
 }
 
-static void WallyHandleCantSwitch(void)
+static void LyraHandleCantSwitch(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandlePlaySE(void)
+static void LyraHandlePlaySE(void)
 {
     PlaySE(gBattleBufferA[gActiveBattler][1] | (gBattleBufferA[gActiveBattler][2] << 8));
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandlePlayFanfareOrBGM(void)
+static void LyraHandlePlayFanfareOrBGM(void)
 {
     if (gBattleBufferA[gActiveBattler][3])
     {
@@ -1408,27 +1408,27 @@ static void WallyHandlePlayFanfareOrBGM(void)
         PlayFanfare(gBattleBufferA[gActiveBattler][1] | (gBattleBufferA[gActiveBattler][2] << 8));
     }
 
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleFaintingCry(void)
+static void LyraHandleFaintingCry(void)
 {
     u16 species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_SPECIES);
 
     // Seems that it doesn't bother using CRY_MODE_FAINT because
-    // Wally's Pokémon during the tutorial is never intended to faint.
+    // Lyra's Pokémon during the tutorial is never intended to faint.
     PlayCry_Normal(species, 25);
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleIntroSlide(void)
+static void LyraHandleIntroSlide(void)
 {
     HandleIntroSlide(gBattleBufferA[gActiveBattler][1]);
     gIntroSlideFlags |= 1;
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleIntroTrainerBallThrow(void)
+static void LyraHandleIntroTrainerBallThrow(void)
 {
     u8 paletteNum;
     u8 taskId;
@@ -1445,7 +1445,7 @@ static void WallyHandleIntroTrainerBallThrow(void)
     StartSpriteAnim(&gSprites[gBattlerSpriteIds[gActiveBattler]], 1);
 
     paletteNum = AllocSpritePalette(0xD6F8);
-    LoadCompressedPalette(gTrainerBackPicPaletteTable[TRAINER_BACK_PIC_WALLY].data, 0x100 + paletteNum * 16, 32);
+    LoadCompressedPalette(gTrainerBackPicPaletteTable[TRAINER_BACK_PIC_LYRA].data, 0x100 + paletteNum * 16, 32);
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = paletteNum;
 
     taskId = CreateTask(Task_StartSendOutAnim, 5);
@@ -1504,67 +1504,67 @@ static void Task_StartSendOutAnim(u8 taskId)
     }
 }
 
-static void WallyHandleDrawPartyStatusSummary(void)
+static void LyraHandleDrawPartyStatusSummary(void)
 {
     if (gBattleBufferA[gActiveBattler][1] != 0 && GetBattlerSide(gActiveBattler) == B_SIDE_PLAYER)
     {
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
     else
     {
         gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].partyStatusSummaryShown = 1;
         gBattlerStatusSummaryTaskId[gActiveBattler] = CreatePartyStatusSummarySprites(gActiveBattler, (struct HpAndStatus *)&gBattleBufferA[gActiveBattler][4], gBattleBufferA[gActiveBattler][1], gBattleBufferA[gActiveBattler][2]);
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     }
 }
 
-static void WallyHandleHidePartyStatusSummary(void)
+static void LyraHandleHidePartyStatusSummary(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleEndBounceEffect(void)
+static void LyraHandleEndBounceEffect(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleSpriteInvisibility(void)
+static void LyraHandleSpriteInvisibility(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleBattleAnimation(void)
+static void LyraHandleBattleAnimation(void)
 {
     u8 animationId = gBattleBufferA[gActiveBattler][1];
     u16 argument = gBattleBufferA[gActiveBattler][2] | (gBattleBufferA[gActiveBattler][3] << 8);
 
     if (TryHandleLaunchBattleTableAnimation(gActiveBattler, gActiveBattler, gActiveBattler, animationId, argument))
-        WallyBufferExecCompleted();
+        LyraBufferExecCompleted();
     else
         gBattlerControllerFuncs[gActiveBattler] = CompleteOnFinishedBattleAnimation;
 }
 
-static void WallyHandleLinkStandbyMsg(void)
+static void LyraHandleLinkStandbyMsg(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleResetActionMoveSelection(void)
+static void LyraHandleResetActionMoveSelection(void)
 {
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 }
 
-static void WallyHandleEndLinkBattle(void)
+static void LyraHandleEndLinkBattle(void)
 {
     gBattleOutcome = gBattleBufferA[gActiveBattler][1];
     FadeOutMapMusic(5);
     BeginFastPaletteFade(3);
-    WallyBufferExecCompleted();
+    LyraBufferExecCompleted();
 
     if (!(gBattleTypeFlags & BATTLE_TYPE_IS_MASTER) && gBattleTypeFlags & BATTLE_TYPE_LINK)
         gBattlerControllerFuncs[gActiveBattler] = SetBattleEndCallbacks;
 }
 
-static void WallyCmdEnd(void)
+static void LyraCmdEnd(void)
 {
 }

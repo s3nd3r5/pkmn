@@ -49,13 +49,13 @@ Route116_EventScript_BoyfriendGruntInTunnel::
 Route116_EventScript_DevonEmployee::
 	lock
 	faceplayer
-	goto_if_set FLAG_MET_DEVON_EMPLOYEE, Route116_EventScript_TryGiveRepeatBallAgain
+	goto_if_set FLAG_MET_PROF_OAK, Route116_EventScript_TryGiveRepeatBallAgain
 	msgbox Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT
 	goto Route116_EventScript_GiveRepeatBall
 	end
 
 Route116_EventScript_GiveRepeatBall::
-	setflag FLAG_MET_DEVON_EMPLOYEE
+	setflag FLAG_MET_PROF_OAK
 	giveitem ITEM_REPEAT_BALL
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
 	msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT

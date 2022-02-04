@@ -2228,9 +2228,9 @@ MatchCall_Text_Juan1::
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
-	.string "encountered WALLACE.\p"
+	.string "encountered LANCE.\p"
 	.string "Perhaps you are a genius who may\n"
-	.string "yet surpass WALLACE!$"
+	.string "yet surpass LANCE!$"
 
 MatchCall_Text_Juan2::
 	.string "JUAN: Fufu… {PLAYER}{KUN}…\n"
@@ -2292,8 +2292,8 @@ MatchCall_Text_Drake::
 	.string "the POKéMON LEAGUE!\p"
 	.string "Don't you agree, {PLAYER}?$"
 
-MatchCall_Text_Wallace::
-	.string "WALLACE: Hello, {PLAYER}{KUN}.\n"
+MatchCall_Text_Lance::
+	.string "LANCE: Hello, {PLAYER}{KUN}.\n"
 	.string "Have you met STEVEN?\p"
 	.string "He is…\n"
 	.string "Actually incredibly skilled.\p"
@@ -2586,37 +2586,37 @@ MatchCall_Text_Ethan15::
 	.string "with you, {PLAYER}, they get pretty\l"
 	.string "envious!$"
 
-MatchCall_Text_Wally1::
-	.string "WALLY: Oh, {PLAYER}!\p"
+MatchCall_Text_Lyra1::
+	.string "LYRA: Oh, {PLAYER}!\p"
 	.string "I've been getting healthier and\n"
 	.string "more physically fit.\p"
 	.string "I hope I can become a TRAINER like\n"
 	.string "you soon, {PLAYER}!$"
 
-MatchCall_Text_Wally2::
-	.string "WALLY: {PLAYER}, hello!\p"
+MatchCall_Text_Lyra2::
+	.string "LYRA: {PLAYER}, hello!\p"
 	.string "After RUSTURF TUNNEL went\n"
 	.string "through, WANDA's been very happy!$"
 
-MatchCall_Text_Wally3::
-	.string "WALLY: Oh, {PLAYER}!\p"
+MatchCall_Text_Lyra3::
+	.string "LYRA: Oh, {PLAYER}!\p"
 	.string "I… I left my uncle's place in\n"
 	.string "VERDANTURF without telling anyone.\p"
 	.string "I wonder if he's furious with me…\p"
 	.string "{PLAYER}, you understand how\n"
 	.string "I feel, don't you?$"
 
-MatchCall_Text_Wally4::
-	.string "WALLY: {PLAYER}?\n"
-	.string "It's me, WALLY!\p"
+MatchCall_Text_Lyra4::
+	.string "LYRA: {PLAYER}?\n"
+	.string "It's me, LYRA!\p"
 	.string "The world of TRAINERS is amazing!\p"
 	.string "When I have my POKéMON with me,\n"
 	.string "all sorts of people say hi!\p"
 	.string "It's as if everyone's getting\n"
 	.string "connected through POKéMON!$"
 
-MatchCall_Text_Wally5::
-	.string "WALLY: {PLAYER}? It's awesome!\n"
+MatchCall_Text_Lyra5::
+	.string "LYRA: {PLAYER}? It's awesome!\n"
 	.string "That RALTS we caught together?\l"
 	.string "It evolved, {PLAYER}!\p"
 	.string "Maybe I'm talented…\p"
@@ -2625,14 +2625,14 @@ MatchCall_Text_Wally5::
 	.string "After all, it's the POKéMON that\n"
 	.string "should be praised!$"
 
-MatchCall_Text_Wally6::
+MatchCall_Text_Lyra6::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "WALLY appears to be out of\n"
+	.string "LYRA appears to be out of\n"
 	.string "the POKéNAV's service area…$"
 
-MatchCall_Text_Wally7::
-	.string "WALLY: Oh, {PLAYER}!\p"
+MatchCall_Text_Lyra7::
+	.string "LYRA: Oh, {PLAYER}!\p"
 	.string "Before I met you, I hardly ever\n"
 	.string "left my house…\p"
 	.string "But now, I'm on an adventure with\n"

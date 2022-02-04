@@ -341,9 +341,9 @@ u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
     return SS_TIDAL_LOCATION_CURRENTS;
 }
 
-bool32 ShouldDoWallyCall(void)
+bool32 ShouldDoLyraCall(void)
 {
-    if (FlagGet(FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL))
+    if (FlagGet(FLAG_ENABLE_FIRST_LYRA_POKENAV_CALL))
     {
         switch (gMapHeader.mapType)
         {
@@ -351,7 +351,7 @@ bool32 ShouldDoWallyCall(void)
         case MAP_TYPE_CITY:
         case MAP_TYPE_ROUTE:
         case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_WALLY_CALL_STEP_COUNTER)) < 250)
+            if (++(*GetVarPointer(VAR_LYRA_CALL_STEP_COUNTER)) < 250)
                 return FALSE;
             break;
         default:
@@ -4137,7 +4137,7 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *linkRecords, u8 
         switch (whichNPCTrainer)
         {
         case 0:
-            StringCopy(gStringVar1, gText_Wallace);
+            StringCopy(gStringVar1, gText_Lance);
             break;
         case 1:
             StringCopy(gStringVar1, gText_Steven);
@@ -4155,7 +4155,7 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *linkRecords, u8 
             StringCopy(gStringVar1, gText_Glacia);
             break;
         default:
-            StringCopy(gStringVar1, gText_Wallace);
+            StringCopy(gStringVar1, gText_Lance);
             break;
         }
     }

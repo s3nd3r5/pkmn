@@ -4689,18 +4689,18 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Timmy},
     },
 
-    [TRAINER_WALLACE] =
+    [TRAINER_LANCE] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
-        .trainerName = _("WALLACE"),
+        .trainerPic = TRAINER_PIC_CHAMPION_LANCE,
+        .trainerName = _("LANCE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_Wallace),
-        .party = {.ItemCustomMoves = sParty_Wallace},
+        .partySize = ARRAY_COUNT(sParty_Lance),
+        .party = {.ItemCustomMoves = sParty_Lance},
     },
 
     [TRAINER_ANDREW] =
@@ -7265,18 +7265,18 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Edwin5},
     },
 
-    [TRAINER_WALLY_VR_1] =
+    [TRAINER_LYRA_VR_1] =
     {
         .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
-        .trainerName = _("WALLY"),
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_WallyVR1),
-        .party = {.NoItemCustomMoves = sParty_WallyVR1},
+        .partySize = ARRAY_COUNT(sParty_LyraVR1),
+        .party = {.NoItemCustomMoves = sParty_LyraVR1},
     },
 
     [TRAINER_ETHAN_ROUTE_103_MUDKIP] =
@@ -9183,74 +9183,74 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Ashley},
     },
 
-    [TRAINER_WALLY_MAUVILLE] =
+    [TRAINER_LYRA_MAUVILLE] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
-        .trainerName = _("WALLY"),
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_WallyMauville),
-        .party = {.NoItemDefaultMoves = sParty_WallyMauville},
+        .partySize = ARRAY_COUNT(sParty_LyraMauville),
+        .party = {.NoItemDefaultMoves = sParty_LyraMauville},
     },
 
-    [TRAINER_WALLY_VR_2] =
+    [TRAINER_LYRA_VR_2] =
     {
         .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
-        .trainerName = _("WALLY"),
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_WallyVR2),
-        .party = {.NoItemCustomMoves = sParty_WallyVR2},
+        .partySize = ARRAY_COUNT(sParty_LyraVR2),
+        .party = {.NoItemCustomMoves = sParty_LyraVR2},
     },
 
-    [TRAINER_WALLY_VR_3] =
+    [TRAINER_LYRA_VR_3] =
     {
         .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
-        .trainerName = _("WALLY"),
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_WallyVR3),
-        .party = {.NoItemCustomMoves = sParty_WallyVR3},
+        .partySize = ARRAY_COUNT(sParty_LyraVR3),
+        .party = {.NoItemCustomMoves = sParty_LyraVR3},
     },
 
-    [TRAINER_WALLY_VR_4] =
+    [TRAINER_LYRA_VR_4] =
     {
         .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
-        .trainerName = _("WALLY"),
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_WallyVR4),
-        .party = {.NoItemCustomMoves = sParty_WallyVR4},
+        .partySize = ARRAY_COUNT(sParty_LyraVR4),
+        .party = {.NoItemCustomMoves = sParty_LyraVR4},
     },
 
-    [TRAINER_WALLY_VR_5] =
+    [TRAINER_LYRA_VR_5] =
     {
         .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
-        .trainerName = _("WALLY"),
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_WallyVR5),
-        .party = {.NoItemCustomMoves = sParty_WallyVR5},
+        .partySize = ARRAY_COUNT(sParty_LyraVR5),
+        .party = {.NoItemCustomMoves = sParty_LyraVR5},
     },
 
     [TRAINER_ETHAN_LILYCOVE_MUDKIP] =

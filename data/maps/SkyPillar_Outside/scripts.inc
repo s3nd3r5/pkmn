@@ -1,4 +1,4 @@
-.set LOCALID_WALLACE, 1
+.set LOCALID_LANCE, 1
 
 SkyPillar_Outside_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SkyPillar_Outside_OnTransition
@@ -20,7 +20,7 @@ SkyPillar_Outside_EventScript_CheckSetAbnormalWeather::
 	return
 
 SkyPillar_Outside_OnLoad:
-	call_if_set FLAG_WALLACE_GOES_TO_SKY_PILLAR, SkyPillar_Outside_EventScript_OpenDoor
+	call_if_set FLAG_LANCE_GOES_TO_SKY_PILLAR, SkyPillar_Outside_EventScript_OpenDoor
 	end
 
 SkyPillar_Outside_EventScript_OpenDoor::
@@ -29,12 +29,12 @@ SkyPillar_Outside_EventScript_OpenDoor::
 	return
 
 SkyPillar_Outside_OnFrame:
-	map_script_2 VAR_SOOTOPOLIS_CITY_STATE, 3, SkyPillar_Outside_EventScript_WallaceScene
+	map_script_2 VAR_SOOTOPOLIS_CITY_STATE, 3, SkyPillar_Outside_EventScript_LanceScene
 	.2byte 0
 
-SkyPillar_Outside_EventScript_WallaceScene::
+SkyPillar_Outside_EventScript_LanceScene::
 	lockall
-	applymovement LOCALID_WALLACE, SkyPillar_Outside_Movement_WallaceApproachPlayer
+	applymovement LOCALID_LANCE, SkyPillar_Outside_Movement_LanceApproachPlayer
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
@@ -51,7 +51,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	msgbox SkyPillar_Outside_Text_EarthquakeNotMomentToWaste, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, SkyPillar_Outside_Movement_PlayerClimbSkyPillar
-	applymovement LOCALID_WALLACE, SkyPillar_Outside_Movement_WallaceClimbSkyPillar
+	applymovement LOCALID_LANCE, SkyPillar_Outside_Movement_LanceClimbSkyPillar
 	waitmovement 0
 	setvar VAR_0x8004, 1   @ vertical pan
 	setvar VAR_0x8005, 3   @ horizontal pan
@@ -60,13 +60,13 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	special ShakeCamera
 	waitstate
 	delay 20
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_LANCE, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 10
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_LANCE, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 20
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_LANCE, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 30
 	msgbox SkyPillar_Outside_Text_SituationGettingWorse, MSGBOX_DEFAULT
@@ -83,13 +83,13 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	fadescreenswapbuffers FADE_TO_BLACK
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 4
-	removeobject LOCALID_WALLACE
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+	removeobject LOCALID_LANCE
+	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_LANCE
 	fadescreenswapbuffers FADE_FROM_BLACK
 	releaseall
 	end
 
-SkyPillar_Outside_Movement_WallaceApproachPlayer:
+SkyPillar_Outside_Movement_LanceApproachPlayer:
 	walk_down
 	walk_down
 	walk_down
@@ -102,7 +102,7 @@ SkyPillar_Outside_Movement_WallaceApproachPlayer:
 	walk_right
 	step_end
 
-SkyPillar_Outside_Movement_WallaceClimbSkyPillar:
+SkyPillar_Outside_Movement_LanceClimbSkyPillar:
 	walk_left
 	walk_left
 	walk_left
@@ -132,7 +132,7 @@ SkyPillar_Outside_Movement_PlayerClimbSkyPillar:
 	walk_up
 	step_end
 
-SkyPillar_Outside_EventScript_Wallace::
+SkyPillar_Outside_EventScript_Lance::
 	end
 
 SkyPillar_Outside_EventScript_ClosedDoor::
@@ -143,7 +143,7 @@ SkyPillar_Outside_Text_DoorIsClosed:
 	.string "The door is closed.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "WALLACE: Oh, my, I'm terribly sorry!\p"
+	.string "LANCE: Oh, my, I'm terribly sorry!\p"
 	.string "In my haste, I didn't notice that\n"
 	.string "I'd left you behind!\p"
 	.string "I've opened the locked door of\n"
@@ -151,16 +151,16 @@ SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
 	.string "{PLAYER}{KUN}, let's be on our way!$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "WALLACE: It's an earthquake!\p"
+	.string "LANCE: It's an earthquake!\p"
 	.string "There's not a moment to waste!\n"
 	.string "We've got to hurry!$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "WALLACE: Hmm…\n"
+	.string "LANCE: Hmm…\n"
 	.string "The situation is getting worse…$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "WALLACE: This isn't good…\p"
+	.string "LANCE: This isn't good…\p"
 	.string "The weather distortion is spreading\n"
 	.string "even here…\p"
 	.string "{PLAYER}{KUN}.\p"

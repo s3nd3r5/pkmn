@@ -33,7 +33,7 @@
 #define B_ACTION_SAFARI_POKEBLOCK       6
 #define B_ACTION_SAFARI_GO_NEAR         7
 #define B_ACTION_SAFARI_RUN             8
-#define B_ACTION_WALLY_THROW            9
+#define B_ACTION_LYRA_THROW            9
 #define B_ACTION_EXEC_SCRIPT            10
 #define B_ACTION_TRY_FINISH             11
 #define B_ACTION_FINISHED               12
@@ -395,10 +395,10 @@ struct BattleStruct
     u8 absentBattlerFlags;
     u8 palaceFlags; // First 4 bits are "is < 50% HP and not asleep" for each battler, last 4 bits are selected moves to pass to AI
     u8 field_93; // related to choosing pokemon?
-    u8 wallyBattleState;
-    u8 wallyMovesState;
-    u8 wallyWaitFrames;
-    u8 wallyMoveFrames;
+    u8 lyraBattleState;
+    u8 lyraMovesState;
+    u8 lyraWaitFrames;
+    u8 lyraMoveFrames;
     u8 lastTakenMove[MAX_BATTLERS_COUNT * 2 * 2]; // Last move that a battler was hit with. This field seems to erroneously take 16 bytes instead of 8.
     u16 hpOnSwitchout[2];
     u32 savedBattleTypeFlags;

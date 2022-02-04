@@ -1,56 +1,56 @@
-.set LOCALID_WALLY_ENTRANCE, 4
+.set LOCALID_LYRA_ENTRANCE, 4
 
 VictoryRoad_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VictoryRoad_1F_OnTransition
 	.byte 0
 
 VictoryRoad_1F_OnTransition:
-	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 1, VictoryRoad_1F_EventScript_SetEntranceWallyPos1
-	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 2, VictoryRoad_1F_EventScript_SetEntranceWallyPos2
+	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 1, VictoryRoad_1F_EventScript_SetEntranceLyraPos1
+	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 2, VictoryRoad_1F_EventScript_SetEntranceLyraPos2
 	end
 
-VictoryRoad_1F_EventScript_SetEntranceWallyPos1::
-	setobjectxyperm LOCALID_WALLY_ENTRANCE, 2, 24
-	setobjectmovementtype LOCALID_WALLY_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
+VictoryRoad_1F_EventScript_SetEntranceLyraPos1::
+	setobjectxyperm LOCALID_LYRA_ENTRANCE, 2, 24
+	setobjectmovementtype LOCALID_LYRA_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-VictoryRoad_1F_EventScript_SetEntranceWallyPos2::
-	setobjectxyperm LOCALID_WALLY_ENTRANCE, 3, 24
-	setobjectmovementtype LOCALID_WALLY_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
+VictoryRoad_1F_EventScript_SetEntranceLyraPos2::
+	setobjectxyperm LOCALID_LYRA_ENTRANCE, 3, 24
+	setobjectmovementtype LOCALID_LYRA_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-VictoryRoad_1F_EventScript_WallyBattleTrigger1::
+VictoryRoad_1F_EventScript_LyraBattleTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
-	addobject LOCALID_WALLY_ENTRANCE
-	applymovement LOCALID_WALLY_ENTRANCE, VictoryRoad_1F_Movement_WallyApproachPlayer1
+	addobject LOCALID_LYRA_ENTRANCE
+	applymovement LOCALID_LYRA_ENTRANCE, VictoryRoad_1F_Movement_LyraApproachPlayer1
 	waitmovement 0
-	goto VictoryRoad_1F_EventScript_WallyEntranceBattle
+	goto VictoryRoad_1F_EventScript_LyraEntranceBattle
 	end
 
-VictoryRoad_1F_EventScript_WallyBattleTrigger2::
+VictoryRoad_1F_EventScript_LyraBattleTrigger2::
 	lockall
 	setvar VAR_0x8008, 2
-	addobject LOCALID_WALLY_ENTRANCE
-	applymovement LOCALID_WALLY_ENTRANCE, VictoryRoad_1F_Movement_WallyApproachPlayer2
+	addobject LOCALID_LYRA_ENTRANCE
+	applymovement LOCALID_LYRA_ENTRANCE, VictoryRoad_1F_Movement_LyraApproachPlayer2
 	waitmovement 0
-	goto VictoryRoad_1F_EventScript_WallyEntranceBattle
+	goto VictoryRoad_1F_EventScript_LyraEntranceBattle
 	end
 
-VictoryRoad_1F_EventScript_WallyEntranceBattle::
+VictoryRoad_1F_EventScript_LyraEntranceBattle::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	msgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyEntranceDefeat
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
-	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
-	copyobjectxytoperm LOCALID_WALLY_ENTRANCE
-	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
+	msgbox VictoryRoad_1F_Text_LyraNotGoingToLoseAnymore, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_LYRA_VR_1, VictoryRoad_1F_Text_LyraEntranceDefeat
+	msgbox VictoryRoad_1F_Text_LyraPostEntranceBattle, MSGBOX_DEFAULT
+	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_LYRA
+	copyobjectxytoperm LOCALID_LYRA_ENTRANCE
+	setflag FLAG_DEFEATED_LYRA_VICTORY_ROAD
 	copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	releaseall
 	end
 
-VictoryRoad_1F_Movement_WallyApproachPlayer1:
+VictoryRoad_1F_Movement_LyraApproachPlayer1:
 	walk_left
 	walk_left
 	walk_left
@@ -64,7 +64,7 @@ VictoryRoad_1F_Movement_WallyApproachPlayer1:
 	walk_up
 	step_end
 
-VictoryRoad_1F_Movement_WallyApproachPlayer2:
+VictoryRoad_1F_Movement_LyraApproachPlayer2:
 	walk_left
 	walk_left
 	walk_left
@@ -77,22 +77,22 @@ VictoryRoad_1F_Movement_WallyApproachPlayer2:
 	walk_up
 	step_end
 
-@ This Wally appears near the entrance once his battle is triggered and remains there until the Hall of Fame is entered
-VictoryRoad_1F_EventScript_EntranceWally::
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_NPC
+@ This Lyra appears near the entrance once his battle is triggered and remains there until the Hall of Fame is entered
+VictoryRoad_1F_EventScript_EntranceLyra::
+	msgbox VictoryRoad_1F_Text_LyraPostEntranceBattle, MSGBOX_NPC
 	end
 
-@ This Wally appears and remains at the exit after the Hall of Fame is entered
-VictoryRoad_1F_EventScript_ExitWally::
-	trainerbattle_single TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
+@ This Lyra appears and remains at the exit after the Hall of Fame is entered
+VictoryRoad_1F_EventScript_ExitLyra::
+	trainerbattle_single TRAINER_LYRA_VR_2, VictoryRoad_1F_Text_LyraIntro, VictoryRoad_1F_Text_LyraDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_1F_EventScript_RematchWally
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_1F_EventScript_RematchLyra
+	msgbox VictoryRoad_1F_Text_LyraPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_1F_EventScript_RematchWally::
-	trainerbattle_rematch TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+VictoryRoad_1F_EventScript_RematchLyra::
+	trainerbattle_rematch TRAINER_LYRA_VR_2, VictoryRoad_1F_Text_LyraIntro, VictoryRoad_1F_Text_LyraDefeat
+	msgbox VictoryRoad_1F_Text_LyraPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 VictoryRoad_1F_EventScript_Edgar::
@@ -120,8 +120,8 @@ VictoryRoad_1F_EventScript_Katelynn::
 	msgbox VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
-	.string "WALLY: Hi! {PLAYER}!\p"
+VictoryRoad_1F_Text_LyraNotGoingToLoseAnymore:
+	.string "LYRA: Hi! {PLAYER}!\p"
 	.string "I bet you're surprised to see me here!\p"
 	.string "I made it all the way here, and it's\n"
 	.string "all thanks to you!\p"
@@ -132,27 +132,27 @@ VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
 	.string "gave me courage and strength!\p"
 	.string "Okay… Here I come!$"
 
-VictoryRoad_1F_Text_WallyEntranceDefeat:
+VictoryRoad_1F_Text_LyraEntranceDefeat:
 	.string "Wow!\n"
 	.string "{PLAYER}, you are strong, after all!$"
 
-VictoryRoad_1F_Text_WallyPostEntranceBattle:
-	.string "WALLY: I couldn't beat you today,\n"
+VictoryRoad_1F_Text_LyraPostEntranceBattle:
+	.string "LYRA: I couldn't beat you today,\n"
 	.string "{PLAYER}, but one of these days, I'll\l"
 	.string "catch up to you!$"
 
-VictoryRoad_1F_Text_WallyIntro:
-	.string "WALLY: Hi! {PLAYER}!\p"
+VictoryRoad_1F_Text_LyraIntro:
+	.string "LYRA: Hi! {PLAYER}!\p"
 	.string "I've gotten stronger since that last\n"
 	.string "time! I wanted to show you, {PLAYER}!\p"
 	.string "Okay… Here I come!$"
 
-VictoryRoad_1F_Text_WallyDefeat:
+VictoryRoad_1F_Text_LyraDefeat:
 	.string "Wow!\n"
 	.string "{PLAYER}, you are strong, after all!$"
 
-VictoryRoad_1F_Text_WallyPostBattle:
-	.string "WALLY: I couldn't beat you this time,\n"
+VictoryRoad_1F_Text_LyraPostBattle:
+	.string "LYRA: I couldn't beat you this time,\n"
 	.string "too… But one of these days, {PLAYER},\l"
 	.string "I'm going to catch up to you…\p"
 	.string "And challenge the POKéMON LEAGUE!$"

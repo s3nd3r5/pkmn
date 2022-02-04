@@ -336,7 +336,7 @@
 #define TRAINER_EDDIE                       332
 #define TRAINER_ALLEN                       333
 #define TRAINER_TIMMY                       334
-#define TRAINER_WALLACE                     335
+#define TRAINER_LANCE                       335
 #define TRAINER_ANDREW                      336
 #define TRAINER_IVAN                        337
 #define TRAINER_CLAUDE                      338
@@ -520,7 +520,7 @@
 #define TRAINER_EDWIN_3                     516
 #define TRAINER_EDWIN_4                     517
 #define TRAINER_EDWIN_5                     518
-#define TRAINER_WALLY_VR_1                  519
+#define TRAINER_LYRA_VR_1                  519
 #define TRAINER_ETHAN_ROUTE_103_MUDKIP    520
 #define TRAINER_ETHAN_ROUTE_110_MUDKIP    521
 #define TRAINER_ETHAN_ROUTE_119_MUDKIP    522
@@ -657,11 +657,11 @@
 #define TRAINER_RILEY                       653
 #define TRAINER_FLINT                       654
 #define TRAINER_ASHLEY                      655
-#define TRAINER_WALLY_MAUVILLE              656
-#define TRAINER_WALLY_VR_2                  657
-#define TRAINER_WALLY_VR_3                  658
-#define TRAINER_WALLY_VR_4                  659
-#define TRAINER_WALLY_VR_5                  660
+#define TRAINER_LYRA_MAUVILLE              656
+#define TRAINER_LYRA_VR_2                  657
+#define TRAINER_LYRA_VR_3                  658
+#define TRAINER_LYRA_VR_4                  659
+#define TRAINER_LYRA_VR_5                  660
 #define TRAINER_ETHAN_LILYCOVE_MUDKIP     661
 #define TRAINER_ETHAN_LILYCOVE_TREECKO    662
 #define TRAINER_ETHAN_LILYCOVE_TORCHIC    663

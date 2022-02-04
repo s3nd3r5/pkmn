@@ -595,7 +595,7 @@
 			.2byte \localId
 			.4byte \movements
 		.else
-			@ Really only useful if the object has followed from one map to another (e.g. Wally during the catching event).
+			@ Really only useful if the object has followed from one map to another (e.g. Lyra during the catching event).
 			.byte 0x50
 			.2byte \localId
 			.4byte \movements

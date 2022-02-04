@@ -149,7 +149,7 @@
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY      0x4082
 #define VAR_UNUSED_0x4083                    0x4083 // Unused Var
 #define VAR_BIRCH_LAB_STATE                  0x4084
-#define VAR_PETALBURG_GYM_STATE              0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
+#define VAR_PETALBURG_GYM_STATE              0x4085 // 0-1: Lyra tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE               0x4086
 #define VAR_CABLE_CLUB_STATE                 0x4087
 #define VAR_CONTEST_TYPE                     0x4088
@@ -232,7 +232,7 @@
 #define VAR_ROAMER_POKEMON                   0x40D5 // 0 = Latias, 1 = Latios
 #define VAR_TRAINER_HILL_IS_ACTIVE           0x40D6
 #define VAR_SKY_PILLAR_RAQUAZA_CRY_DONE      0x40D7
-#define VAR_SOOTOPOLIS_WALLACE_STATE         0x40D8
+#define VAR_SOOTOPOLIS_LANCE_STATE         0x40D8
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE             0x40DA
 #define VAR_UNUSED_0x40DB                    0x40DB // Unused Var
@@ -258,7 +258,7 @@
 #define VAR_SECRET_BASE_HIGH_TV_FLAGS        0x40EF // Used by Secret Base TV programs
 #define VAR_SECRET_BASE_IS_NOT_LOCAL         0x40F0 // Set to TRUE while in another player's secret base.
 #define VAR_DAILY_BP                         0x40F1
-#define VAR_WALLY_CALL_STEP_COUNTER          0x40F2
+#define VAR_LYRA_CALL_STEP_COUNTER          0x40F2
 #define VAR_SCOTT_FORTREE_CALL_STEP_COUNTER  0x40F3
 #define VAR_ROXANNE_CALL_STEP_COUNTER        0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER       0x40F5

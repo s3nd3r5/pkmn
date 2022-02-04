@@ -283,8 +283,8 @@ void SetControllerToPlayerPartner(void);
 // safari controller
 void SetControllerToSafari(void);
 
-// wally controller
-void SetControllerToWally(void);
+// lyra controller
+void SetControllerToLyra(void);
 
 // recorded opponent controller
 void SetControllerToRecordedOpponent(void);

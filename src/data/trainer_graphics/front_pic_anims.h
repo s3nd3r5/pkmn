@@ -214,7 +214,7 @@ static const union AnimCmd *const sAnims_Youngster[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ChampionWallace[] ={
+static const union AnimCmd *const sAnims_ChampionLance[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -278,7 +278,7 @@ static const union AnimCmd *const sAnims_MagmaAdmin[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_Wally[] ={
+static const union AnimCmd *const sAnims_Lyra[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -426,7 +426,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_POKEFAN_M] = sAnims_PokefanM,
     [TRAINER_PIC_POKEFAN_F] = sAnims_PokefanF,
     [TRAINER_PIC_YOUNGSTER] = sAnims_Youngster,
-    [TRAINER_PIC_CHAMPION_WALLACE] = sAnims_ChampionWallace,
+    [TRAINER_PIC_CHAMPION_LANCE] = sAnims_ChampionLance,
     [TRAINER_PIC_FISHERMAN] = sAnims_Fisherman,
     [TRAINER_PIC_CYCLING_TRIATHLETE_M] = sAnims_CyclingTriathleteM,
     [TRAINER_PIC_CYCLING_TRIATHLETE_F] = sAnims_CyclingTriathleteF,
@@ -442,7 +442,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_TWINS] = sAnims_Twins,
     [TRAINER_PIC_SAILOR] = sAnims_Sailor,
     [TRAINER_PIC_MAGMA_ADMIN] = sAnims_MagmaAdmin,
-    [TRAINER_PIC_WALLY] = sAnims_Wally,
+    [TRAINER_PIC_LYRA] = sAnims_Lyra,
     [TRAINER_PIC_ETHAN] = sAnims_Ethan,
     [TRAINER_PIC_MAY] = sAnims_May,
     [TRAINER_PIC_BUG_CATCHER] = sAnims_BugCatcher,

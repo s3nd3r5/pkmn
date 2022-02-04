@@ -86,7 +86,7 @@
 #define OBJ_EVENT_GFX_CUTTABLE_TREE               82
 #define OBJ_EVENT_GFX_MART_EMPLOYEE               83
 #define OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN          84
-#define OBJ_EVENT_GFX_TEALA                       85
+#define OBJ_EVENT_GFX_ACE_TRAINER_M               85
 #define OBJ_EVENT_GFX_BREAKABLE_ROCK              86
 #define OBJ_EVENT_GFX_PUSHABLE_BOULDER            87
 #define OBJ_EVENT_GFX_MR_BRINEYS_BOAT             88
@@ -117,7 +117,7 @@
 #define OBJ_EVENT_GFX_MOVING_BOX                 113
 #define OBJ_EVENT_GFX_CABLE_CAR                  114
 #define OBJ_EVENT_GFX_SCIENTIST_F                115
-#define OBJ_EVENT_GFX_DEVON_EMPLOYEE             116
+#define OBJ_EVENT_GFX_PROF_OAK                   116
 #define OBJ_EVENT_GFX_AQUA_MEMBER_M              117
 #define OBJ_EVENT_GFX_AQUA_MEMBER_F              118
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_M             119
@@ -134,13 +134,13 @@
 #define OBJ_EVENT_GFX_WINONA                     130
 #define OBJ_EVENT_GFX_LIZA                       131
 #define OBJ_EVENT_GFX_TATE                       132
-#define OBJ_EVENT_GFX_WALLACE                    133
+#define OBJ_EVENT_GFX_LANCE                      133
 #define OBJ_EVENT_GFX_STEVEN                     134
-#define OBJ_EVENT_GFX_WALLY                      135
+#define OBJ_EVENT_GFX_LYRA                       135
 #define OBJ_EVENT_GFX_LITTLE_BOY_3               136
 #define OBJ_EVENT_GFX_ETHAN_FISHING              137
 #define OBJ_EVENT_GFX_MAY_FISHING                138
-#define OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN      139
+#define OBJ_EVENT_GFX_ACE_TRAINER_F			     139
 #define OBJ_EVENT_GFX_SS_TIDAL                   140
 #define OBJ_EVENT_GFX_SUBMARINE_SHADOW           141
 #define OBJ_EVENT_GFX_PICHU_DOLL                 142
@@ -224,7 +224,7 @@
 #define OBJ_EVENT_GFX_POOCHYENA                  220
 #define OBJ_EVENT_GFX_KYOGRE_SIDE                221
 #define OBJ_EVENT_GFX_GROUDON_SIDE               222
-#define OBJ_EVENT_GFX_MYSTERY_GIFT_MAN           223
+#define OBJ_EVENT_GFX_OFFICER_M		             223
 #define OBJ_EVENT_GFX_TRICK_HOUSE_STATUE         224
 #define OBJ_EVENT_GFX_KIRLIA                     225
 #define OBJ_EVENT_GFX_DUSCLOPS                   226
