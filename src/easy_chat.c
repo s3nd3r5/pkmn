@@ -1475,7 +1475,7 @@ void ShowEasyChatScreen(void)
         break;
     case EASY_CHAT_TYPE_DUMMY_SHOW:
         words = gSaveBlock1Ptr->tvShows[gSpecialVar_0x8005].dummy.words;
-        displayedPersonType = EASY_CHAT_PERSON_REPORTER_MALE;
+        displayedPersonType = EASY_CHAT_PERSON_REPORTER_FEMALE;
         break;
     case EASY_CHAT_TYPE_TRENDY_PHRASE:
         words = (u16 *)gStringVar3;
@@ -1489,7 +1489,7 @@ void ShowEasyChatScreen(void)
         break;
     case EASY_CHAT_TYPE_CONTEST_INTERVIEW:
         words = &gSaveBlock1Ptr->tvShows[gSpecialVar_0x8005].bravoTrainer.words[gSpecialVar_0x8006];
-        displayedPersonType = EASY_CHAT_PERSON_REPORTER_MALE;
+        displayedPersonType = EASY_CHAT_PERSON_REPORTER_FEMALE;
         break;
     case EASY_CHAT_TYPE_BATTLE_TOWER_INTERVIEW:
         words = gSaveBlock1Ptr->tvShows[gSpecialVar_0x8005].fanclubOpinions.words18;
@@ -4993,9 +4993,6 @@ static void TryAddInterviewObjectEvents(void)
 
     switch (GetDisplayedPersonType())
     {
-    case EASY_CHAT_PERSON_REPORTER_MALE:
-        graphicsId = OBJ_EVENT_GFX_REPORTER_M;
-        break;
     case EASY_CHAT_PERSON_REPORTER_FEMALE:
         graphicsId = OBJ_EVENT_GFX_REPORTER_F;
         break;

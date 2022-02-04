@@ -65,7 +65,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EthanAcroBike;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfBirch;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man4;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man5;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ReporterM;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreederM;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ReporterF;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Anabel;
@@ -211,7 +211,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pikachu;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azumarill;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wingull;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KecleonBridgeShadow;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberMSwimming;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreederF;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azurill;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkEthan;
@@ -318,7 +318,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PROF_BIRCH] =               &gObjectEventGraphicsInfo_ProfBirch,
     [OBJ_EVENT_GFX_MAN_4] =                    &gObjectEventGraphicsInfo_Man4,
     [OBJ_EVENT_GFX_MAN_5] =                    &gObjectEventGraphicsInfo_Man5,
-    [OBJ_EVENT_GFX_REPORTER_M] =               &gObjectEventGraphicsInfo_ReporterM,
+    [OBJ_EVENT_GFX_BREEDER_M] =               &gObjectEventGraphicsInfo_BreederM,
     [OBJ_EVENT_GFX_REPORTER_F] =               &gObjectEventGraphicsInfo_ReporterF,
     [OBJ_EVENT_GFX_BARD] =                     &gObjectEventGraphicsInfo_Bard,
     [OBJ_EVENT_GFX_ANABEL] =                   &gObjectEventGraphicsInfo_Anabel,
@@ -464,7 +464,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_AZUMARILL] =                &gObjectEventGraphicsInfo_Azumarill,
     [OBJ_EVENT_GFX_WINGULL] =                  &gObjectEventGraphicsInfo_Wingull,
     [OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW] =    &gObjectEventGraphicsInfo_KecleonBridgeShadow,
-    [OBJ_EVENT_GFX_TUBER_M_SWIMMING] =         &gObjectEventGraphicsInfo_TuberMSwimming,
+    [OBJ_EVENT_GFX_BREEDER_F] =         &gObjectEventGraphicsInfo_BreederF,
     [OBJ_EVENT_GFX_AZURILL] =                  &gObjectEventGraphicsInfo_Azurill,
     [OBJ_EVENT_GFX_MOM] =                      &gObjectEventGraphicsInfo_Mom,
     [OBJ_EVENT_GFX_LINK_ETHAN] =               &gObjectEventGraphicsInfo_LinkEthan,

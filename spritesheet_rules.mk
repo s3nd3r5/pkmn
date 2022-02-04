@@ -317,8 +317,8 @@ $(OBJEVENTGFXDIR)/people/red.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/reporter_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/reporter_m.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+$(OBJEVENTGFXDIR)/people/breeder_m.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/rooftop_sale_woman.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
@@ -360,13 +360,13 @@ $(OBJEVENTGFXDIR)/people/ace_trainer_m.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/tuber_f.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 2
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/tuber_m.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 2
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/tuber_m_swimming.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 2
+$(OBJEVENTGFXDIR)/people/breeder_f.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/union_room_attendant.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4

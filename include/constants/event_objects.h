@@ -68,7 +68,7 @@
 #define OBJ_EVENT_GFX_PROF_BIRCH                  64
 #define OBJ_EVENT_GFX_MAN_4                       65
 #define OBJ_EVENT_GFX_MAN_5                       66
-#define OBJ_EVENT_GFX_REPORTER_M                  67
+#define OBJ_EVENT_GFX_BREEDER_M                  67
 #define OBJ_EVENT_GFX_REPORTER_F                  68
 #define OBJ_EVENT_GFX_BARD                        69
 #define OBJ_EVENT_GFX_ANABEL                      70
@@ -214,7 +214,7 @@
 #define OBJ_EVENT_GFX_AZUMARILL                  210
 #define OBJ_EVENT_GFX_WINGULL                    211
 #define OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW      212
-#define OBJ_EVENT_GFX_TUBER_M_SWIMMING           213
+#define OBJ_EVENT_GFX_BREEDER_F           213
 #define OBJ_EVENT_GFX_AZURILL                    214
 #define OBJ_EVENT_GFX_MOM                        215
 #define OBJ_EVENT_GFX_LINK_ETHAN                 216
