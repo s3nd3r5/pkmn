@@ -312,10 +312,10 @@ gStdScripts_End::
 	.include "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc"
-	.include "data/maps/EverGrandeCity_SidneysRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_DrakesRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_BluesRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_BrunosRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_LoreleisRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_ClairesRoom/scripts.inc"
 	.include "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
 	.include "data/maps/EverGrandeCity_Hall1/scripts.inc"
 	.include "data/maps/EverGrandeCity_Hall2/scripts.inc"
@@ -620,10 +620,10 @@ EventScript_MoveMrBrineyToRoute109::
 	end
 
 EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
-	clearflag FLAG_DEFEATED_ELITE_4_SIDNEY
-	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
-	clearflag FLAG_DEFEATED_ELITE_4_GLACIA
-	clearflag FLAG_DEFEATED_ELITE_4_DRAKE
+	clearflag FLAG_DEFEATED_ELITE_4_BLUE
+	clearflag FLAG_DEFEATED_ELITE_4_BRUNO
+	clearflag FLAG_DEFEATED_ELITE_4_LORELEI
+	clearflag FLAG_DEFEATED_ELITE_4_CLAIRE
 	setvar VAR_ELITE_4_STATE, 0
 	return
 

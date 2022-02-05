@@ -3653,60 +3653,60 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemCustomMoves = sParty_Walter5},
     },
 
-    [TRAINER_SIDNEY] =
+    [TRAINER_BLUE] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
-        .trainerName = _("SIDNEY"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_BLUE,
+        .trainerName = _("BLUE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_SETUP_FIRST_TURN,
-        .partySize = ARRAY_COUNT(sParty_Sidney),
-        .party = {.ItemCustomMoves = sParty_Sidney},
+        .partySize = ARRAY_COUNT(sParty_Blue),
+        .party = {.ItemCustomMoves = sParty_Blue},
     },
 
-    [TRAINER_PHOEBE] =
+    [TRAINER_BRUNO] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_PHOEBE,
-        .trainerName = _("PHOEBE"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_BRUNO,
+        .trainerName = _("BRUNO"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_Phoebe),
-        .party = {.ItemCustomMoves = sParty_Phoebe},
+        .partySize = ARRAY_COUNT(sParty_Bruno),
+        .party = {.ItemCustomMoves = sParty_Bruno},
     },
 
-    [TRAINER_GLACIA] =
+    [TRAINER_LORELEI] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_GLACIA,
-        .trainerName = _("GLACIA"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_LORELEI,
+        .trainerName = _("LORELEI"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_Glacia),
-        .party = {.ItemCustomMoves = sParty_Glacia},
+        .partySize = ARRAY_COUNT(sParty_Lorelei),
+        .party = {.ItemCustomMoves = sParty_Lorelei},
     },
 
-    [TRAINER_DRAKE] =
+    [TRAINER_CLAIRE] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
-        .trainerName = _("DRAKE"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_CLAIRE,
+        .trainerName = _("CLAIRE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_Drake),
-        .party = {.ItemCustomMoves = sParty_Drake},
+        .partySize = ARRAY_COUNT(sParty_Claire),
+        .party = {.ItemCustomMoves = sParty_Claire},
     },
 
     [TRAINER_ROXANNE_1] =

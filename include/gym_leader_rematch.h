@@ -75,16 +75,16 @@ enum {
     REMATCH_WINONA,
     REMATCH_TATE_AND_LIZA,
     REMATCH_JUAN,
-    REMATCH_SIDNEY, // Entries from SIDNEY below are considered part of REMATCH_ELITE_FOUR_ENTRIES.
-    REMATCH_PHOEBE,
-    REMATCH_GLACIA,
-    REMATCH_DRAKE,
+    REMATCH_BLUE, // Entries from BLUE below are considered part of REMATCH_ELITE_FOUR_ENTRIES.
+    REMATCH_BRUNO,
+    REMATCH_LORELEI,
+    REMATCH_CLAIRE,
     REMATCH_LANCE,
     REMATCH_TABLE_ENTRIES // The total number of rematch entries. Must be last in enum
 };
 
 #define REMATCH_SPECIAL_TRAINER_START   REMATCH_LYRA_VR
-#define REMATCH_ELITE_FOUR_ENTRIES      REMATCH_SIDNEY
+#define REMATCH_ELITE_FOUR_ENTRIES      REMATCH_BLUE
 
 void UpdateGymLeaderRematch(void);
 

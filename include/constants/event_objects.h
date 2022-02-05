@@ -122,10 +122,10 @@
 #define OBJ_EVENT_GFX_AQUA_MEMBER_F              118
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_M             119
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_F             120
-#define OBJ_EVENT_GFX_SIDNEY                     121
-#define OBJ_EVENT_GFX_PHOEBE                     122
-#define OBJ_EVENT_GFX_GLACIA                     123
-#define OBJ_EVENT_GFX_DRAKE                      124
+#define OBJ_EVENT_GFX_BLUE                     121
+#define OBJ_EVENT_GFX_BRUNO                     122
+#define OBJ_EVENT_GFX_LORELEI                     123
+#define OBJ_EVENT_GFX_CLAIRE                      124
 #define OBJ_EVENT_GFX_ROXANNE                    125
 #define OBJ_EVENT_GFX_BRAWLY                     126
 #define OBJ_EVENT_GFX_WATTSON                    127

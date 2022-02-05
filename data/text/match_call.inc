@@ -2256,32 +2256,32 @@ MatchCall_Text_Juan4::
 	.string "When I close my eyes, I see visions\n"
 	.string "of you soaring with the melody…$"
 
-MatchCall_Text_Sidney::
-	.string "SIDNEY: Yo, {PLAYER}!\p"
+MatchCall_Text_Blue::
+	.string "BLUE: Yo, {PLAYER}!\p"
 	.string "If you want to battle with me\n"
 	.string "again, you come on back whenever\l"
 	.string "you like to the POKéMON LEAGUE.\p"
 	.string "I'll always be here!\n"
 	.string "I'll be waiting!$"
 
-MatchCall_Text_Phoebe::
-	.string "PHOEBE: Hi, {PLAYER}!\p"
+MatchCall_Text_Bruno::
+	.string "BRUNO: Hi, {PLAYER}!\p"
 	.string "How about coming back here again\n"
 	.string "sometime?\p"
 	.string "I'd like to see how much tighter\n"
 	.string "your bond has grown with your\l"
 	.string "POKéMON.$"
 
-MatchCall_Text_Glacia::
-	.string "GLACIA: Hello, {PLAYER}.\p"
+MatchCall_Text_Lorelei::
+	.string "LORELEI: Hello, {PLAYER}.\p"
 	.string "I trust you haven't become\n"
 	.string "complacent with your power?\p"
 	.string "If you feel the need to cool your\n"
 	.string "hot emotions just a little, do come\l"
 	.string "to the POKéMON LEAGUE…$"
 
-MatchCall_Text_Drake::
-	.string "DRAKE: That voice… {PLAYER}, is it?\n"
+MatchCall_Text_Claire::
+	.string "CLAIRE: That voice… {PLAYER}, is it?\n"
 	.string "You sound well…\p"
 	.string "I understand that there is now\n"
 	.string "a facility called the BATTLE\l"

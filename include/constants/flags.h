@@ -449,10 +449,10 @@
 #define FLAG_REMATCH_WINONA                  0x1A3
 #define FLAG_REMATCH_TATE_AND_LIZA           0x1A4
 // Note: FLAG_REMATCH_JUAN is handled by FLAG_ENABLE_JUAN_MATCH_CALL instead.
-#define FLAG_REMATCH_SIDNEY                  0x1A5
-#define FLAG_REMATCH_PHOEBE                  0x1A6
-#define FLAG_REMATCH_GLACIA                  0x1A7
-#define FLAG_REMATCH_DRAKE                   0x1A8
+#define FLAG_REMATCH_BLUE                  0x1A5
+#define FLAG_REMATCH_BRUNO                  0x1A6
+#define FLAG_REMATCH_LORELEI                 0x1A7
+#define FLAG_REMATCH_CLAIRE                   0x1A8
 #define FLAG_REMATCH_LANCE                   0x1A9
 
 #define FLAG_UNUSED_0x1AA                    0x1AA // Unused Flag
@@ -1324,10 +1324,10 @@
 #define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
 #define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
 
-#define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB
-#define FLAG_DEFEATED_ELITE_4_PHOEBE                                0x4FC
-#define FLAG_DEFEATED_ELITE_4_GLACIA                                0x4FD
-#define FLAG_DEFEATED_ELITE_4_DRAKE                                 0x4FE
+#define FLAG_DEFEATED_ELITE_4_BLUE                                0x4FB
+#define FLAG_DEFEATED_ELITE_4_BRUNO                                0x4FC
+#define FLAG_DEFEATED_ELITE_4_LORELEI                                0x4FD
+#define FLAG_DEFEATED_ELITE_4_CLAIRE                               0x4FE
 
 #define FLAG_UNUSED_0x4FF                                           0x4FF // Unused Flag
 

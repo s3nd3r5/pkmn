@@ -119,10 +119,10 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberM;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberF;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberM;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberF;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sidney;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phoebe;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drake;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blue;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bruno;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lorelei;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Claire;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roxanne;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brawly;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wattson;
@@ -372,10 +372,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_AQUA_MEMBER_F] =            &gObjectEventGraphicsInfo_AquaMemberF,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_M] =           &gObjectEventGraphicsInfo_MagmaMemberM,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_F] =           &gObjectEventGraphicsInfo_MagmaMemberF,
-    [OBJ_EVENT_GFX_SIDNEY] =                   &gObjectEventGraphicsInfo_Sidney,
-    [OBJ_EVENT_GFX_PHOEBE] =                   &gObjectEventGraphicsInfo_Phoebe,
-    [OBJ_EVENT_GFX_GLACIA] =                   &gObjectEventGraphicsInfo_Glacia,
-    [OBJ_EVENT_GFX_DRAKE] =                    &gObjectEventGraphicsInfo_Drake,
+    [OBJ_EVENT_GFX_BLUE] =                   &gObjectEventGraphicsInfo_Blue,
+    [OBJ_EVENT_GFX_BRUNO] =                   &gObjectEventGraphicsInfo_Bruno,
+    [OBJ_EVENT_GFX_LORELEI] =                   &gObjectEventGraphicsInfo_Lorelei,
+    [OBJ_EVENT_GFX_CLAIRE] =                    &gObjectEventGraphicsInfo_Claire,
     [OBJ_EVENT_GFX_ROXANNE] =                  &gObjectEventGraphicsInfo_Roxanne,
     [OBJ_EVENT_GFX_BRAWLY] =                   &gObjectEventGraphicsInfo_Brawly,
     [OBJ_EVENT_GFX_WATTSON] =                  &gObjectEventGraphicsInfo_Wattson,

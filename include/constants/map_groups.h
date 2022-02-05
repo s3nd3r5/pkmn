@@ -249,10 +249,10 @@
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F (14 | (15 << 8))
 
 // gMapGroup_IndoorEverGrande
-#define MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM      (0 | (16 << 8))
-#define MAP_EVER_GRANDE_CITY_PHOEBES_ROOM      (1 | (16 << 8))
-#define MAP_EVER_GRANDE_CITY_GLACIAS_ROOM      (2 | (16 << 8))
-#define MAP_EVER_GRANDE_CITY_DRAKES_ROOM       (3 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_BLUES_ROOM        (0 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_BRUNOS_ROOM       (1 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_LORELEIS_ROOM     (2 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_CLAIRES_ROOM      (3 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM    (4 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_HALL1             (5 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_HALL2             (6 | (16 << 8))

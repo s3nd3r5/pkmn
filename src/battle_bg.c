@@ -826,25 +826,25 @@ void DrawMainBattleBackground(void)
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(gBattleTerrainPalette_StadiumAqua, 0x20, 0x60);
             break;
-        case MAP_BATTLE_SCENE_SIDNEY:
+        case MAP_BATTLE_SCENE_BLUE:
             LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_StadiumSidney, 0x20, 0x60);
+            LoadCompressedPalette(gBattleTerrainPalette_StadiumBlue, 0x20, 0x60);
             break;
-        case MAP_BATTLE_SCENE_PHOEBE:
+        case MAP_BATTLE_SCENE_BRUNO:
             LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_StadiumPhoebe, 0x20, 0x60);
+            LoadCompressedPalette(gBattleTerrainPalette_StadiumBruno, 0x20, 0x60);
             break;
-        case MAP_BATTLE_SCENE_GLACIA:
+        case MAP_BATTLE_SCENE_LORELEI:
             LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_StadiumGlacia, 0x20, 0x60);
+            LoadCompressedPalette(gBattleTerrainPalette_StadiumLorelei, 0x20, 0x60);
             break;
-        case MAP_BATTLE_SCENE_DRAKE:
+        case MAP_BATTLE_SCENE_CLAIRE:
             LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_StadiumDrake, 0x20, 0x60);
+            LoadCompressedPalette(gBattleTerrainPalette_StadiumClaire, 0x20, 0x60);
             break;
         case MAP_BATTLE_SCENE_FRONTIER:
             LZDecompressVram(gBattleTerrainTiles_Building, (void*)(BG_CHAR_ADDR(2)));
@@ -1262,16 +1262,16 @@ bool8 LoadChosenBattleElement(u8 caseId)
             case MAP_BATTLE_SCENE_AQUA:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
                 break;
-            case MAP_BATTLE_SCENE_SIDNEY:
+            case MAP_BATTLE_SCENE_BLUE:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
                 break;
-            case MAP_BATTLE_SCENE_PHOEBE:
+            case MAP_BATTLE_SCENE_BRUNO:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
                 break;
-            case MAP_BATTLE_SCENE_GLACIA:
+            case MAP_BATTLE_SCENE_LORELEI:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
                 break;
-            case MAP_BATTLE_SCENE_DRAKE:
+            case MAP_BATTLE_SCENE_CLAIRE:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
                 break;
             case MAP_BATTLE_SCENE_FRONTIER:
@@ -1324,16 +1324,16 @@ bool8 LoadChosenBattleElement(u8 caseId)
             case MAP_BATTLE_SCENE_AQUA:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
                 break;
-            case MAP_BATTLE_SCENE_SIDNEY:
+            case MAP_BATTLE_SCENE_BLUE:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
                 break;
-            case MAP_BATTLE_SCENE_PHOEBE:
+            case MAP_BATTLE_SCENE_BRUNO:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
                 break;
-            case MAP_BATTLE_SCENE_GLACIA:
+            case MAP_BATTLE_SCENE_LORELEI:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
                 break;
-            case MAP_BATTLE_SCENE_DRAKE:
+            case MAP_BATTLE_SCENE_CLAIRE:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
                 break;
             case MAP_BATTLE_SCENE_FRONTIER:
@@ -1386,17 +1386,17 @@ bool8 LoadChosenBattleElement(u8 caseId)
             case MAP_BATTLE_SCENE_AQUA:
                 LoadCompressedPalette(gBattleTerrainPalette_StadiumAqua, 0x20, 0x60);
                 break;
-            case MAP_BATTLE_SCENE_SIDNEY:
-                LoadCompressedPalette(gBattleTerrainPalette_StadiumSidney, 0x20, 0x60);
+            case MAP_BATTLE_SCENE_BLUE:
+                LoadCompressedPalette(gBattleTerrainPalette_StadiumBlue, 0x20, 0x60);
                 break;
-            case MAP_BATTLE_SCENE_PHOEBE:
-                LoadCompressedPalette(gBattleTerrainPalette_StadiumPhoebe, 0x20, 0x60);
+            case MAP_BATTLE_SCENE_BRUNO:
+                LoadCompressedPalette(gBattleTerrainPalette_StadiumBruno, 0x20, 0x60);
                 break;
-            case MAP_BATTLE_SCENE_GLACIA:
-                LoadCompressedPalette(gBattleTerrainPalette_StadiumGlacia, 0x20, 0x60);
+            case MAP_BATTLE_SCENE_LORELEI:
+                LoadCompressedPalette(gBattleTerrainPalette_StadiumLorelei, 0x20, 0x60);
                 break;
-            case MAP_BATTLE_SCENE_DRAKE:
-                LoadCompressedPalette(gBattleTerrainPalette_StadiumDrake, 0x20, 0x60);
+            case MAP_BATTLE_SCENE_CLAIRE:
+                LoadCompressedPalette(gBattleTerrainPalette_StadiumClaire, 0x20, 0x60);
                 break;
             case MAP_BATTLE_SCENE_FRONTIER:
                 LoadCompressedPalette(gBattleTerrainPalette_Frontier, 0x20, 0x60);

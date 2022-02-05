@@ -497,68 +497,68 @@ static const struct MatchCallStructTrainer sJuanMatchCallHeader =
     .textData = sJuanTextScripts
 };
 
-static const match_call_text_data_t sSidneyTextScripts[] = {
-    { MatchCall_Text_Sidney, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t sBlueTextScripts[] = {
+    { MatchCall_Text_Blue, 0xFFFF, 0xFFFF },
     { NULL,                  0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sSidneyMatchCallHeader =
+static const struct MatchCallStructTrainer sBlueMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
-    .flag = FLAG_REMATCH_SIDNEY,
-    .rematchTableIdx = REMATCH_SIDNEY,
+    .flag = FLAG_REMATCH_BLUE,
+    .rematchTableIdx = REMATCH_BLUE,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sSidneyTextScripts
+    .textData = sBlueTextScripts
 };
 
-static const match_call_text_data_t sPhoebeTextScripts[] = {
-    { MatchCall_Text_Phoebe, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t sBrunoTextScripts[] = {
+    { MatchCall_Text_Bruno, 0xFFFF, 0xFFFF },
     { NULL,                  0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sPhoebeMatchCallHeader =
+static const struct MatchCallStructTrainer sBrunoMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
-    .flag = FLAG_REMATCH_PHOEBE,
-    .rematchTableIdx = REMATCH_PHOEBE,
+    .flag = FLAG_REMATCH_BRUNO,
+    .rematchTableIdx = REMATCH_BRUNO,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sPhoebeTextScripts
+    .textData = sBrunoTextScripts
 };
 
-static const match_call_text_data_t sGlaciaTextScripts[] = {
-    { MatchCall_Text_Glacia, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t sLoreleiTextScripts[] = {
+    { MatchCall_Text_Lorelei, 0xFFFF, 0xFFFF },
     { NULL,                  0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sGlaciaMatchCallHeader =
+static const struct MatchCallStructTrainer sLoreleiMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
-    .flag = FLAG_REMATCH_GLACIA,
-    .rematchTableIdx = REMATCH_GLACIA,
+    .flag = FLAG_REMATCH_LORELEI,
+    .rematchTableIdx = REMATCH_LORELEI,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sGlaciaTextScripts
+    .textData = sLoreleiTextScripts
 };
 
-static const match_call_text_data_t sDrakeTextScripts[] = {
-    { MatchCall_Text_Drake, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t sClaireTextScripts[] = {
+    { MatchCall_Text_Claire, 0xFFFF, 0xFFFF },
     { NULL,                 0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sDrakeMatchCallHeader =
+static const struct MatchCallStructTrainer sClaireMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_EVER_GRANDE_CITY,
-    .flag = FLAG_REMATCH_DRAKE,
-    .rematchTableIdx = REMATCH_DRAKE,
+    .flag = FLAG_REMATCH_CLAIRE,
+    .rematchTableIdx = REMATCH_CLAIRE,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sDrakeTextScripts
+    .textData = sClaireTextScripts
 };
 
 static const match_call_text_data_t sLanceTextScripts[] = {
@@ -594,10 +594,10 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_WINONA]     = {.leader = &sWinonaMatchCallHeader},
     [MC_HEADER_TATE_LIZA]  = {.leader = &sTateLizaMatchCallHeader},
     [MC_HEADER_JUAN]       = {.leader = &sJuanMatchCallHeader},
-    [MC_HEADER_SIDNEY]     = {.leader = &sSidneyMatchCallHeader},
-    [MC_HEADER_PHOEBE]     = {.leader = &sPhoebeMatchCallHeader},
-    [MC_HEADER_GLACIA]     = {.leader = &sGlaciaMatchCallHeader},
-    [MC_HEADER_DRAKE]      = {.leader = &sDrakeMatchCallHeader},
+    [MC_HEADER_BLUE]     = {.leader = &sBlueMatchCallHeader},
+    [MC_HEADER_BRUNO]     = {.leader = &sBrunoMatchCallHeader},
+    [MC_HEADER_LORELEI]     = {.leader = &sLoreleiMatchCallHeader},
+    [MC_HEADER_CLAIRE]      = {.leader = &sClaireMatchCallHeader},
     [MC_HEADER_LANCE]    = {.leader = &sLanceMatchCallHeader}
 };
 
