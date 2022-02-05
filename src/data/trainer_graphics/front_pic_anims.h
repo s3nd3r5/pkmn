@@ -158,19 +158,19 @@ static const union AnimCmd *const sAnims_EliteFourClaire[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderRoxanne[] ={
+static const union AnimCmd *const sAnims_LeaderBrock[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderBrawly[] ={
+static const union AnimCmd *const sAnims_LeaderMisty[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderWattson[] ={
+static const union AnimCmd *const sAnims_LeaderSurge[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderFlannery[] ={
+static const union AnimCmd *const sAnims_LeaderErika[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -178,15 +178,15 @@ static const union AnimCmd *const sAnims_LeaderNorman[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderWinona[] ={
+static const union AnimCmd *const sAnims_LeaderSabrina[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderTateAndLiza[] ={
+static const union AnimCmd *const sAnims_LeaderJanine[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderJuan[] ={
+static const union AnimCmd *const sAnims_LeaderBlaine[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -412,14 +412,14 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_ELITE_FOUR_BRUNO] = sAnims_EliteFourBruno,
     [TRAINER_PIC_ELITE_FOUR_LORELEI] = sAnims_EliteFourLorelei,
     [TRAINER_PIC_ELITE_FOUR_CLAIRE] = sAnims_EliteFourClaire,
-    [TRAINER_PIC_LEADER_ROXANNE] = sAnims_LeaderRoxanne,
-    [TRAINER_PIC_LEADER_BRAWLY] = sAnims_LeaderBrawly,
-    [TRAINER_PIC_LEADER_WATTSON] = sAnims_LeaderWattson,
-    [TRAINER_PIC_LEADER_FLANNERY] = sAnims_LeaderFlannery,
+    [TRAINER_PIC_LEADER_BROCK] = sAnims_LeaderBrock,
+    [TRAINER_PIC_LEADER_MISTY] = sAnims_LeaderMisty,
+    [TRAINER_PIC_LEADER_SURGE] = sAnims_LeaderSurge,
+    [TRAINER_PIC_LEADER_ERIKA] = sAnims_LeaderErika,
     [TRAINER_PIC_LEADER_NORMAN] = sAnims_LeaderNorman,
-    [TRAINER_PIC_LEADER_WINONA] = sAnims_LeaderWinona,
-    [TRAINER_PIC_LEADER_TATE_AND_LIZA] = sAnims_LeaderTateAndLiza,
-    [TRAINER_PIC_LEADER_JUAN] = sAnims_LeaderJuan,
+    [TRAINER_PIC_LEADER_SABRINA] = sAnims_LeaderSabrina,
+    [TRAINER_PIC_LEADER_JANINE] = sAnims_LeaderJanine,
+    [TRAINER_PIC_LEADER_BLAINE] = sAnims_LeaderBlaine,
     [TRAINER_PIC_SCHOOL_KID_M] = sAnims_SchoolKidM,
     [TRAINER_PIC_SCHOOL_KID_F] = sAnims_SchoolKidF,
     [TRAINER_PIC_SR_AND_JR] = sAnims_SrAndJr,

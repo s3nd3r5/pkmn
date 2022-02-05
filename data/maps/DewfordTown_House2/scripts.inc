@@ -23,7 +23,7 @@ DewfordTown_House2_EventScript_ExplainSilkScarf::
 	end
 
 DewfordTown_House2_EventScript_Boy::
-	msgbox DewfordTown_House2_Text_BrawlySoCool, MSGBOX_NPC
+	msgbox DewfordTown_House2_Text_MistySoCool, MSGBOX_NPC
 	end
 
 DewfordTown_House2_Text_WantYouToHaveSilkScarf:
@@ -47,11 +47,11 @@ DewfordTown_House2_Text_ExplainSilkScarf:
 	.string "It's a marvelous SCARF that will go\n"
 	.string "with almost all POKéMON!$"
 
-DewfordTown_House2_Text_BrawlySoCool:
+DewfordTown_House2_Text_MistySoCool:
 	.string "Wow, you bothered to cross the sea\n"
 	.string "to visit DEWFORD?\p"
 	.string "Did you maybe come here because you\n"
-	.string "heard about BRAWLY?\p"
+	.string "heard about MISTY?\p"
 	.string "He's so cool…\n"
 	.string "Everyone idolizes him.$"
 

@@ -1,16 +1,16 @@
 RustboroCity_Gym_MapScripts::
 	.byte 0
 
-RustboroCity_Gym_EventScript_Roxanne::
-	trainerbattle_single TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxanneIntro, RustboroCity_Gym_Text_RoxanneDefeat, RustboroCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC
+RustboroCity_Gym_EventScript_Brock::
+	trainerbattle_single TRAINER_BROCK_1, RustboroCity_Gym_Text_BrockIntro, RustboroCity_Gym_Text_BrockDefeat, RustboroCity_Gym_EventScript_BrockDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_BrockRematch
 	goto_if_unset FLAG_RECEIVED_TM39, RustboroCity_Gym_EventScript_GiveRockTomb
-	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
+	msgbox RustboroCity_Gym_Text_BrockPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-RustboroCity_Gym_EventScript_RoxanneDefeated::
+RustboroCity_Gym_EventScript_BrockDefeated::
 	message RustboroCity_Gym_Text_ReceivedStoneBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
@@ -33,9 +33,9 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	release
 	end
 
-RustboroCity_Gym_EventScript_RoxanneRematch::
-	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons
-	msgbox RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE
+RustboroCity_Gym_EventScript_BrockRematch::
+	trainerbattle_rematch_double TRAINER_BROCK_1, RustboroCity_Gym_Text_BrockPreRematch, RustboroCity_Gym_Text_BrockRematchDefeat, RustboroCity_Gym_Text_BrockRematchNeedTwoMons
+	msgbox RustboroCity_Gym_Text_BrockPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 RustboroCity_Gym_EventScript_Josh::
@@ -88,18 +88,18 @@ RustboroCity_Gym_EventScript_GymStatue::
 	releaseall
 	end
 
-RustboroCity_Gym_EventScript_RegisterRoxanne::
+RustboroCity_Gym_EventScript_RegisterBrock::
 	lockall
-	pokenavcall RustboroCity_Gym_Text_RoxanneRegisterCall
+	pokenavcall RustboroCity_Gym_Text_BrockRegisterCall
 	waitmessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Gym_Text_RegisteredRoxanne, MSGBOX_DEFAULT
+	msgbox RustboroCity_Gym_Text_RegisteredBrock, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_ENABLE_ROXANNE_MATCH_CALL
-	clearflag FLAG_ENABLE_ROXANNE_FIRST_CALL
+	setflag FLAG_ENABLE_BROCK_MATCH_CALL
+	clearflag FLAG_ENABLE_BROCK_FIRST_CALL
 	releaseall
 	end
 
@@ -116,7 +116,7 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "But GYM LEADERS aren't pushovers!\p"
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
-	.string "ROXANNE, the GYM LEADER, is a user\n"
+	.string "BROCK, the GYM LEADER, is a user\n"
 	.string "of ROCK-type POKéMON.\p"
 	.string "The ROCK type is very durable, but\n"
 	.string "it can't stand WATER-type and\l"
@@ -150,13 +150,13 @@ RustboroCity_Gym_Text_JoshPostBattle:
 
 RustboroCity_Gym_Text_TommyIntro:
 	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against ROXANNE!$"
+	.string "a chance against BROCK!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
 	.string "Wow! You've got some potential!$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "ROXANNE is stronger than me by\n"
+	.string "BROCK is stronger than me by\n"
 	.string "several times.\p"
 	.string "You'd better be on your guard!$"
 
@@ -175,8 +175,8 @@ RustboroCity_Gym_Text_MarcPostBattle:
 	.string "It took smarts and sense for her to\n"
 	.string "pick the ROCK type at her young age.$"
 
-RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am ROXANNE, the RUSTBORO\n"
+RustboroCity_Gym_Text_BrockIntro:
+	.string "Hello, I am BROCK, the RUSTBORO\n"
 	.string "POKéMON GYM LEADER.\p"
 	.string "I became a GYM LEADER so that I might\n"
 	.string "apply what I learned at the POKéMON\l"
@@ -184,7 +184,7 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which POKéMON?$"
 
-RustboroCity_Gym_Text_RoxanneDefeat:
+RustboroCity_Gym_Text_BrockDefeat:
 	.string "So…\n"
 	.string "I lost…\p"
 	.string "It seems that I still have much more\n"
@@ -198,7 +198,7 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
 	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+	.string "from BROCK.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "The STONE BADGE heightens the ATTACK\n"
@@ -217,7 +217,7 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "Remember, a TM can be used only once,\n"
 	.string "so think before you use it.$"
 
-RustboroCity_Gym_Text_RoxannePostBattle:
+RustboroCity_Gym_Text_BrockPostBattle:
 	.string "Since you are so strong, you should\n"
 	.string "challenge other GYM LEADERS.\p"
 	.string "By battling many TRAINERS, you should\n"
@@ -228,15 +228,15 @@ RustboroCity_Gym_Text_GymStatue:
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
+	.string "BROCK'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
-RustboroCity_Gym_Text_RoxanneRegisterCall:
+RustboroCity_Gym_Text_BrockRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is ROXANNE of RUSTBORO CITY.\p"
-	.string "I heard from BRAWLY that you're\n"
+	.string "BROCK: Oh, hello, {PLAYER}?\n"
+	.string "This is BROCK of RUSTBORO CITY.\p"
+	.string "I heard from MISTY that you're\n"
 	.string "moving up through the ranks of\l"
 	.string "TRAINERS at an incredible clip.\p"
 	.string "Well, I'd rather not think that\n"
@@ -248,31 +248,31 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
-RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered GYM LEADER ROXANNE\n"
+RustboroCity_Gym_Text_RegisteredBrock:
+	.string "Registered GYM LEADER BROCK\n"
 	.string "in the POKéNAV.$"
 
-RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
+RustboroCity_Gym_Text_BrockPreRematch:
+	.string "BROCK: I'm so glad to see you again.\n"
+	.string "I'm BROCK, the GYM LEADER here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"
 	.string "we've become. Let us battle!$"
 
-RustboroCity_Gym_Text_RoxanneRematchDefeat:
+RustboroCity_Gym_Text_BrockRematchDefeat:
 	.string "Grr…\n"
 	.string "Again, I have lost…$"
 
-RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "ROXANNE: I still have much to learn\n"
+RustboroCity_Gym_Text_BrockPostRematch:
+	.string "BROCK: I still have much to learn\n"
 	.string "when it comes to battling POKéMON.\p"
 	.string "That awareness makes me love battling\n"
 	.string "all that much more!$"
 
-RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
+RustboroCity_Gym_Text_BrockRematchNeedTwoMons:
+	.string "BROCK: I'm so glad to see you again.\n"
+	.string "I'm BROCK, the GYM LEADER here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"

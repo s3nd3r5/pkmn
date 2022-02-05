@@ -506,12 +506,12 @@ static bool32 ShouldDoNearbyMessage(void)
     }
     else
     {
-        if (state->matchCallEntries[selection].headerId == MC_HEADER_WATTSON)
+        if (state->matchCallEntries[selection].headerId == MC_HEADER_SURGE)
         {
             if (GetMatchCallMapSec(selection) == gMapHeader.regionMapSectionId
              && FlagGet(FLAG_BADGE05_GET) == TRUE)
             {
-                if (!FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
+                if (!FlagGet(FLAG_SURGE_REMATCH_AVAILABLE))
                     return TRUE;
             }
         }

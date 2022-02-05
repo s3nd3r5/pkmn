@@ -323,45 +323,45 @@ const u8 gText_MatchCallPkmnTrainer_Lyra_Pokemon[] = _("The 1st POKéMON I caugh
 const u8 gText_MatchCallPkmnTrainer_Lyra_Intro1[] = _("POKéMON and I have grown");
 const u8 gText_MatchCallPkmnTrainer_Lyra_Intro2[] = _("stronger together.");
 
-const u8 gText_MatchCallRockinWhiz_Roxanne_Strategy[] = _("ROCK-type power attack.");
-const u8 gText_MatchCallRockinWhiz_Roxanne_Pokemon[] = _("I prefer rock-hard POKéMON.");
-const u8 gText_MatchCallRockinWhiz_Roxanne_Intro1[] = _("A LEADER of a big GYM bears");
-const u8 gText_MatchCallRockinWhiz_Roxanne_Intro2[] = _("a lot of responsibility.");
+const u8 gText_MatchCallRockinWhiz_Brock_Strategy[] = _("ROCK-type power attack.");
+const u8 gText_MatchCallRockinWhiz_Brock_Pokemon[] = _("I prefer rock-hard POKéMON.");
+const u8 gText_MatchCallRockinWhiz_Brock_Intro1[] = _("A LEADER of a big GYM bears");
+const u8 gText_MatchCallRockinWhiz_Brock_Intro2[] = _("a lot of responsibility.");
 
-const u8 gText_MatchCallTheBigHit_Brawly_Strategy[] = _("Direct physical action!");
-const u8 gText_MatchCallTheBigHit_Brawly_Pokemon[] = _("FIGHTING POKéMON rule!");
-const u8 gText_MatchCallTheBigHit_Brawly_Intro1[] = _("The world awaits me as the");
-const u8 gText_MatchCallTheBigHit_Brawly_Intro2[] = _("next big wave!");
+const u8 gText_MatchCallTheBigHit_Misty_Strategy[] = _("Direct physical action!");
+const u8 gText_MatchCallTheBigHit_Misty_Pokemon[] = _("FIGHTING POKéMON rule!");
+const u8 gText_MatchCallTheBigHit_Misty_Intro1[] = _("The world awaits me as the");
+const u8 gText_MatchCallTheBigHit_Misty_Intro2[] = _("next big wave!");
 
-const u8 gText_MatchCallSwellShock_Wattson_Strategy[] = _("I choose to electrify.");
-const u8 gText_MatchCallSwellShock_Wattson_Pokemon[] = _("Get shocked by electricity!");
-const u8 gText_MatchCallSwellShock_Wattson_Intro1[] = _("One must never throw a");
-const u8 gText_MatchCallSwellShock_Wattson_Intro2[] = _("match. Even I must not.");
+const u8 gText_MatchCallSwellShock_Surge_Strategy[] = _("I choose to electrify.");
+const u8 gText_MatchCallSwellShock_Surge_Pokemon[] = _("Get shocked by electricity!");
+const u8 gText_MatchCallSwellShock_Surge_Intro1[] = _("One must never throw a");
+const u8 gText_MatchCallSwellShock_Surge_Intro2[] = _("match. Even I must not.");
 
-const u8 gText_MatchCallPassionBurn_Flannery_Strategy[] = _("Battle aggressively.");
-const u8 gText_MatchCallPassionBurn_Flannery_Pokemon[] = _("Burn with passion!");
-const u8 gText_MatchCallPassionBurn_Flannery_Intro1[] = _("Completely wash away daily");
-const u8 gText_MatchCallPassionBurn_Flannery_Intro2[] = _("fatigue in hot springs!");
+const u8 gText_MatchCallPassionBurn_Erika_Strategy[] = _("Battle aggressively.");
+const u8 gText_MatchCallPassionBurn_Erika_Pokemon[] = _("Burn with passion!");
+const u8 gText_MatchCallPassionBurn_Erika_Intro1[] = _("Completely wash away daily");
+const u8 gText_MatchCallPassionBurn_Erika_Intro2[] = _("fatigue in hot springs!");
 
 const u8 gText_MatchCallReliableOne_Dad_Strategy[] = _("I flexibly adapt my style.");
 const u8 gText_MatchCallReliableOne_Dad_Pokemon[] = _("Grown in a balanced manner.");
 const u8 gText_MatchCallReliableOne_Dad_Intro1[] = _("I walk the 30 minutes from");
 const u8 gText_MatchCallReliableOne_Dad_Intro2[] = _("home to here every day.");
 
-const u8 gText_MatchCallSkyTamer_Winona_Strategy[] = _("I take advantage of speed.");
-const u8 gText_MatchCallSkyTamer_Winona_Pokemon[] = _("Graceful sky dancers.");
-const u8 gText_MatchCallSkyTamer_Winona_Intro1[] = _("The ultimate would be to");
-const u8 gText_MatchCallSkyTamer_Winona_Intro2[] = _("live as one with nature.");
+const u8 gText_MatchCallSkyTamer_Sabrina_Strategy[] = _("I take advantage of speed.");
+const u8 gText_MatchCallSkyTamer_Sabrina_Pokemon[] = _("Graceful sky dancers.");
+const u8 gText_MatchCallSkyTamer_Sabrina_Intro1[] = _("The ultimate would be to");
+const u8 gText_MatchCallSkyTamer_Sabrina_Intro2[] = _("live as one with nature.");
 
-const u8 gText_MatchCallMysticDuo_TateAndLiza_Strategy[] = _("We battle in cooperation.");
-const u8 gText_MatchCallMysticDuo_TateAndLiza_Pokemon[] = _("Always friendly POKéMON.");
-const u8 gText_MatchCallMysticDuo_TateAndLiza_Intro1[] = _("Papa has trouble telling");
-const u8 gText_MatchCallMysticDuo_TateAndLiza_Intro2[] = _("the two of us apart!");
+const u8 gText_MatchCallMysticDuo_Janine_Strategy[] = _("We battle in cooperation.");
+const u8 gText_MatchCallMysticDuo_Janine_Pokemon[] = _("Always friendly POKéMON.");
+const u8 gText_MatchCallMysticDuo_Janine_Intro1[] = _("Papa has trouble telling");
+const u8 gText_MatchCallMysticDuo_Janine_Intro2[] = _("the two of us apart!");
 
-const u8 gText_MatchCallDandyCharm_Juan_Strategy[] = _("I use splendid waterpower.");
-const u8 gText_MatchCallDandyCharm_Juan_Pokemon[] = _("POKéMON of elegance!");
-const u8 gText_MatchCallDandyCharm_Juan_Intro1[] = _("The adulation of beautiful");
-const u8 gText_MatchCallDandyCharm_Juan_Intro2[] = _("ladies fills me with energy!");
+const u8 gText_MatchCallDandyCharm_Blaine_Strategy[] = _("I use splendid waterpower.");
+const u8 gText_MatchCallDandyCharm_Blaine_Pokemon[] = _("POKéMON of elegance!");
+const u8 gText_MatchCallDandyCharm_Blaine_Intro1[] = _("The adulation of beautiful");
+const u8 gText_MatchCallDandyCharm_Blaine_Intro2[] = _("ladies fills me with energy!");
 
 const u8 gText_MatchCallEliteFour_Blue_Strategy[] = _("Offense over defense!");
 const u8 gText_MatchCallEliteFour_Blue_Pokemon[] = _("The DARK side's beauties.");
@@ -455,14 +455,14 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_SAWYER] = MCFLAVOR(Hiker_Sawyer),
     [REMATCH_KIRA_AND_DAN] = MCFLAVOR(YoungCouple_LoisAndHal),
     [REMATCH_LYRA_VR] = MCFLAVOR(PkmnTrainer_Lyra),
-    [REMATCH_ROXANNE] = MCFLAVOR(RockinWhiz_Roxanne),
-    [REMATCH_BRAWLY] = MCFLAVOR(TheBigHit_Brawly),
-    [REMATCH_WATTSON] = MCFLAVOR(SwellShock_Wattson),
-    [REMATCH_FLANNERY] = MCFLAVOR(PassionBurn_Flannery),
+    [REMATCH_BROCK] = MCFLAVOR(RockinWhiz_Brock),
+    [REMATCH_MISTY] = MCFLAVOR(TheBigHit_Misty),
+    [REMATCH_SURGE] = MCFLAVOR(SwellShock_Surge),
+    [REMATCH_ERIKA] = MCFLAVOR(PassionBurn_Erika),
     [REMATCH_NORMAN] = MCFLAVOR(ReliableOne_Dad),
-    [REMATCH_WINONA] = MCFLAVOR(SkyTamer_Winona),
-    [REMATCH_TATE_AND_LIZA] = MCFLAVOR(MysticDuo_TateAndLiza),
-    [REMATCH_JUAN] = MCFLAVOR(DandyCharm_Juan),
+    [REMATCH_SABRINA] = MCFLAVOR(SkyTamer_Sabrina),
+    [REMATCH_JANINE] = MCFLAVOR(MysticDuo_Janine),
+    [REMATCH_BLAINE] = MCFLAVOR(DandyCharm_Blaine),
     [REMATCH_BLUE] = MCFLAVOR(EliteFour_Blue),
     [REMATCH_BRUNO] = MCFLAVOR(EliteFour_Bruno),
     [REMATCH_LORELEI] = MCFLAVOR(EliteFour_Lorelei),

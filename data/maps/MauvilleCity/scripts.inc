@@ -13,13 +13,13 @@ MauvilleCity_OnTransition:
 	setflag FLAG_SYS_TV_START
 	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
 	setvar VAR_MAUVILLE_GYM_STATE, 0
-	call_if_set FLAG_GOT_TM24_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
+	call_if_set FLAG_GOT_TM24_FROM_SURGE, MauvilleCity_EventScript_MoveSurgeBackToGym
 	end
 
-MauvilleCity_EventScript_MoveWattsonBackToGym::
-	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
-	setflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
-	setflag FLAG_WATTSON_REMATCH_AVAILABLE
+MauvilleCity_EventScript_MoveSurgeBackToGym::
+	clearflag FLAG_HIDE_MAUVILLE_GYM_SURGE
+	setflag FLAG_HIDE_MAUVILLE_CITY_SURGE
+	setflag FLAG_SURGE_REMATCH_AVAILABLE
 	return
 
 MauvilleCity_EventScript_Boy::
@@ -415,35 +415,35 @@ MauvilleCity_Movement_ScottExitEast:
 	walk_left
 	step_end
 
-MauvilleCity_EventScript_Wattson::
+MauvilleCity_EventScript_Surge::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_TM24_FROM_WATTSON, MauvilleCity_EventScript_ReceivedThunderbolt
+	goto_if_set FLAG_GOT_TM24_FROM_SURGE, MauvilleCity_EventScript_ReceivedThunderbolt
 	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_EventScript_CompletedNewMauville
-	goto_if_set FLAG_GOT_BASEMENT_KEY_FROM_WATTSON, MauvilleCity_EventScript_BegunNewMauville
-	msgbox MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT
+	goto_if_set FLAG_GOT_BASEMENT_KEY_FROM_SURGE, MauvilleCity_EventScript_BegunNewMauville
+	msgbox MauvilleCity_Text_SurgeNeedFavorTakeKey, MSGBOX_DEFAULT
 	giveitem ITEM_BASEMENT_KEY
-	setflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON
-	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
+	setflag FLAG_GOT_BASEMENT_KEY_FROM_SURGE
+	msgbox MauvilleCity_Text_SurgeWontBeChallenge, MSGBOX_DEFAULT
 	release
 	end
 
 MauvilleCity_EventScript_BegunNewMauville::
-	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
+	msgbox MauvilleCity_Text_SurgeWontBeChallenge, MSGBOX_DEFAULT
 	release
 	end
 
 MauvilleCity_EventScript_CompletedNewMauville::
-	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
+	msgbox MauvilleCity_Text_SurgeThanksTakeTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM24
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_GOT_TM24_FROM_WATTSON
-	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
+	setflag FLAG_GOT_TM24_FROM_SURGE
+	msgbox MauvilleCity_Text_SurgeYoungTakeCharge, MSGBOX_DEFAULT
 	release
 	end
 
 MauvilleCity_EventScript_ReceivedThunderbolt::
-	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
+	msgbox MauvilleCity_Text_SurgeYoungTakeCharge, MSGBOX_DEFAULT
 	release
 	end
 
@@ -576,8 +576,8 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "… … … … … …\n"
 	.string "I'll be cheering for you!$"
 
-MauvilleCity_Text_WattsonNeedFavorTakeKey:
-	.string "WATTSON: Oh, {PLAYER}{KUN}!\n"
+MauvilleCity_Text_SurgeNeedFavorTakeKey:
+	.string "SURGE: Oh, {PLAYER}{KUN}!\n"
 	.string "You look like you have a lot of zip!\l"
 	.string "That's a good thing, wahahahaha!\p"
 	.string "Fine! I've decided!\n"
@@ -591,24 +591,24 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "Here, this is the KEY to get into\n"
 	.string "NEW MAUVILLE.$"
 
-MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "WATTSON: Don't you worry about it.\n"
+MauvilleCity_Text_SurgeWontBeChallenge:
+	.string "SURGE: Don't you worry about it.\n"
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to NEW MAUVILLE is just\n"
 	.string "a short SURF away from ROUTE 110.\p"
 	.string "That's it, then, you have my trust!\n"
 	.string "Wahahahaha!$"
 
-MauvilleCity_Text_WattsonThanksTakeTM:
-	.string "WATTSON: Wahahahaha!\p"
+MauvilleCity_Text_SurgeThanksTakeTM:
+	.string "SURGE: Wahahahaha!\p"
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
 	.string "THUNDERBOLT!\p"
 	.string "Go on, you've earned it!$"
 
-MauvilleCity_Text_WattsonYoungTakeCharge:
-	.string "WATTSON: Wahahahaha!\p"
+MauvilleCity_Text_SurgeYoungTakeCharge:
+	.string "SURGE: Wahahahaha!\p"
 	.string "It pleases me to no end to see\n"
 	.string "the young step up and take charge!$"
 
@@ -639,7 +639,7 @@ MauvilleCity_Text_CitySign:
 
 MauvilleCity_Text_GymSign:
 	.string "MAUVILLE CITY POKéMON GYM\n"
-	.string "LEADER: WATTSON\l"
+	.string "LEADER: SURGE\l"
 	.string "“The cheerfully electrifying man!”$"
 
 MauvilleCity_Text_BikeShopSign:

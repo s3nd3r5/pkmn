@@ -15,16 +15,16 @@ FortreeCity_Gym_EventScript_InitRotatingGates::
 	special RotatingGate_InitPuzzleAndGraphics
 	end
 
-FortreeCity_Gym_EventScript_Winona::
-	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
+FortreeCity_Gym_EventScript_Sabrina::
+	trainerbattle_single TRAINER_SABRINA_1, FortreeCity_Gym_Text_SabrinaIntro, FortreeCity_Gym_Text_SabrinaDefeat, FortreeCity_Gym_EventScript_SabrinaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_WinonaRematch
+	goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_SabrinaRematch
 	goto_if_unset FLAG_RECEIVED_TM40, FortreeCity_Gym_EventScript_GiveAerialAce2
-	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
+	msgbox FortreeCity_Gym_Text_SabrinaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-FortreeCity_Gym_EventScript_WinonaDefeated::
+FortreeCity_Gym_EventScript_SabrinaDefeated::
 	message FortreeCity_Gym_Text_ReceivedFeatherBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
@@ -37,11 +37,11 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox FortreeCity_Gym_Text_RegisteredWinona, MSGBOX_DEFAULT
+	msgbox FortreeCity_Gym_Text_RegisteredSabrina, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_ENABLE_WINONA_MATCH_CALL
+	setflag FLAG_ENABLE_SABRINA_MATCH_CALL
 	setvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0
 	setflag FLAG_SCOTT_CALL_FORTREE_GYM
 	release
@@ -62,9 +62,9 @@ FortreeCity_Gym_EventScript_GiveAerialAce::
 	setflag FLAG_RECEIVED_TM40
 	return
 
-FortreeCity_Gym_EventScript_WinonaRematch::
-	trainerbattle_rematch_double TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaPreRematch, FortreeCity_Gym_Text_WinonaRematchDefeat, FortreeCity_Gym_Text_WinonaRematchNeedTwoMons
-	msgbox FortreeCity_Gym_Text_WinonaPostRematch, MSGBOX_AUTOCLOSE
+FortreeCity_Gym_EventScript_SabrinaRematch::
+	trainerbattle_rematch_double TRAINER_SABRINA_1, FortreeCity_Gym_Text_SabrinaPreRematch, FortreeCity_Gym_Text_SabrinaRematchDefeat, FortreeCity_Gym_Text_SabrinaRematchNeedTwoMons
+	msgbox FortreeCity_Gym_Text_SabrinaPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 FortreeCity_Gym_EventScript_Jared::
@@ -135,7 +135,7 @@ FortreeCity_Gym_EventScript_GymStatue::
 FortreeCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
-	.string "FORTREE GYM LEADER WINONA is\n"
+	.string "FORTREE GYM LEADER SABRINA is\n"
 	.string "a master of FLYING-type POKéMON.\p"
 	.string "She's waiting at the back of this GYM,\n"
 	.string "behind the rotating doors.\p"
@@ -178,32 +178,32 @@ FortreeCity_Gym_Text_EdwardoPostBattle:
 	.string "myself even stronger.$"
 
 FortreeCity_Gym_Text_FlintIntro:
-	.string "There's no need for WINONA, our GYM\n"
+	.string "There's no need for SABRINA, our GYM\n"
 	.string "LEADER, to deal with you!\p"
 	.string "I'm plenty good enough for you!$"
 
 FortreeCity_Gym_Text_FlintDefeat:
-	.string "WINONA, I…\n"
+	.string "SABRINA, I…\n"
 	.string "I lost!$"
 
 FortreeCity_Gym_Text_FlintPostBattle:
-	.string "WINONA is cute and she's strong.\n"
+	.string "SABRINA is cute and she's strong.\n"
 	.string "She's the ultimate LEADER!\p"
 	.string "Blush…$"
 
 FortreeCity_Gym_Text_AshleyIntro:
-	.string "WINONA taught me personally!\n"
+	.string "SABRINA taught me personally!\n"
 	.string "You can't beat me easily!$"
 
 FortreeCity_Gym_Text_AshleyDefeat:
 	.string "I was beaten…$"
 
 FortreeCity_Gym_Text_AshleyPostBattle:
-	.string "Thanks to WINONA, the people of\n"
+	.string "Thanks to SABRINA, the people of\n"
 	.string "FORTREE can live without fear.$"
 
 FortreeCity_Gym_Text_HumbertoIntro:
-	.string "When WINONA takes to battle, her face\n"
+	.string "When SABRINA takes to battle, her face\n"
 	.string "shines with beautiful determination…\p"
 	.string "I'm not letting you witness that\n"
 	.string "lovely sight!$"
@@ -214,7 +214,7 @@ FortreeCity_Gym_Text_HumbertoDefeat:
 
 FortreeCity_Gym_Text_HumbertoPostBattle:
 	.string "You'd better watch it!\n"
-	.string "Don't get distracted staring at WINONA\l"
+	.string "Don't get distracted staring at SABRINA\l"
 	.string "or you'll go crashing down in a heap!$"
 
 FortreeCity_Gym_Text_DariusIntro:
@@ -228,10 +228,10 @@ FortreeCity_Gym_Text_DariusDefeat:
 FortreeCity_Gym_Text_DariusPostBattle:
 	.string "Sure, you beat me all right.\n"
 	.string "But you'd better watch it! Our LEADER\l"
-	.string "WINONA's POKéMON are all business.$"
+	.string "SABRINA's POKéMON are all business.$"
 
-FortreeCity_Gym_Text_WinonaIntro:
-	.string "I am WINONA. I am the LEADER of\n"
+FortreeCity_Gym_Text_SabrinaIntro:
+	.string "I am SABRINA. I am the LEADER of\n"
 	.string "the FORTREE POKéMON GYM.\p"
 	.string "I have become one with BIRD POKéMON\n"
 	.string "and have soared the skies…\p"
@@ -240,7 +240,7 @@ FortreeCity_Gym_Text_WinonaIntro:
 	.string "Witness the elegant choreography\n"
 	.string "of BIRD POKéMON and I!$"
 
-FortreeCity_Gym_Text_WinonaDefeat:
+FortreeCity_Gym_Text_SabrinaDefeat:
 	.string "Never before have I seen a TRAINER\n"
 	.string "command POKéMON with more grace\l"
 	.string "than I…\p"
@@ -249,7 +249,7 @@ FortreeCity_Gym_Text_WinonaDefeat:
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
 	.string "{PLAYER} received the FEATHER BADGE\n"
-	.string "from WINONA.$"
+	.string "from SABRINA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 	.string "With the FEATHER BADGE, all POKéMON up\n"
@@ -266,11 +266,11 @@ FortreeCity_Gym_Text_ExplainAerialAce:
 	.string "No POKéMON should be able to avoid it.\p"
 	.string "… … … … … …$"
 
-FortreeCity_Gym_Text_RegisteredWinona:
-	.string "Registered GYM LEADER WINONA\n"
+FortreeCity_Gym_Text_RegisteredSabrina:
+	.string "Registered GYM LEADER SABRINA\n"
 	.string "in the POKéNAV.$"
 
-FortreeCity_Gym_Text_WinonaPostBattle:
+FortreeCity_Gym_Text_SabrinaPostBattle:
 	.string "Though I fell to you, I will remain\n"
 	.string "devoted to BIRD POKéMON.$"
 
@@ -279,11 +279,11 @@ FortreeCity_Gym_Text_GymStatue:
 
 FortreeCity_Gym_Text_GymStatueCertified:
 	.string "FORTREE CITY POKéMON GYM\p"
-	.string "WINONA'S CERTIFIED TRAINERS:\n"
+	.string "SABRINA'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
-FortreeCity_Gym_Text_WinonaPreRematch:
-	.string "WINONA: We humans can never escape\n"
+FortreeCity_Gym_Text_SabrinaPreRematch:
+	.string "SABRINA: We humans can never escape\n"
 	.string "gravity's pull on the ground.\p"
 	.string "But by striving for excellence,\n"
 	.string "we have the power to soar!\p"
@@ -292,18 +292,18 @@ FortreeCity_Gym_Text_WinonaPreRematch:
 	.string "Please, allow me to see your power\n"
 	.string "at full flight!$"
 
-FortreeCity_Gym_Text_WinonaRematchDefeat:
+FortreeCity_Gym_Text_SabrinaRematchDefeat:
 	.string "I failed to reach your height again…$"
 
-FortreeCity_Gym_Text_WinonaPostRematch:
-	.string "WINONA: Even though I have lost,\n"
+FortreeCity_Gym_Text_SabrinaPostRematch:
+	.string "SABRINA: Even though I have lost,\n"
 	.string "the wings of my heart remain unbroken.\p"
 	.string "I can rise and soar again and\n"
 	.string "yet again.\p"
 	.string "I am convinced of it!$"
 
-FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
-	.string "WINONA: We humans can never escape\n"
+FortreeCity_Gym_Text_SabrinaRematchNeedTwoMons:
+	.string "SABRINA: We humans can never escape\n"
 	.string "gravity's pull on the ground.\p"
 	.string "But by striving for excellence,\n"
 	.string "we have the power to soar!\p"

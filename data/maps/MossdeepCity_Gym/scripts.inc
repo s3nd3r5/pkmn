@@ -48,16 +48,16 @@ MossdeepCity_Gym_EventScript_SetSwitch4Metatiles::
 	setmetatile 5, 24, METATILE_RS_MossdeepGym_Switch_Down, TRUE
 	end
 
-MossdeepCity_Gym_EventScript_TateAndLiza::
-	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
+MossdeepCity_Gym_EventScript_Janine::
+	trainerbattle_double TRAINER_JANINE_1, MossdeepCity_Gym_Text_JanineIntro, MossdeepCity_Gym_Text_JanineDefeat, MossdeepCity_Gym_Text_JanineNeedTwoMons, MossdeepCity_Gym_EventScript_JanineDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_TateAndLizaRematch
+	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_JanineRematch
 	goto_if_unset FLAG_RECEIVED_TM04, MossdeepCity_Gym_EventScript_GiveCalmMind2
-	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
+	msgbox MossdeepCity_Gym_Text_JaninePostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
+MossdeepCity_Gym_EventScript_JanineDefeated::
 	message MossdeepCity_Gym_Text_ReceivedMindBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
@@ -81,11 +81,11 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox MossdeepCity_Gym_Text_RegisteredTateAndLiza, MSGBOX_DEFAULT
+	msgbox MossdeepCity_Gym_Text_RegisteredJanine, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
+	setflag FLAG_ENABLE_JANINE_MATCH_CALL
 	release
 	end
 
@@ -104,9 +104,9 @@ MossdeepCity_Gym_EventScript_GiveCalmMind::
 	setflag FLAG_RECEIVED_TM04
 	return
 
-MossdeepCity_Gym_EventScript_TateAndLizaRematch::
-	trainerbattle_rematch_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons
-	msgbox MossdeepCity_Gym_Text_TateAndLizaPostRematch, MSGBOX_AUTOCLOSE
+MossdeepCity_Gym_EventScript_JanineRematch::
+	trainerbattle_rematch_double TRAINER_JANINE_1, MossdeepCity_Gym_Text_JaninePreRematch, MossdeepCity_Gym_Text_JanineRematchDefeat, MossdeepCity_Gym_Text_JanineRematchNeedTwoMons
+	msgbox MossdeepCity_Gym_Text_JaninePostRematch, MSGBOX_AUTOCLOSE
 	end
 
 @ All the below switch scripts are leftover from RS and are functionally unused
@@ -545,64 +545,64 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "All right! I think I'll develop a special\n"
 	.string "invincible POKéMON power next.$"
 
-MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "TATE: Hehehe… Were you surprised?\p"
-	.string "LIZA: Fufufu… Were you surprised?\p"
-	.string "TATE: That there are two GYM LEADERS?\n"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: We're twins!\n"
-	.string "LIZA: We're twins!\p"
-	.string "TATE: We don't need to talk because…\n"
-	.string "LIZA: We can each determine what…\p"
-	.string "TATE: The other is thinking…\n"
-	.string "LIZA: All in our minds!\p"
-	.string "TATE: This combination of ours…\n"
-	.string "LIZA: Can you beat it?$"
+MossdeepCity_Gym_Text_JanineIntro:
+	.string "JANINE: Hehehe… Were you surprised?\p"
+	.string "JANINE: Fufufu… Were you surprised?\p"
+	.string "JANINE: That there are two GYM LEADERS?\n"
+	.string "JANINE: That there are two GYM LEADERS?\p"
+	.string "JANINE: We're twins!\n"
+	.string "JANINE: We're twins!\p"
+	.string "JANINE: We don't need to talk because…\n"
+	.string "JANINE: We can each determine what…\p"
+	.string "JANINE: The other is thinking…\n"
+	.string "JANINE: All in our minds!\p"
+	.string "JANINE: This combination of ours…\n"
+	.string "JANINE: Can you beat it?$"
 
-MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "TATE: What?! Our combination…\n"
-	.string "LIZA: Was shattered!\p"
-	.string "TATE: It can't be helped. You've won…\n"
-	.string "LIZA: So, in recognition, take this.$"
+MossdeepCity_Gym_Text_JanineDefeat:
+	.string "JANINE: What?! Our combination…\n"
+	.string "JANINE: Was shattered!\p"
+	.string "JANINE: It can't be helped. You've won…\n"
+	.string "JANINE: So, in recognition, take this.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} received the MIND BADGE\n"
-	.string "from TATE and LIZA.$"
+	.string "from JANINE and JANINE.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "TATE: The MIND BADGE enhances the\n"
+	.string "JANINE: The MIND BADGE enhances the\n"
 	.string "SP. ATK and SP. DEF of POKéMON.\p"
-	.string "LIZA: It also lets you use the HM move\n"
+	.string "JANINE: It also lets you use the HM move\n"
 	.string "DIVE outside of battle.\p"
-	.string "TATE: You should also take this, too.$"
+	.string "JANINE: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
-	.string "TATE: That TM04 contains…\n"
-	.string "LIZA: CALM MIND!\p"
-	.string "TATE: It raises SP. ATK and…\n"
-	.string "LIZA: It raises SP. DEF!\p"
-	.string "TATE: It's a move that's perfect…\n"
-	.string "LIZA: For PSYCHIC POKéMON!\p"
+	.string "JANINE: That TM04 contains…\n"
+	.string "JANINE: CALM MIND!\p"
+	.string "JANINE: It raises SP. ATK and…\n"
+	.string "JANINE: It raises SP. DEF!\p"
+	.string "JANINE: It's a move that's perfect…\n"
+	.string "JANINE: For PSYCHIC POKéMON!\p"
 	.string "… … … … … …$"
 
-MossdeepCity_Gym_Text_RegisteredTateAndLiza:
-	.string "Registered GYM LEADERS TATE & LIZA\n"
+MossdeepCity_Gym_Text_RegisteredJanine:
+	.string "Registered GYM LEADERS JANINE & JANINE\n"
 	.string "in the POKéNAV.$"
 
-MossdeepCity_Gym_Text_TateAndLizaPostBattle:
-	.string "TATE: Looks like the bond between you\n"
+MossdeepCity_Gym_Text_JaninePostBattle:
+	.string "JANINE: Looks like the bond between you\n"
 	.string "and your POKéMON is far stronger than\l"
 	.string "the bond that we share as twins.\p"
-	.string "LIZA: You will become even stronger!\n"
+	.string "JANINE: You will become even stronger!\n"
 	.string "We've battled you, so we know.$"
 
-MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
-	.string "TATE: Hehehe… Were you surprised?\p"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: Oops, you have only one…\n"
-	.string "LIZA: POKéMON that can battle.\p"
-	.string "TATE: We can't battle that way!\p"
-	.string "LIZA: If you want to challenge us,\n"
+MossdeepCity_Gym_Text_JanineNeedTwoMons:
+	.string "JANINE: Hehehe… Were you surprised?\p"
+	.string "JANINE: That there are two GYM LEADERS?\p"
+	.string "JANINE: Oops, you have only one…\n"
+	.string "JANINE: POKéMON that can battle.\p"
+	.string "JANINE: We can't battle that way!\p"
+	.string "JANINE: If you want to challenge us,\n"
 	.string "bring some more POKéMON.$"
 
 MossdeepCity_Gym_Text_GymStatue:
@@ -610,39 +610,39 @@ MossdeepCity_Gym_Text_GymStatue:
 
 MossdeepCity_Gym_Text_GymStatueCertified:
 	.string "MOSSDEEP CITY POKéMON GYM\p"
-	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
+	.string "JANINE AND JANINE'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
-MossdeepCity_Gym_Text_TateAndLizaPreRematch:
-	.string "TATE: POKéMON…\n"
-	.string "LIZA: POKéMON…\p"
-	.string "TATE: By changing the party's mix…\n"
-	.string "LIZA: The battle style changes.\p"
-	.string "TATE: But me…\n"
-	.string "LIZA: But me…\p"
-	.string "TATE: I'll always be with LIZA!\n"
-	.string "LIZA: I'll always be with TATE!\p"
-	.string "TATE: Our combination…\n"
-	.string "LIZA: We'll show you again and again!$"
+MossdeepCity_Gym_Text_JaninePreRematch:
+	.string "JANINE: POKéMON…\n"
+	.string "JANINE: POKéMON…\p"
+	.string "JANINE: By changing the party's mix…\n"
+	.string "JANINE: The battle style changes.\p"
+	.string "JANINE: But me…\n"
+	.string "JANINE: But me…\p"
+	.string "JANINE: I'll always be with JANINE!\n"
+	.string "JANINE: I'll always be with JANINE!\p"
+	.string "JANINE: Our combination…\n"
+	.string "JANINE: We'll show you again and again!$"
 
-MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
-	.string "TATE: You and your POKéMON…\n"
-	.string "LIZA: It's as if you were siblings!$"
+MossdeepCity_Gym_Text_JanineRematchDefeat:
+	.string "JANINE: You and your POKéMON…\n"
+	.string "JANINE: It's as if you were siblings!$"
 
-MossdeepCity_Gym_Text_TateAndLizaPostRematch:
-	.string "TATE: You can knock us down,\n"
+MossdeepCity_Gym_Text_JaninePostRematch:
+	.string "JANINE: You can knock us down,\n"
 	.string "but we'll never stay down!\p"
-	.string "LIZA: Because the two of us,\n"
+	.string "JANINE: Because the two of us,\n"
 	.string "we always support each other!$"
 
-MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
-	.string "TATE: You're back again…\n"
-	.string "LIZA: You're back again…\p"
-	.string "TATE: To give us a rematch.\n"
-	.string "LIZA: To give us a rematch.\p"
-	.string "TATE: But…\n"
-	.string "LIZA: For our match…\p"
-	.string "TATE: You brought just one POKéMON!\n"
-	.string "LIZA: You brought just one POKéMON!\p"
-	.string "TATE: We need you to bring at least…\n"
-	.string "LIZA: Two POKéMON when you come back.$"
+MossdeepCity_Gym_Text_JanineRematchNeedTwoMons:
+	.string "JANINE: You're back again…\n"
+	.string "JANINE: You're back again…\p"
+	.string "JANINE: To give us a rematch.\n"
+	.string "JANINE: To give us a rematch.\p"
+	.string "JANINE: But…\n"
+	.string "JANINE: For our match…\p"
+	.string "JANINE: You brought just one POKéMON!\n"
+	.string "JANINE: You brought just one POKéMON!\p"
+	.string "JANINE: We need you to bring at least…\n"
+	.string "JANINE: Two POKéMON when you come back.$"

@@ -4,7 +4,7 @@ SootopolisCity_House3_MapScripts::
 SootopolisCity_House3_EventScript_Woman::
 	lock
 	faceplayer
-	msgbox SootopolisCity_House3_Text_JuanHasManyFansDoYou, MSGBOX_YESNO
+	msgbox SootopolisCity_House3_Text_BlaineHasManyFansDoYou, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, SootopolisCity_House3_EventScript_HaveFans
 	msgbox SootopolisCity_House3_Text_LonesomeTryWorkingHarder, MSGBOX_DEFAULT
 	release
@@ -19,9 +19,9 @@ SootopolisCity_House3_EventScript_Girl::
 	msgbox SootopolisCity_House3_Text_TrainerFanClubWasWild, MSGBOX_NPC
 	end
 
-SootopolisCity_House3_Text_JuanHasManyFansDoYou:
+SootopolisCity_House3_Text_BlaineHasManyFansDoYou:
 	.string "You're a POKéMON TRAINER, aren't you?\p"
-	.string "SOOTOPOLIS's JUAN has many fans.\n"
+	.string "SOOTOPOLIS's BLAINE has many fans.\n"
 	.string "Even more than his student LANCE!\p"
 	.string "Do you have any?$"
 

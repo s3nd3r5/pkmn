@@ -123,14 +123,14 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blue;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bruno;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lorelei;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Claire;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roxanne;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brawly;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wattson;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Flannery;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brock;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Misty;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Surge;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Erika;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Norman;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Winona;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Liza;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tate;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sabrina;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Janine;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lance;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Steven;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lyra;
@@ -216,7 +216,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azurill;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkEthan;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkMay;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juan;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blaine;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scott;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poochyena;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KyogreSide;
@@ -376,14 +376,14 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BRUNO] =                   &gObjectEventGraphicsInfo_Bruno,
     [OBJ_EVENT_GFX_LORELEI] =                   &gObjectEventGraphicsInfo_Lorelei,
     [OBJ_EVENT_GFX_CLAIRE] =                    &gObjectEventGraphicsInfo_Claire,
-    [OBJ_EVENT_GFX_ROXANNE] =                  &gObjectEventGraphicsInfo_Roxanne,
-    [OBJ_EVENT_GFX_BRAWLY] =                   &gObjectEventGraphicsInfo_Brawly,
-    [OBJ_EVENT_GFX_WATTSON] =                  &gObjectEventGraphicsInfo_Wattson,
-    [OBJ_EVENT_GFX_FLANNERY] =                 &gObjectEventGraphicsInfo_Flannery,
+    [OBJ_EVENT_GFX_BROCK] =                  &gObjectEventGraphicsInfo_Brock,
+    [OBJ_EVENT_GFX_MISTY] =                   &gObjectEventGraphicsInfo_Misty,
+    [OBJ_EVENT_GFX_SURGE] =                  &gObjectEventGraphicsInfo_Surge,
+    [OBJ_EVENT_GFX_ERIKA] =                 &gObjectEventGraphicsInfo_Erika,
     [OBJ_EVENT_GFX_NORMAN] =                   &gObjectEventGraphicsInfo_Norman,
-    [OBJ_EVENT_GFX_WINONA] =                   &gObjectEventGraphicsInfo_Winona,
-    [OBJ_EVENT_GFX_LIZA] =                     &gObjectEventGraphicsInfo_Liza,
-    [OBJ_EVENT_GFX_TATE] =                     &gObjectEventGraphicsInfo_Tate,
+    [OBJ_EVENT_GFX_SABRINA] =                   &gObjectEventGraphicsInfo_Sabrina,
+    [OBJ_EVENT_GFX_JANINE] =                     &gObjectEventGraphicsInfo_Janine,
+    [OBJ_EVENT_GFX_GIOVANNI] =                     &gObjectEventGraphicsInfo_Giovanni,
     [OBJ_EVENT_GFX_LANCE] =                    &gObjectEventGraphicsInfo_Lance,
     [OBJ_EVENT_GFX_STEVEN] =                   &gObjectEventGraphicsInfo_Steven,
     [OBJ_EVENT_GFX_LYRA] =                     &gObjectEventGraphicsInfo_Lyra,
@@ -469,7 +469,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MOM] =                      &gObjectEventGraphicsInfo_Mom,
     [OBJ_EVENT_GFX_LINK_ETHAN] =               &gObjectEventGraphicsInfo_LinkEthan,
     [OBJ_EVENT_GFX_LINK_MAY] =                 &gObjectEventGraphicsInfo_LinkMay,
-    [OBJ_EVENT_GFX_JUAN] =                     &gObjectEventGraphicsInfo_Juan,
+    [OBJ_EVENT_GFX_BLAINE] =                     &gObjectEventGraphicsInfo_Blaine,
     [OBJ_EVENT_GFX_SCOTT] =                    &gObjectEventGraphicsInfo_Scott,
     [OBJ_EVENT_GFX_POOCHYENA] =                &gObjectEventGraphicsInfo_Poochyena,
     [OBJ_EVENT_GFX_KYOGRE_SIDE] =              &gObjectEventGraphicsInfo_KyogreSide,

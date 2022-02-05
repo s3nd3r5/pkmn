@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_TATE",
+      "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
       "x": 23,
       "y": 7,
       "elevation": 0,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MossdeepCity_Gym_EventScript_TateAndLiza",
+      "script": "MossdeepCity_Gym_EventScript_Janine",
       "flag": "0"
     },
     {
@@ -119,7 +119,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LIZA",
+      "graphics_id": "OBJ_EVENT_GFX_JANINE",
       "x": 24,
       "y": 7,
       "elevation": 0,
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MossdeepCity_Gym_EventScript_TateAndLiza",
+      "script": "MossdeepCity_Gym_EventScript_Janine",
       "flag": "0"
     },
     {

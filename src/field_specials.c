@@ -416,9 +416,9 @@ bool32 ShouldDoScottBattleFrontierCall(void)
     return TRUE;
 }
 
-bool32 ShouldDoRoxanneCall(void)
+bool32 ShouldDoBrockCall(void)
 {
-    if (FlagGet(FLAG_ENABLE_ROXANNE_FIRST_CALL))
+    if (FlagGet(FLAG_ENABLE_BROCK_FIRST_CALL))
     {
         switch (gMapHeader.mapType)
         {
@@ -426,7 +426,7 @@ bool32 ShouldDoRoxanneCall(void)
         case MAP_TYPE_CITY:
         case MAP_TYPE_ROUTE:
         case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_ROXANNE_CALL_STEP_COUNTER)) < 250)
+            if (++(*GetVarPointer(VAR_BROCK_CALL_STEP_COUNTER)) < 250)
                 return FALSE;
             break;
         default:
@@ -4143,10 +4143,10 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *linkRecords, u8 
             StringCopy(gStringVar1, gText_Steven);
             break;
         case 2:
-            StringCopy(gStringVar1, gText_Brawly);
+            StringCopy(gStringVar1, gText_Misty);
             break;
         case 3:
-            StringCopy(gStringVar1, gText_Winona);
+            StringCopy(gStringVar1, gText_Sabrina);
             break;
         case 4:
             StringCopy(gStringVar1, gText_Bruno);

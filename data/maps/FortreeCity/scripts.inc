@@ -24,7 +24,7 @@ FortreeCity_EventScript_Woman::
 	end
 
 FortreeCity_EventScript_WomanGymAccessible::
-	msgbox FortreeCity_Text_ThisTimeIllBeatWinona, MSGBOX_DEFAULT
+	msgbox FortreeCity_Text_ThisTimeIllBeatSabrina, MSGBOX_DEFAULT
 	release
 	end
 
@@ -102,9 +102,9 @@ FortreeCity_Text_SomethingBlockingGym:
 	.string "After all the bother I went through\n"
 	.string "training on ROUTE 120…$"
 
-FortreeCity_Text_ThisTimeIllBeatWinona:
+FortreeCity_Text_ThisTimeIllBeatSabrina:
 	.string "I've got my pride-and-joy POKéMON\n"
-	.string "with me. This time, I'll beat WINONA.$"
+	.string "with me. This time, I'll beat SABRINA.$"
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
 	.string "The ground absorbs rainwater, and\n"
@@ -150,7 +150,7 @@ FortreeCity_Text_CitySign:
 
 FortreeCity_Text_GymSign:
 	.string "FORTREE CITY POKéMON GYM\n"
-	.string "LEADER: WINONA\p"
+	.string "LEADER: SABRINA\p"
 	.string "“The bird user taking flight into\n"
 	.string "the world.”$"
 
